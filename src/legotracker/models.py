@@ -13,3 +13,12 @@ class PriceRow:
     in_stock: bool
     url: str
     source: str            # "feed" | "page" | "manual"
+
+
+@dataclass(frozen=True)
+class Verdict:
+    """What the tool thinks of today's price, and why."""
+    label: str                 # BUY_NOW GOOD FAIR WAIT NEVER_DISCOUNTS
+    position: float | None     # % of the way up the known range
+    reason: str                # plain-language, goes straight into the email
+    alertable: bool            # whether this is worth an email
