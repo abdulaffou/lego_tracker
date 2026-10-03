@@ -1,0 +1,51 @@
+# Sets to track. Set number and name are enough to start.
+# amazon_low / amazon_high come from Rufus in the Amazon app
+# (open the set -> "Price history" -> read the low and high off the chart).
+
+- set: "11389"
+  name: Project Hail Mary
+  amazon_low: 11999
+  amazon_high: 11999
+  seen_on: 2026-10-04
+
+- set: "10294"
+  name: Titanic
+  asin: B09GPPP2NK
+  amazon_low: 57000
+  amazon_high: 98999
+  seen_on: 2026-10-04
+
+- set: "11377"
+  name: Minas Tirith
+  # No history: brand new set, not listed on Amazon India yet.
+
+- set: "10350"
+  name: Tudor Corner
+  amazon_low: 14500
+  amazon_high: 24501
+  seen_on: 2026-10-04
+
+- set: "11371"
+  name: Shopping Street
+  amazon_low: 24479
+  amazon_high: 25999
+  seen_on: 2026-10-04
+
+- set: "76269"
+  name: Avengers Tower
+  amazon_low: 24501
+  amazon_high: 48021
+  seen_on: 2026-10-04
+
+- set: "42172"
+  name: McLaren P1
+  asin: B0CWH3TBGB
+  amazon_low: 20600
+  amazon_high: 40490
+  seen_on: 2026-10-04
+
+- set: "10316"
+  name: Rivendell
+  amazon_low: 25200
+  amazon_high: 45392
+  seen_on: 2026-10-04
