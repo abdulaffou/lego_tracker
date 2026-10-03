@@ -1,0 +1,103 @@
+"""Amazon.in, and the free price-history site.
+
+Both are best-effort. Amazon serves data-centre IPs a CAPTCHA, so the
+cloud run often gets nothing; the local run from Abdul's Mac works. Any
+failure returns None and the run continues.
+
+Product links are supplied in watchlist.yaml, never searched for:
+searching "LEGO Technic McLaren P1 42172" returned four products, none
+of them the McLaren.
+"""
+import logging
+import re
+
+import requests
+
+from ..models import PriceRow
+
+log = logging.getLogger(__name__)
+
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+      "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36")
+
+PRICE_WHOLE = re.compile(r'a-price-whole">([\d,]+)')
+# Amazon renders the list price as markup, not as a JSON amount:
+#   <span ...apex-basisprice-offscreen-label">M.R.P.: &#8377;41,199.00</span>
+#   <p ...> List Price: <span class="a-text-strike"> &#8377;41,199.00 </span>
+_RUPEE_SIGN = r"(?:&#8377;|\u20b9|Rs\.?)"
+BASIS_PRICE = re.compile(
+    r"(?:M\.R\.P\.?|List Price)\s*:?\s*" + _RUPEE_SIGN + r"\s*([\d,]+)",
+    re.IGNORECASE)
+BLOCKED = re.compile(r"Enter the characters you see below|not a robot",
+                     re.IGNORECASE)
+
+_RUPEES = r"(?:&#8377;|₹|Rs\.?)\s*([\d,]+)"
+HISTORY_FIELDS = {
+    "low": re.compile(r"Lowest.{0,120}?" + _RUPEES, re.IGNORECASE | re.DOTALL),
+    "high": re.compile(r"Highest.{0,120}?" + _RUPEES, re.IGNORECASE | re.DOTALL),
+    "average": re.compile(r"Average.{0,120}?" + _RUPEES,
+                          re.IGNORECASE | re.DOTALL),
+}
+
+
+def _number(text: str) -> float:
+    return float(text.replace(",", ""))
+
+
+def parse_amazon_page(html: str, set_number: str, url: str,
+                      today: str) -> PriceRow | None:
+    if not html or BLOCKED.search(html):
+        return None
+    price_match = PRICE_WHOLE.search(html)
+    if not price_match:
+        return None
+    basis = BASIS_PRICE.search(html)
+    return PriceRow(
+        date=today,
+        shop="amazon",
+        set_number=set_number,
+        price=_number(price_match.group(1)),
+        mrp=_number(basis.group(1)) if basis else None,
+        in_stock=True,
+        url=url,
+        source="page",
+    )
+
+
+def fetch_amazon(asin: str, set_number: str, today: str) -> PriceRow | None:
+    url = f"https://www.amazon.in/dp/{asin}"
+    try:
+        response = requests.get(
+            url, headers={"User-Agent": UA,
+                          "Accept-Language": "en-IN,en;q=0.9"}, timeout=30)
+        response.raise_for_status()
+    except Exception as exc:
+        log.warning("amazon %s failed: %s", asin, exc)
+        return None
+    return parse_amazon_page(response.text, set_number, url, today)
+
+
+def parse_price_history(html: str) -> dict | None:
+    """Pull low/high/average off a pricehistory.app page."""
+    if not html:
+        return None
+    stats = {}
+    for field, pattern in HISTORY_FIELDS.items():
+        match = pattern.search(html)
+        if not match:
+            return None
+        stats[field] = _number(match.group(1))
+    if stats["low"] > stats["high"]:
+        log.warning("price history low above high; ignoring")
+        return None
+    return stats
+
+
+def fetch_price_history(url: str) -> dict | None:
+    try:
+        response = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        response.raise_for_status()
+    except Exception as exc:
+        log.warning("pricehistory %s failed: %s", url, exc)
+        return None
+    return parse_price_history(response.text)
