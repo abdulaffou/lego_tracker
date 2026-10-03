@@ -1,0 +1,5241 @@
+{
+ "products": [
+  {
+   "id": 9917205545282,
+   "title": "101 Dalmatians Puppy",
+   "handle": "disney-101-dalmatians-puppy-43269-building-kit-1722-pieces",
+   "body_html": "<p>Unleash your love of puppies with this building set. Build Disney\u2019s Patch to display and place him in a variety of poses. Or rebuild him into other puppies from the film. Want some quality building time with your young 101 Dalmatians fan? This is a fun companion to the Lucky &amp; Penny 101 Dalmatians Puppies building kit (sold separately), allowing kids and adults to enjoy building at the same time.</p>",
+   "published_at": "2025-07-01T13:53:16+05:30",
+   "created_at": "2025-03-20T17:40:35+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "1000-5000",
+    "18+",
+    "age",
+    "all_products",
+    "Black-Friday-Specials",
+    "Brick-maash-offer",
+    "Brickmas_bash",
+    "Briks_newoffer",
+    "christmas_day",
+    "classic",
+    "custom_gift",
+    "disney animation",
+    "disney classic",
+    "fantasy",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Disney",
+    "Lego Jurassic World",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-christmas_day",
+    "new-custom",
+    "New-year-off",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-07-04-2026",
+    "spotlight-15-06-26",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422767288642,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "43269",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "15499.00",
+     "grams": 2267,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917205545282,
+     "created_at": "2025-03-20T17:40:35+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 49651414270274,
+     "created_at": "2025-07-01T12:41:27+05:30",
+     "position": 1,
+     "updated_at": "2025-07-01T13:52:03+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_Prod.png?v=1751358123",
+     "width": 2452,
+     "height": 3000
+    },
+    {
+     "id": 49651414204738,
+     "created_at": "2025-07-01T12:41:26+05:30",
+     "position": 2,
+     "updated_at": "2025-07-01T13:52:03+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_Box1_v29.png?v=1751358123",
+     "width": 2656,
+     "height": 3000
+    },
+    {
+     "id": 49651414106434,
+     "created_at": "2025-07-01T12:41:26+05:30",
+     "position": 3,
+     "updated_at": "2025-07-01T13:52:03+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_boxprod.jpg?v=1751358123",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 49651414237506,
+     "created_at": "2025-07-01T12:41:27+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_WEB_SEC03_NOBG.png?v=1758447333",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49651414303042,
+     "created_at": "2025-07-01T12:41:27+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_WEB_SEC01_NOBG_3000x3000_6294c866-4808-4d8e-b336-962cdc1aea7b.png?v=1758447333",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 49651414171970,
+     "created_at": "2025-07-01T12:41:26+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_43271_Lifestyle_Build_07.jpg?v=1758447333",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49651413942594,
+     "created_at": "2025-07-01T12:41:26+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_43271_Lifestyle_Envr_01.jpg?v=1758447333",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49651414008130,
+     "created_at": "2025-07-01T12:41:26+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_Lifestyle_Build_01.jpg?v=1758447333",
+     "width": 3000,
+     "height": 1886
+    },
+    {
+     "id": 49651414040898,
+     "created_at": "2025-07-01T12:41:27+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_Lifestyle_Build_06.jpg?v=1758447333",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49651414073666,
+     "created_at": "2025-07-01T12:41:27+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_Lifestyle_Envr_05.jpg?v=1758447333",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49651413975362,
+     "created_at": "2025-07-01T12:41:26+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:05:33+05:30",
+     "product_id": 9917205545282,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43269_43271_Lifestyle_Build_02.jpg?v=1758447333",
+     "width": 3000,
+     "height": 2001
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10217656287554,
+   "title": "1966 Ford GT40 MKII Race Car",
+   "handle": "lego-r-technic-1966-ford-gt40-mkii-race-car-for-adults-42223",
+   "body_html": "<p>Drive to victory and celebrate a motoring icon with this LEGO\u00ae Technic\u2122 1966 Ford GT40 MKII Race Car model for adults (42223). Car lovers, racing fans and building enthusiasts ages 18+ can invoke the spirit of an iconic endurance race with this realistic model version of an iconic vintage car. Have fun exploring the detailed features of the set. Use the knob on top of the car to steer. Check out the opening doors and admire the black and silver livery that\u2019s inspired by the real-life champion car. Open the engine cover to reveal the V8 engine, then use the lever inside to open the hood. After you\u2019ve built it, you can proudly display your race car in any room or office. Drive your desire for high-performance vehicle building kits with the range of LEGO Technic collectible cars for adults. Enjoy enhanced building with the LEGO Builder app, zooming and rotating with 3D instructions, while saving and tracking progress \u2013 all from the app. Set contains 793 pieces.</p>",
+   "published_at": "2026-01-23T17:01:22+05:30",
+   "created_at": "2026-01-22T16:23:27+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "18+",
+    "500-1000",
+    "all_products",
+    "Collectors_week",
+    "Collectors_week_newkds",
+    "custom-22-01-26",
+    "feb_hype",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "technic",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 51867349549378,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42223",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "7999.00",
+     "grams": 0,
+     "compare_at_price": "7999.00",
+     "position": 1,
+     "product_id": 10217656287554,
+     "created_at": "2026-01-22T16:23:28+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51391857033538,
+     "created_at": "2026-01-23T15:56:43+05:30",
+     "position": 1,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/6dfa1e66-cb29-456c-bf14-b27b006a266f_1.png?v=1769164322",
+     "width": 3000,
+     "height": 1322
+    },
+    {
+     "id": 51391857099074,
+     "created_at": "2026-01-23T15:56:45+05:30",
+     "position": 2,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/d36e9c74-2c79-4a87-9170-b2c7007b385d_1.png?v=1769164322",
+     "width": 3000,
+     "height": 2400
+    },
+    {
+     "id": 51391855886658,
+     "created_at": "2026-01-23T15:56:36+05:30",
+     "position": 3,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/5181409f-9b9b-4e83-9501-b36800a4b9b2_1.jpg?v=1769164322",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 51391855952194,
+     "created_at": "2026-01-23T15:56:38+05:30",
+     "position": 4,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/30669311-0a65-4015-83b8-b36800a4dd41_2.jpg?v=1769164322",
+     "width": 3000,
+     "height": 4498
+    },
+    {
+     "id": 51391855919426,
+     "created_at": "2026-01-23T15:56:38+05:30",
+     "position": 5,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/30669311-0a65-4015-83b8-b36800a4dd41_1.jpg?v=1769164322",
+     "width": 3000,
+     "height": 4498
+    },
+    {
+     "id": 51391853756738,
+     "created_at": "2026-01-23T15:56:18+05:30",
+     "position": 6,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/b0f40a22-18c1-4392-a8f0-b36800a4d94c.jpg?v=1769164322",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 51391857000770,
+     "created_at": "2026-01-23T15:56:41+05:30",
+     "position": 7,
+     "updated_at": "2026-01-23T16:02:02+05:30",
+     "product_id": 10217656287554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/d285b101-b091-4125-b9ed-b361003b7f70_1.png?v=1769164322",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917220651330,
+   "title": "2 Fast 2 Furious Honda S2000",
+   "handle": "speed-champions-2-fast-2-furious-honda-s2000-77241-building-kit-300-pieces",
+   "body_html": "<p>Recreate thrilling races from the iconic 2 Fast 2 Furious film with this supercool Honda S2000 brick-built replica! The highly detailed LEGO\u00ae Speed Champions model includes authentic design features from the original and lets you build, play with and display. It comes with a Suki character minifigure to place behind the wheel and race through the streets!</p>",
+   "published_at": "2025-07-01T15:53:33+05:30",
+   "created_at": "2025-03-20T17:44:52+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Key Account",
+   "tags": [
+    "100-500",
+    "9+",
+    "9-14",
+    "age",
+    "all_products",
+    "build_dream_ride",
+    "custom_gift",
+    "interest",
+    "Lego Speed Champions Mercedes",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "speed champions",
+    "spotlight-07-04-2026",
+    "spotlight-07-05",
+    "theme",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 50422788948290,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "77241",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "3199.00",
+     "grams": 318,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917220651330,
+     "created_at": "2025-03-20T17:44:52+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 49652841349442,
+     "created_at": "2025-07-01T15:51:20+05:30",
+     "position": 1,
+     "updated_at": "2025-07-01T15:53:25+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_Prod.png?v=1751365405",
+     "width": 3000,
+     "height": 1255
+    },
+    {
+     "id": 49652841316674,
+     "created_at": "2025-07-01T15:51:19+05:30",
+     "position": 2,
+     "updated_at": "2025-07-01T15:53:25+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_boxprod.jpg?v=1751365405",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 49652841447746,
+     "created_at": "2025-07-01T15:51:19+05:30",
+     "position": 3,
+     "updated_at": "2025-07-01T16:33:45+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_Box1_v29.png?v=1751367825",
+     "width": 3000,
+     "height": 1981
+    },
+    {
+     "id": 49652841382210,
+     "created_at": "2025-07-01T15:51:20+05:30",
+     "position": 4,
+     "updated_at": "2025-07-01T16:33:45+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_WEB_SEC03_NOBG.png?v=1751367825",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49652841578818,
+     "created_at": "2025-07-01T15:51:19+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:00:26+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_Lifestyle_build.jpg?v=1758447026",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49652841414978,
+     "created_at": "2025-07-01T15:51:19+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:00:26+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_Lifestyle_cons.jpg?v=1758447026",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49652841251138,
+     "created_at": "2025-07-01T15:51:19+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:00:26+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_Lifestyle_cons_2.jpg?v=1758447026",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49652841283906,
+     "created_at": "2025-07-01T15:51:19+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:00:27+05:30",
+     "product_id": 9917220651330,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/77241_Lifestyle_envr.jpg?v=1758447027",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917201023298,
+   "title": "2 Fast 2 Furious Nissan Skyline GT-R (R34) Car",
+   "handle": "technic-2-fast-2-furious-nissan-skyline-gt-r-r34-car-42210-building-kit-1410-pieces",
+   "body_html": "<p>Shift gears and chase dreams Fast &amp; Furious style with this LEGO\u00ae Technic 2 Fast 2 Furious Nissan Skyline GT-R (R34) Car set for adults. Assemble faithful details like the steering, front and rear suspension and 6-cylinder engine. Adjust the wing, then try out the first ever LEGO Technic drift function. This raises the car so you can recreate impressive manoeuvres from your favorite race scenes.</p>",
+   "published_at": "2025-06-30T17:05:05+05:30",
+   "created_at": "2025-03-20T17:39:31+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "1000-5000",
+    "18+",
+    "age",
+    "all_products",
+    "Black-Friday-Specials",
+    "Brick-maash-offer",
+    "Brickmas_bash",
+    "BrickRush",
+    "Briks_newoffer",
+    "christmas_day",
+    "custom_gift",
+    "interest",
+    "Lego Cars",
+    "Lego SpeedChampions",
+    "Lego Technic Cars",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-christmas_day",
+    "new-custom",
+    "secret-deals-newnavaratri",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-07-05",
+    "technic",
+    "theme",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 50422761718082,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42210",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "15499.00",
+     "grams": 1978,
+     "compare_at_price": "15499.00",
+     "position": 1,
+     "product_id": 9917201023298,
+     "created_at": "2025-03-20T17:39:32+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 49645998965058,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 1,
+     "updated_at": "2025-06-30T17:04:56+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_boxprod.jpg?v=1751283296",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 49645999030594,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 2,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_Prod.png?v=1751283303",
+     "width": 3000,
+     "height": 1569
+    },
+    {
+     "id": 49645999063362,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 3,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_WEB_SEC01_NOBG_3000x3000_1429b5e6-a2e8-4470-854a-edf55e2f249e.png?v=1751283303",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 49645998997826,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 4,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_WEB_SEC03.png?v=1751283303",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49645998899522,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 5,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_Lifestyle_Build_05.jpg?v=1751283303",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49645998866754,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 6,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_Lifestyle_Build_07.jpg?v=1751283303",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49645998932290,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 7,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_Lifestyle_Build_08.jpg?v=1751283303",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 49645998833986,
+     "created_at": "2025-06-30T17:04:20+05:30",
+     "position": 8,
+     "updated_at": "2025-06-30T17:05:03+05:30",
+     "product_id": 9917201023298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42210_Lifestyle_Cons_02.jpg?v=1751283303",
+     "width": 3000,
+     "height": 2001
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10361405440322,
+   "title": "2026 U.S. Soccer National Team Jersey",
+   "handle": "lego-r-editions-2026-u-s-soccer-national-team-jersey-43033",
+   "body_html": "<p>Lego Mybrickhouse</p>",
+   "published_at": "2026-06-03T15:04:41+05:30",
+   "created_at": "2026-06-02T12:31:03+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "",
+   "tags": [
+    "10+",
+    "100-500",
+    "9-14",
+    "all_products",
+    "custom-02-06-2026",
+    "edition",
+    "editions sports",
+    "Fifa-Edition-new",
+    "new_arrivals_24_08_2026",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sports and outdoor"
+   ],
+   "variants": [
+    {
+     "id": 54458269303106,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "43033",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "2499.00",
+     "grams": 0,
+     "compare_at_price": "2499.00",
+     "position": 1,
+     "product_id": 10361405440322,
+     "created_at": "2026-06-02T12:31:03+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 52486660096322,
+     "created_at": "2026-06-02T17:46:21+05:30",
+     "position": 1,
+     "updated_at": "2026-06-02T17:46:24+05:30",
+     "product_id": 10361405440322,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43033_WEB_PRI_NOBG.png?v=1780402584",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 52486660030786,
+     "created_at": "2026-06-02T17:46:21+05:30",
+     "position": 2,
+     "updated_at": "2026-06-02T17:46:24+05:30",
+     "product_id": 10361405440322,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43033_Box2_v29.png?v=1780402584",
+     "width": 3000,
+     "height": 2521
+    },
+    {
+     "id": 52486660063554,
+     "created_at": "2026-06-02T17:46:21+05:30",
+     "position": 3,
+     "updated_at": "2026-06-02T17:46:24+05:30",
+     "product_id": 10361405440322,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/43033_boxprod_v29.png?v=1780402584",
+     "width": 3000,
+     "height": 3000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917167206722,
+   "title": "3 in 1 Animals on Wheels",
+   "handle": "duplo-town-3in1-animals-on-wheels-10448-building-kit-58-pieces",
+   "body_html": "<p>Drive toddlers\u2019 imaginations and let their creativity flow with these cute animals on wheels. Preschoolers use their creativity to build and rebuild animals in any way they choose. Delivering lots of dynamic fun, this set will help toddlers develop a raft of early learning skills as they explore the imaginative moving details and construct the animals on the movable wheelbases.</p>",
+   "published_at": "2025-06-30T13:10:06+05:30",
+   "created_at": "2025-03-20T17:29:19+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "1-4",
+    "2+",
+    "age",
+    "all_products",
+    "animals and nature",
+    "Animals Toy",
+    "custom_gift",
+    "duplo",
+    "duplo town",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Animals",
+    "lego-03-07-2026",
+    "lego_17_07_2026",
+    "less-than-100",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "New-year-off",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-03-09-2026",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "spotlight_19_08_26",
+    "theme",
+    "town"
+   ],
+   "variants": [
+    {
+     "id": 50422718497090,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10448",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "4099.00",
+     "grams": 82,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917167206722,
+     "created_at": "2025-03-20T17:29:19+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 49644570607938,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 1,
+     "updated_at": "2025-06-30T12:23:57+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_Prod.png?v=1751266437",
+     "width": 3000,
+     "height": 1902
+    },
+    {
+     "id": 49644570575170,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 2,
+     "updated_at": "2025-06-30T12:23:57+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_boxprod.jpg?v=1751266437",
+     "width": 3500,
+     "height": 3500
+    },
+    {
+     "id": 49644570673474,
+     "created_at": "2025-06-30T12:22:16+05:30",
+     "position": 3,
+     "updated_at": "2025-06-30T12:23:57+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_Box1_v29.png?v=1751266437",
+     "width": 3000,
+     "height": 2386
+    },
+    {
+     "id": 49644570509634,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:10:45+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_WEB_SEC05_NOBG.png?v=1758447645",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49644570476866,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:10:46+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_WEB_SEC02_NOBG.png?v=1758447646",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49644570378562,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:10:46+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_Lifestyle_build.jpg?v=1758447646",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49644570411330,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:10:46+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_Lifestyle_cons.jpg?v=1758447646",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49644570640706,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:10:46+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_Lifestyle_cons_2.jpg?v=1758447646",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49644570542402,
+     "created_at": "2025-06-30T12:22:17+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:10:46+05:30",
+     "product_id": 9917167206722,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10448_Lifestyle_envr.jpg?v=1758447646",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10214737314114,
+   "title": "3 in 1 Creative Cute Pets",
+   "handle": "lego-r-duplo-r-my-first-3-in-1-creative-cute-pets-toy-10477",
+   "body_html": "<p>Fill playtimes with color and creativity with the LEGO\u00ae DUPLO\u00ae My First 3 in 1 Creative Cute Pets (10477) animal toy. This cute pet toy for kids ages 18 months plus offers 8 different building options with the same set of bricks. Using the 24 easy-to-handle bricks designed especially for the smallest kids, little builders can choose to make dog, cat, bird, rabbit, mouse and fish buildable figures. Some of these animal toys for young kids use single-colored LEGO DUPLO bricks. Little builders can learn to sort by color to create their pet, finishing their figure by adding a friendly animal face. Packed with toddler learning activities, this small gift for young kids encourages toddlers to develop focus and perseverance as they try out the different brick choices to select the correct bricks to complete the animal. Or they can use their creativity to construct an imaginary creature of their own invention! Contains 24 pieces.</p>",
+   "published_at": "2026-01-22T12:44:11+05:30",
+   "created_at": "2026-01-19T11:28:33+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "1-4",
+    "1\u00bd+",
+    "all_products",
+    "custom-19-02-15",
+    "duplo my first",
+    "less-than-100",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "socialising and community",
+    "spotlight-07-05"
+   ],
+   "variants": [
+    {
+     "id": 51854061601090,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10477",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "999.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10214737314114,
+     "created_at": "2026-01-19T11:28:33+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51348857160002,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 1,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_Prod.png?v=1768807391",
+     "width": 3000,
+     "height": 2512
+    },
+    {
+     "id": 51348857192770,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 2,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_Box1_v29.png?v=1768807391",
+     "width": 3000,
+     "height": 2490
+    },
+    {
+     "id": 51348857291074,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 3,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_boxprod_v29_sha.png?v=1768807391",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51348857258306,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 4,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_Lifestyle_Build_crop.jpg?v=1768807391",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51348857127234,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 5,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_Lifestyle_cons_2.jpg?v=1768807391",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51348857094466,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 6,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_Lifestyle_envr.jpg?v=1768807391",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51348857225538,
+     "created_at": "2026-01-19T12:34:58+05:30",
+     "position": 7,
+     "updated_at": "2026-01-19T12:53:11+05:30",
+     "product_id": 10214737314114,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10477_Lifestyle_Cons_crop.jpg?v=1768807391",
+     "width": 3000,
+     "height": 3000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10385113350466,
+   "title": "3 in 1 Creative Ramps with Vehicles",
+   "handle": "lego-r-duplo-r-town-3-in-1-creative-ramps-with-vehicles-10478",
+   "body_html": "<p>Rev up playtime fun with the LEGO\u00ae DUPLO\u00ae Town 3 in 1 Creative Ramps with Vehicles (10478) building toy. This set inspires hours of fun car play and learning with 2 race cars and bricks that rebuild into 3 different sets of ramps.<br>\nModel A is a long, tall ramp with a jump. Model B consists of 2 shorter ramps that let kids practice color recognition to match each vehicle to its ramp before racing them with family and friends. Little racers learn to solve problems with Model C by launching the cars through the loop and over the gap. Kids also learn emotional intelligence and perseverance as they try to land the jump successfully.<br>\nThis set comes with lots of accessories, including flames, cones and a trophy to recreate race day excitement. With fun scenarios, realistic details and learning moments, LEGO DUPLO Town educational toys help young kids make sense of the world they see around them. Set includes 111 pieces.</p>",
+   "published_at": "2026-06-29T11:31:55+05:30",
+   "created_at": "2026-06-23T11:43:29+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "",
+   "tags": [
+    "animals_new",
+    "custom-23-06-2026",
+    "new_arrivals_24_08_2026",
+    "see-all-age",
+    "see-all-bricks"
+   ],
+   "variants": [
+    {
+     "id": 54875365933378,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10478",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "7499.00",
+     "grams": 0,
+     "compare_at_price": "7499.00",
+     "position": 1,
+     "product_id": 10385113350466,
+     "created_at": "2026-06-23T11:43:30+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 52693232353602,
+     "created_at": "2026-06-26T11:10:42+05:30",
+     "position": 1,
+     "updated_at": "2026-06-26T11:19:19+05:30",
+     "product_id": 10385113350466,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10478_Prod.png?v=1782452959",
+     "width": 3612,
+     "height": 3035
+    },
+    {
+     "id": 52693233041730,
+     "created_at": "2026-06-26T11:10:46+05:30",
+     "position": 2,
+     "updated_at": "2026-06-26T11:18:48+05:30",
+     "product_id": 10385113350466,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10478_Lifestyle_Build_crop.jpg?v=1782452928",
+     "width": 3500,
+     "height": 3500
+    },
+    {
+     "id": 52693233008962,
+     "created_at": "2026-06-26T11:10:45+05:30",
+     "position": 3,
+     "updated_at": "2026-06-26T11:19:19+05:30",
+     "product_id": 10385113350466,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10478_Lifestyle_Envr_crop.jpg?v=1782452959",
+     "width": 3500,
+     "height": 3500
+    },
+    {
+     "id": 52693233172802,
+     "created_at": "2026-06-26T11:10:49+05:30",
+     "position": 4,
+     "updated_at": "2026-06-26T11:19:23+05:30",
+     "product_id": 10385113350466,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10478_Lifestyle_Cons_crop.jpg?v=1782452963",
+     "width": 3500,
+     "height": 3500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10214739804482,
+   "title": "3 in 1 Modern Family House with Figures",
+   "handle": "lego-r-duplo-r-town-3-in-1-modern-family-house-with-figures-10470",
+   "body_html": "<p>Toddlers ages 2+ can enjoy imaginative pretend play by exploring family routines with this 3 in 1 Modern Family House with Figures (10470) dollhouse building kit. With 4 figures \u2013 2 parents, a toddler and baby \u2013 this interactive toy lets toddlers enjoy social, emotional learning activities as they play with the dollhouse family. This versatile fine-motor skills toy has lots of creative possibilities as young girls and boys build 3 models using the same set of LEGO\u00ae DUPLO\u00ae bricks. They can configure it as an apartment on one floor, or as a 3- or 5-story dollhouse with a roof garden and accessories such as a lounger and insect hotel. This role-play toy for young kids includes lots of dollhouse accessories toddlers will recognize from their own homes, such as a fridge, toilet and baby stroller. These features will spark hours of storytelling for kids, where they will develop creativity, learn about routines and explore the different roles in a family. Contains 166 pieces.</p>",
+   "published_at": "2026-01-22T12:43:21+05:30",
+   "created_at": "2026-01-19T11:29:48+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "1-4",
+    "100-500",
+    "2+",
+    "age",
+    "all_products",
+    "custom-19-02-15",
+    "duplo town",
+    "Id-kds-spotlightsk",
+    "lego-03-07-2026",
+    "lego_17_07_2026",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "socialising and community",
+    "spotlight-07-05",
+    "spotlight-15-06-26"
+   ],
+   "variants": [
+    {
+     "id": 51854065631554,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10470",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "8499.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10214739804482,
+     "created_at": "2026-01-19T11:29:48+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51360655081794,
+     "created_at": "2026-01-20T15:47:16+05:30",
+     "position": 1,
+     "updated_at": "2026-01-20T15:54:30+05:30",
+     "product_id": 10214739804482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10470_Prod_13f33987-dcb8-436e-81b6-ae5b2b9cc28f.png?v=1768904670",
+     "width": 3000,
+     "height": 3385
+    },
+    {
+     "id": 51360655114562,
+     "created_at": "2026-01-20T15:47:16+05:30",
+     "position": 2,
+     "updated_at": "2026-01-20T15:54:30+05:30",
+     "product_id": 10214739804482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10470_Box1_v29_1cdca763-46fe-4923-8f33-274ce10e3700.png?v=1768904670",
+     "width": 3000,
+     "height": 2361
+    },
+    {
+     "id": 51360655180098,
+     "created_at": "2026-01-20T15:47:16+05:30",
+     "position": 3,
+     "updated_at": "2026-01-31T19:42:08+05:30",
+     "product_id": 10214739804482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10470_Lifestyle_Build_crop_146a78aa-8efb-4618-95a9-04b0e8517d45.jpg?v=1769868728",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51360655212866,
+     "created_at": "2026-01-20T15:47:16+05:30",
+     "position": 4,
+     "updated_at": "2026-01-31T19:42:08+05:30",
+     "product_id": 10214739804482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10470_WE_Lifestyle_7f847a70-90ff-4d21-b658-b94d74bdf509.jpg?v=1769868728",
+     "width": 2500,
+     "height": 2500
+    },
+    {
+     "id": 51360655245634,
+     "created_at": "2026-01-20T15:47:16+05:30",
+     "position": 5,
+     "updated_at": "2026-01-31T19:42:08+05:30",
+     "product_id": 10214739804482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10470_10475_10477_10476_WE_eComCross_NLcrosssell_81aae7fc-54d0-4ea5-a3b1-824b61ccf21c.jpg?v=1769868728",
+     "width": 3000,
+     "height": 3000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917213540674,
+   "title": "Acclamator-Class Assault Ship\u2122",
+   "handle": "star-wars-acclamator-class-assault-ship-buildable-starship-model-75404-building-kit-450-pieces",
+   "body_html": "<p>Be transported to the drama of the Battle of Geonosis as you build the first-ever LEGO\u00ae Star Wars\u2122 construction model of an Acclamator-Class Assault Ship (75404). This Star Wars collectible build-and-display starship model captures many authentic details of the iconic vehicle seen in Star Wars: Attack of the Clones\u2122. Enjoy quality time immersing yourself in the complex, rewarding build, and display your creation on the stand with a nameplate.<br>Part of the mid-scale LEGO Star Wars Starship Collection, this building set makes a great treat for yourself or a creative Star Wars gift for other adult fans and collectors.<br>Get the most out of this fantasy model building kit with the LEGO Builder app. The app lets you zoom in and rotate a 3D version of your construction model as you build, track your progress and save all your sets in one place.</p>",
+   "published_at": "2025-03-20T17:42:51+05:30",
+   "created_at": "2025-03-20T17:42:51+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "18+",
+    "age",
+    "all_products",
+    "custom_gift",
+    "fantasy",
+    "interest",
+    "Lego Ship",
+    "Lego Star Wars",
+    "lego_17_07_2026",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "Ship Toy",
+    "spotlight-03-09-2026",
+    "spotlight_19_08_26",
+    "star wars tm",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422780559682,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "75404",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "5449.00",
+     "grams": 578,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917213540674,
+     "created_at": "2025-03-20T17:42:51+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48932235313474,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 1,
+     "updated_at": "2025-05-15T11:36:50+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Prod.png?v=1747289210",
+     "width": 3000,
+     "height": 2402
+    },
+    {
+     "id": 48932235346242,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 2,
+     "updated_at": "2025-05-15T11:36:50+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Box1_v29.png?v=1747289210",
+     "width": 2914,
+     "height": 3000
+    },
+    {
+     "id": 48932235280706,
+     "created_at": "2025-04-10T16:12:55+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_WEB_SEC03_NOBG.png?v=1758447190",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48932235247938,
+     "created_at": "2025-04-10T16:12:55+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_WEB_SEC01_NOBG.png?v=1758447190",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48932235182402,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Lifestyle_Build_02.jpg?v=1758447190",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932235084098,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Lifestyle_Build_03.jpg?v=1758447190",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932235149634,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Lifestyle_Build_04.jpg?v=1758447190",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932235215170,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Lifestyle_Build_06.jpg?v=1758447190",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932235051330,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Lifestyle_Cons_02.jpg?v=1758447190",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932235116866,
+     "created_at": "2025-04-10T16:12:54+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:03:10+05:30",
+     "product_id": 9917213540674,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75404_Lifestyle_Build_01.jpg?v=1758447190",
+     "width": 3000,
+     "height": 2001
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917203349826,
+   "title": "Advent Calendar 2025",
+   "handle": "friends-advent-calendar-2025-christmas-toy-42668-building-kit-237-pieces",
+   "body_html": "<p>Inspire holiday cheer and cosy moments for girls and boys aged 6 and over as kids open the doors of the LEGO\u00ae Friends Advent Calendar 2025 (42668) toy building set. It comes with 5 minidolls, including Aliya, Autumn, Liann, Nova and Leo, plus 5 LEGO animals including 2 dogs, a guinea pig, a gecko and a cat figure. Open a door each day to build the holiday sleepover story. Find surprises behind each door with sweet Christmas builds to make. Discover festive activities, like writing to Santa, decorating the tree, singing karaoke, riding the hobbyhorse and making hot chocolate. Each minidoll comes with a mattress and each pet has accessories so kids can create different stories as they assemble the scene. Other fun accessories include a sofa, lamp, fireplace, sledge, 5 gift boxes and a LEGO-piece reindeer cuddly toy. As well as being a Christmas countdown gift for kids, this creative toy supports young builders\u2019 social skills as they join the friends for an unforgettable sleepover.</p>",
+   "published_at": "2025-09-12T12:30:23+05:30",
+   "created_at": "2025-03-20T17:40:07+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "5-8",
+    "6+",
+    "age",
+    "all_products",
+    "custom_gift",
+    "discount-new-17-04-2026",
+    "Id-kds-spotlightsk",
+    "interest",
+    "lego friends",
+    "lego-03-07-2026",
+    "lego_17_07_2026",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "Santas_Secret",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "socialising and community",
+    "spotlight-03-09-2026",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "spotlight_19_08_26",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422764896578,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42668",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "3199.00",
+     "grams": 393,
+     "compare_at_price": "3199.00",
+     "position": 1,
+     "product_id": 9917203349826,
+     "created_at": "2025-03-20T17:40:07+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 50228354941250,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 1,
+     "updated_at": "2025-09-12T12:30:24+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Prod.png?v=1757660424",
+     "width": 3000,
+     "height": 1479
+    },
+    {
+     "id": 50228354744642,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 2,
+     "updated_at": "2025-09-12T12:30:24+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_boxprod.jpg?v=1757660424",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 50228354711874,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 3,
+     "updated_at": "2025-09-12T12:30:24+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Box1_v29.png?v=1757660424",
+     "width": 3000,
+     "height": 2389
+    },
+    {
+     "id": 50228354974018,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 4,
+     "updated_at": "2025-09-12T12:30:24+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_WEB_PRI_NOBG.png?v=1757660424",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 50228355006786,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:06:08+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_WEB_SEC01_NOBG.png?v=1758447368",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 50228355039554,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:06:08+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_WEB_SEC03_NOBG.png?v=1758447368",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 50228354777410,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:06:08+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Lifestyle_Build.jpg?v=1758447368",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 50228354810178,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:06:08+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Lifestyle_Cons.jpg?v=1758447368",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 50228354842946,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:06:08+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Lifestyle_cons_2.jpg?v=1758447368",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 50228354875714,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:06:08+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Lifestyle_envr.jpg?v=1758447368",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 50228354908482,
+     "created_at": "2025-09-12T12:18:38+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:06:09+05:30",
+     "product_id": 9917203349826,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42668_Lifestyle_envr_2.jpg?v=1758447369",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917201711426,
+   "title": "Adventure Camp Archery Range",
+   "handle": "friends-adventure-camp-archery-range-toy-42622-building-kit-157-pieces",
+   "body_html": "<p>The LEGO\u00ae Friends Adventure Camp Archery Range (42622) building toy for kids aged 6+ comes with Autumn and Nova minidolls, a raccoon and lots of sports playset accessories. Girls and boys can act out target practice for real with this exciting set as the bow actually shoots the arrows. See the target flip down when the arrow hits it! There\u2019s a colour-coded difficulty scale so kids can move the target back for a bigger challenge.<br>Little adventurers can create endless stories with this children\u2019s archery-themed set. Autumn comes with 2 different faces to change her expression as she takes aim. Nova receives the archery badge for her camp activity book. Then Autumn and Nova relax with a sandwich. Watch out for the cheeky raccoon who\u2019s hoping for a bite of the friends\u2019 lunch!<br>This set makes a great gift idea for kids and comes with the LEGO Builder app for an easy and intuitive building adventure. Here kids can zoom in and rotate models in 3D, save sets and track progress.</p>",
+   "published_at": "2025-03-20T17:39:42+05:30",
+   "created_at": "2025-03-20T17:39:42+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "5-8",
+    "6+",
+    "age",
+    "all_products",
+    "Brick-maash-offer",
+    "custom_gift",
+    "discount-new-17-04-2026",
+    "Id-kds-spotlightsk",
+    "interest",
+    "lego friends",
+    "Lego Friends Sets",
+    "new-06-10-2025",
+    "new-custom",
+    "New-year-off",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "retiring_soon_19_08_26",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "sports and outdoor",
+    "spotlight-03-09-2026",
+    "spotlight_19_08_26",
+    "Spto-new-year",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422762930498,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42622",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1449.00",
+     "grams": 222,
+     "compare_at_price": "1449.00",
+     "position": 1,
+     "product_id": 9917201711426,
+     "created_at": "2025-03-20T17:39:42+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48923078099266,
+     "created_at": "2025-04-09T11:22:23+05:30",
+     "position": 1,
+     "updated_at": "2025-05-15T12:28:37+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_Prod.png?v=1747292317",
+     "width": 3000,
+     "height": 2003
+    },
+    {
+     "id": 48923078230338,
+     "created_at": "2025-04-09T11:22:24+05:30",
+     "position": 2,
+     "updated_at": "2025-05-15T12:28:37+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_Box1_v29.png?v=1747292317",
+     "width": 3000,
+     "height": 1985
+    },
+    {
+     "id": 48923077804354,
+     "created_at": "2025-04-09T11:22:22+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_WEB_SEC02_NOBG.png?v=1758447405",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923077902658,
+     "created_at": "2025-04-09T11:22:22+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_WEB_SEC06_NOBG.png?v=1758447405",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923077935426,
+     "created_at": "2025-04-09T11:22:23+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_WEB_SEC04_NOBG.png?v=1758447405",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923077869890,
+     "created_at": "2025-04-09T11:22:22+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_WEB_SEC05_NOBG.png?v=1758447405",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923077673282,
+     "created_at": "2025-04-09T11:22:20+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_WEB_SEC01_NOBG.png?v=1758447405",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923077411138,
+     "created_at": "2025-04-09T11:22:17+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_Lifestyle_cons.jpg?v=1758447405",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48923077476674,
+     "created_at": "2025-04-09T11:22:17+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_Lifestyle_cons_2.jpg?v=1758447405",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48923077345602,
+     "created_at": "2025-04-09T11:22:17+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_Lifestyle_envr.jpg?v=1758447405",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48923077509442,
+     "created_at": "2025-04-09T11:22:18+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:06:45+05:30",
+     "product_id": 9917201711426,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42622_Lifestyle_build.jpg?v=1758447405",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10143260639554,
+   "title": "Adventure Camp Cozy Cabins",
+   "handle": "friends-adventure-camp-cosy-cabins-camping-toy-42624-437-pieces",
+   "body_html": "<p>\"The LEGO\u00ae Friends Adventure Camp Cosy Cabins (42624) playset for kids aged 7+ comes with 3 minidolls, a fox and lots of camping toy accessories so girls and boys can enjoy fun adventures.<br>This LEGO toy building set for kids makes imaginative pretend play so much fun. Young builders tell the story of Paisley, Zac and Sky as the friends enjoy a cosy camping trip. The set includes 2 buildable shelters with roofs that lift for easy access. The friends put the sleeping bags inside, ready for nightfall. Then Zac and Sky ride the 2 mountain bikes while Paisley writes songs on the lute. In the evening, the friends relax by the campfire, where they toast marshmallows and make the traditional campfire treat \u2013 s\u2019mores.<br>Discover more gift ideas for kids with LEGO Friends sets (sold separately), where there are lots of opportunities for kids to act out real-life adventures. This set comes with the LEGO Builder app, where kids can zoom in and rotate models in 3D, save sets and track progress.\"</p>",
+   "published_at": "2025-12-29T18:06:44+05:30",
+   "created_at": "2025-11-14T11:06:35+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "100-500",
+    "5-8",
+    "7+",
+    "all_products",
+    "discount-new-17-04-2026",
+    "Id-kds-spotlightsk",
+    "lego friends",
+    "lego-03-07-2026",
+    "lego_17_07_2026",
+    "new_brick_rush_sale",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sport-light-new-tab",
+    "sports and outdoor",
+    "Spotlight",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "spotlight-new-03-09-2026",
+    "Spotlight2",
+    "spotlight_19_08_26",
+    "Spto-new-year"
+   ],
+   "variants": [
+    {
+     "id": 51527065993538,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42624",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "5049.00",
+     "grams": 0,
+     "compare_at_price": "5049.00",
+     "position": 1,
+     "product_id": 10143260639554,
+     "created_at": "2025-11-14T11:06:35+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 50719298978114,
+     "created_at": "2025-11-14T11:39:45+05:30",
+     "position": 1,
+     "updated_at": "2025-12-04T15:25:18+05:30",
+     "product_id": 10143260639554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42624_WEB_SEC03_NOBG.png?v=1764842118",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 50719299076418,
+     "created_at": "2025-11-14T11:39:45+05:30",
+     "position": 2,
+     "updated_at": "2025-12-04T15:25:18+05:30",
+     "product_id": 10143260639554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42624_Box1_v29.png?v=1764842118",
+     "width": 3000,
+     "height": 2408
+    },
+    {
+     "id": 50719299109186,
+     "created_at": "2025-11-14T11:39:45+05:30",
+     "position": 3,
+     "updated_at": "2025-12-04T15:25:18+05:30",
+     "product_id": 10143260639554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42624_boxprod_v29_WE_pos_jpg.jpg?v=1764842118",
+     "width": 1080,
+     "height": 1440
+    },
+    {
+     "id": 50719298945346,
+     "created_at": "2025-11-14T11:39:45+05:30",
+     "position": 4,
+     "updated_at": "2025-12-04T15:25:18+05:30",
+     "product_id": 10143260639554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42624_WEB_SEC04_NOBG.png?v=1764842118",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 50719299010882,
+     "created_at": "2025-11-14T11:39:45+05:30",
+     "position": 5,
+     "updated_at": "2025-12-04T15:25:18+05:30",
+     "product_id": 10143260639554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42624_WEB_PRI_NOBG.png?v=1764842118",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 50719299043650,
+     "created_at": "2025-11-14T11:39:45+05:30",
+     "position": 6,
+     "updated_at": "2025-12-04T15:25:18+05:30",
+     "product_id": 10143260639554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42624_Prod.png?v=1764842118",
+     "width": 3000,
+     "height": 1997
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10217656025410,
+   "title": "Adventures with Interactive LEGO\u00ae Mario\u2122",
+   "handle": "lego-r-super-mario-adventures-with-interactive-lego-r-mario-71439",
+   "body_html": "<p>Give kids hours of adventures with interactive LEGO\u00ae Mario\u2122, including a battle for Bowser Jr.\u2019s Clown Car vehicle, with this LEGO\u00ae Super Mario\u2122 toy playset (71439). An exciting Nintendo\u00ae gift for boys, girls and gamers aged 6 and up, the set features an interactive LEGO Mario figure, plus Bowser Jr., a Goomba and Yoshi toy figures, plus 3 environment builds. Travel from the Start Pipe to the Goal Pole, triggering digital reactions from LEGO Mario and collecting coins along the way. Greet Yoshi, defeat the Goomba, stomp on the ? Block, topple Bowser Jr. and then ride away in his Junior Clown Car. Find building instructions in the box or on the LEGO Super Mario app, which also offers imaginative ideas for ways to build and play and is a safe platform for children to share their creations. Expand the play possibilities by adding the builds and characters in this set to others in the huge LEGO Super Mario range.</p>",
+   "published_at": "2026-01-23T17:01:28+05:30",
+   "created_at": "2026-01-22T16:23:19+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "100-500",
+    "5-8",
+    "6+",
+    "all_products",
+    "custom-22-01-26",
+    "lego_super_mario",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "spotlight-07-05",
+    "super mario",
+    "video games"
+   ],
+   "variants": [
+    {
+     "id": 51867349287234,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "71439",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "5999.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10217656025410,
+     "created_at": "2026-01-22T16:23:19+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51390783750466,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 1,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/f0903969-6b4d-4c99-b397-b01f006bc29a.png?v=1769152570",
+     "width": 3000,
+     "height": 2302
+    },
+    {
+     "id": 51390783783234,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 2,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/2783e7b8-f8bb-4484-ab9e-b05200ada5cb.png?v=1769152570",
+     "width": 3000,
+     "height": 3089
+    },
+    {
+     "id": 51390783881538,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 3,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/84b75e32-ae9f-40fe-a1b6-b18d00a9f082.jpg?v=1769152570",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51390783848770,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 4,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/79276776-8c00-43d1-a345-b17d00b5db63.jpg?v=1769152570",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51390783816002,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 5,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/73dac0be-f869-4245-8ee4-b17d00b5e660.jpg?v=1769152570",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51390783652162,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 6,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/e43ab750-4adb-46e0-9b64-b17200b75a99.jpg?v=1769152570",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 51390783947074,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 7,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/dcd9413f-186a-44f6-aecc-b18d00aa2a70.jpg?v=1769152570",
+     "width": 2500,
+     "height": 2500
+    },
+    {
+     "id": 51390783684930,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 8,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/308820b3-8da8-4345-abf3-b17e00ad2c01.png?v=1769152570",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51390783717698,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 9,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/26dfb43d-73da-47b0-a32f-b17e00ac71ef.png?v=1769152570",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51390783914306,
+     "created_at": "2026-01-23T12:32:50+05:30",
+     "position": 10,
+     "updated_at": "2026-01-23T12:46:10+05:30",
+     "product_id": 10217656025410,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/dcd9413f-186a-44f6-aecc-b18d00aa2a70_1_11e20cf7-81d5-4363-81d0-77c6401cae34.jpg?v=1769152570",
+     "width": 2500,
+     "height": 2500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917213049154,
+   "title": "Ahsoka Tano's Duel on Peridea",
+   "handle": "star-wars-ahsoka-tano-s-duel-on-peridea-set-75385-building-kit-382-pieces",
+   "body_html": "<p>Reenact the epic Star Wars: Ahsoka Season 1 finale battle and create new adventures with Ahsoka Tano\u2019s Duel on Peridea buildable toy playset for kids (75385). A fun birthday gift idea for boys, girls and any fan aged 8 and over, this collectible construction toy includes 5 LEGO\u00ae Star Wars\u2122 minifigures \u2013 Ahsoka Tano, Grand Admiral Thrawn, Morgan Elsbeth, Ezra Bridger and a Night Trooper \u2013 with iconic accessories for creative play. Place the characters on the platform, which features 3 built-in turntables for spinning battles and a function to recreate Ezra\u2019s leap.<br>Make kids\u2019 creative experience even more engaging with the LEGO Builder app, where they can get digital 3D views of the buildable toy model during construction, save sets and track their progress.<br>The platform and characters in this awesome building toy can be used with other sets (sold separately) in the extensive LEGO Star Wars range to create even more original stories.</p>",
+   "published_at": "2025-03-20T17:42:42+05:30",
+   "created_at": "2025-03-20T17:42:42+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "8+",
+    "9-14",
+    "age",
+    "all_products",
+    "Brick-maash-offer",
+    "custom_gift",
+    "discount-new-17-04-2026",
+    "fantasy",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Star Wars",
+    "lego-03-07-2026",
+    "new-06-10-2025",
+    "new-custom",
+    "New-year-off",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "retiring_soon_19_08_26",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "Spto-new-year",
+    "star wars tm",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422779806018,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "75385",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "5949.00",
+     "grams": 555,
+     "compare_at_price": "5949.00",
+     "position": 1,
+     "product_id": 9917213049154,
+     "created_at": "2025-03-20T17:42:42+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48931981328706,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 1,
+     "updated_at": "2025-05-15T11:37:21+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_Prod.png?v=1747289241",
+     "width": 3000,
+     "height": 1653
+    },
+    {
+     "id": 48931981459778,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 2,
+     "updated_at": "2025-05-15T11:37:21+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_Box1_v29.png?v=1747289241",
+     "width": 3000,
+     "height": 2832
+    },
+    {
+     "id": 48931981427010,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:03:19+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_WEB_SEC02_NOBG.png?v=1758447199",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48931981394242,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:03:19+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_WEB_Lineup_NOBG.png?v=1758447199",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48931981361474,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:03:19+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_WEB_SEC03_NOBG.png?v=1758447199",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48931981230402,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:03:20+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_Lifestyle_build.jpg?v=1758447200",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48931981197634,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:03:20+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_Lifestyle_cons.jpg?v=1758447200",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48931981295938,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:03:20+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_Lifestyle_cons_02.jpg?v=1758447200",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48931981263170,
+     "created_at": "2025-04-10T15:05:41+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:03:20+05:30",
+     "product_id": 9917213049154,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75385_Lifestyle_envr.jpg?v=1758447200",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917191225666,
+   "title": "Aircraft: Race Plane",
+   "handle": "creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces",
+   "body_html": "<p>Superfast adventures in the sky await boys and girls aged 7 plus with the LEGO\u00ae Creator 3in1 Aircraft: Race Plane (31160) toy playset. The plane model has a rotating propeller at the front, moving wheels so it can travel on the ground, and a brick-built stand for display.<br>Kids can choose to build 3 different awesome vehicles: an airplane toy with a rotating propeller and moving wheels; a jet plane toy with moving wheels; and a helicopter model with a spinning rotor blade. Each model can be displayed on a brick-built stand and the set is an impressive gift for kids who enjoy playing out imaginative action-packed stories.<br>LEGO Creator 3in1 sets are great gifts for kids with 3 different models to create and recreate in every box. These 3in1 transforming toy sets let them enjoy imaginative play and offer an impressive range that appeals to their biggest passions, including supercool vehicles, amazing animals and detailed houses. Please note that models cannot be built simultaneously.</p>",
+   "published_at": "2025-03-20T17:36:59+05:30",
+   "created_at": "2025-03-20T17:36:59+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "5-8",
+    "7+",
+    "age",
+    "all_products",
+    "custom_gift",
+    "interest",
+    "lego creator",
+    "Lego Race Car",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "Plane Toy",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "theme",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 50422750380354,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "31160",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1349.00",
+     "grams": 315,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917191225666,
+     "created_at": "2025-03-20T17:36:59+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48922906427714,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 1,
+     "updated_at": "2025-05-15T12:35:18+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_WEB_SEC03.jpg?v=1747292718",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48922906526018,
+     "created_at": "2025-04-09T10:35:05+05:30",
+     "position": 2,
+     "updated_at": "2025-05-15T12:35:18+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_Box5_v29.png?v=1747292718",
+     "width": 3000,
+     "height": 1983
+    },
+    {
+     "id": 48922906689858,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 3,
+     "updated_at": "2025-05-15T12:35:18+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_WEB_PRI_NOBG.png?v=1747292718",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48922906591554,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:08:40+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_WEB_SEC09_NOBG.png?v=1758447520",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48922906624322,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:08:40+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_WEB_SEC02_NOBG.png?v=1758447520",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48922906657090,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:08:40+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_WEB_SEC01_NOBG.png?v=1758447520",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48922906493250,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:08:40+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_Lifestyle_Build.jpg?v=1758447520",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48922906362178,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:08:40+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_Lifestyle_Cons.jpg?v=1758447520",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48922906460482,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:08:40+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_Lifestyle_Cons1.jpg?v=1758447520",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48922906394946,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:08:41+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_Lifestyle_Cons2.jpg?v=1758447521",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48922906558786,
+     "created_at": "2025-04-09T10:35:06+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:08:41+05:30",
+     "product_id": 9917191225666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/31160_Lifestyle_Envr_A_B_C.jpg?v=1758447521",
+     "width": 3000,
+     "height": 2001
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10214739771714,
+   "title": "Airplane, Service Truck & Hovercraft Remix",
+   "handle": "lego-r-city-airplane-service-truck-hovercraft-remix-60505",
+   "body_html": "<p>Inspire creative play with the LEGO\u00ae City Airplane, Service Truck &amp; Hovercraft Remix (60505) set for ages 7+. This 3-model emergency vehicle toy building kit includes a medical aircraft, a coast guard hovercraft and a service truck with a cherry picker arm. Each model comprises 3 modular parts that can be combined, allowing boys and girls to mix and match to create an array of action vehicles for exciting missions. Just add the service driver, coast guard and medic minifigures and let the adventures begin. This search-and-rescue-vehicles playset makes a great surprise treat or birthday gift for kids who love hands-on interactive toys and imaginative play. Add this set to others (sold separately) from the LEGO City range for more exciting adventures. Kids can enjoy intuitive building in the LEGO Builder app with this airplane, hovercraft and truck building kit, zooming and rotating with 3D instructions, while saving and tracking progress. Set contains 990 pieces.</p>",
+   "published_at": "2026-01-22T12:43:22+05:30",
+   "created_at": "2026-01-19T11:29:47+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "5-8",
+    "500-1000",
+    "7+",
+    "all_products",
+    "build_dream_ride",
+    "custom-19-02-15",
+    "Id-kds-spotlightsk",
+    "lego city",
+    "lego-03-07-2026",
+    "lego_17_07_2026",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "spotlight-03-09-2026",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "spotlight_19_08_26",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 51854065598786,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "60505",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "7499.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10214739771714,
+     "created_at": "2026-01-19T11:29:48+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51360769147202,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 1,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_WEB_PRI_NOBG.png?v=1769868841",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51360769212738,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 2,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_Box1_v29_c8d40e72-49fa-496a-ab27-5d5483fc3387.png?v=1769868841",
+     "width": 3000,
+     "height": 2386
+    },
+    {
+     "id": 51360769114434,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 3,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_Lifestyle_build.jpg?v=1769868841",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51360769081666,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 4,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_Lifestyle_cons_2.jpg?v=1769868841",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51360769048898,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 5,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_Lifestyle_cons.jpg?v=1769868841",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51360769179970,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 6,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_Prod_6b43c9d5-99e3-4f9c-a6a0-57c1c82d7db9.png?v=1769868841",
+     "width": 2425,
+     "height": 1853
+    },
+    {
+     "id": 51360769016130,
+     "created_at": "2026-01-20T16:23:45+05:30",
+     "position": 7,
+     "updated_at": "2026-01-31T19:44:01+05:30",
+     "product_id": 10214739771714,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60505_Lifestyle_envr.jpg?v=1769868841",
+     "width": 3000,
+     "height": 2000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10217656254786,
+   "title": "Airport Fire Truck",
+   "handle": "lego-r-city-airport-fire-truck-toy-truck-building-set-60499",
+   "body_html": "<p>Mobilize the LEGO\u00ae City Airport Fire Truck (60499) for kids ages 7 and up. This realistic emergency vehicle toy features a 360\u00b0 rooftop extinguisher, opening side equipment bays and tool storage compartments. Kids can turn a dial to steer the truck, launch water elements from the extinguisher and remove the engine for repairs. The toy truck comes with 6 chunky rubber tires and a detailed cab with seating for the 4 firefighter minifigures. Just add a sprinkle of imagination to ignite hours of heroic firefighting adventures. This toy truck building set makes a great birthday or any-day gift for kids with a passion for hands-on play. Use it with other LEGO City sets (sold separately) for even bigger adventures. Kids can build with confidence using the LEGO Builder app where they can zoom, rotate in 3D and track progress with easy-to-follow digital instructions. Set contains 691 pieces.</p>",
+   "published_at": "2026-01-23T17:01:23+05:30",
+   "created_at": "2026-01-22T16:23:26+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "5-8",
+    "500-1000",
+    "7+",
+    "all_products",
+    "build_dream_ride",
+    "custom-22-01-26",
+    "heroic_editions",
+    "lego city",
+    "real life heroes",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme"
+   ],
+   "variants": [
+    {
+     "id": 51867349516610,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "60499",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "7499.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10217656254786,
+     "created_at": "2026-01-22T16:23:26+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51391837864258,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 1,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/37286a6d-2a69-4bb7-aa3d-b26c0084fb50.png?v=1769163741",
+     "width": 3000,
+     "height": 2063
+    },
+    {
+     "id": 51391837897026,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 2,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/ec58afbd-1b57-4ccc-a41f-b2c70081a40b.png?v=1769163741",
+     "width": 3000,
+     "height": 2386
+    },
+    {
+     "id": 51391837765954,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 3,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/bd9c66be-2a71-4256-94bb-b36e00bcd604.jpg?v=1769163741",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51391837733186,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 4,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/687004ed-605c-441f-9e3c-b36e00bc87b9.jpg?v=1769163741",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51391837929794,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 5,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/2c6fe109-2c44-4f8a-b95d-b380008b5b8e.jpg?v=1769163741",
+     "width": 2500,
+     "height": 2500
+    },
+    {
+     "id": 51391837798722,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 6,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/0fbdd6a2-d544-4534-bc8f-b36100188908.png?v=1769163741",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51391837831490,
+     "created_at": "2026-01-23T15:47:44+05:30",
+     "position": 7,
+     "updated_at": "2026-01-23T15:52:21+05:30",
+     "product_id": 10217656254786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/39865cfd-9e23-4389-9953-b36100184ffe.png?v=1769163741",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10214739902786,
+   "title": "Airport with Airplane",
+   "handle": "lego-r-city-airport-with-airplane-toy-model-airport-set-60502",
+   "body_html": "<p>Playtime will take flight with the LEGO\u00ae City Airport with Airplane (60502) building kit for kids ages 8 and up. This detailed model airport is packed with features for pretend play. Kids can pass luggage through the toy scanner, rotate the walk-through metal detector to reveal an X-ray skeleton and change the departure display to offer a choice of 4 destinations. The set also includes a cool toy passenger airplane with a detailed cabin and fold-down stairs, plus an airport tug and a jet bridge. Just add the 9 minifigures for hours of imaginative play. This airport toy makes a great gift idea for boys, girls and kids who love model airplanes and LEGO building sets. Add it to other sets (sold separately) from the LEGO City range for even bigger adventures. Team up with friends and family with Build Together mode in the LEGO Builder app, where everyone has fun building part of the set using their own devices. Set contains 887 pieces.</p>",
+   "published_at": "2026-01-22T12:43:19+05:30",
+   "created_at": "2026-01-19T11:29:51+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "500-1000",
+    "8+",
+    "9-14",
+    "all_products",
+    "custom-19-02-15",
+    "Id-kds-spotlightsk",
+    "lego city",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "spotlight-07-05",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 51854065729858,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "60502",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "9999.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10214739902786,
+     "created_at": "2026-01-19T11:29:52+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51360137478466,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 1,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_WEB_PRI_NOBG.png?v=1769868336",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51360137544002,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 2,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_Box1_v29.png?v=1769868336",
+     "width": 3000,
+     "height": 2670
+    },
+    {
+     "id": 51360137347394,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 3,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_Lifestyle_build.jpg?v=1769868336",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51360137281858,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 4,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_Lifestyle_cons_2.jpg?v=1769868336",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51360137314626,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 5,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_Lifestyle_cons.jpg?v=1769868336",
+     "width": 3000,
+     "height": 2000
+    },
+    {
+     "id": 51360137511234,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 6,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_Prod.png?v=1769868336",
+     "width": 2245,
+     "height": 2095
+    },
+    {
+     "id": 51360137380162,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 7,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_WEB_SEC05_NOBG.png?v=1769868336",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51360137445698,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 8,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_WEB_SEC02_NOBG.png?v=1769868336",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51360137412930,
+     "created_at": "2026-01-20T13:37:23+05:30",
+     "position": 9,
+     "updated_at": "2026-01-31T19:35:36+05:30",
+     "product_id": 10214739902786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/60502_WEB_SEC04.jpg?v=1769868336",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10351456092482,
+   "title": "Alex's Campfire Conflict",
+   "handle": "30732-alexs-campfire-conflict-v29",
+   "body_html": "<p>The set contains 31 pieces. Promotes motor skills and creativity. VEHICLE TOY FOR CREATIVE PLAY \u2013 Kids can fold up the sides of the toy truck to access the cargo area, load up the pallet of miniature toy playsets, lift the hood and open the rear doors Designed for creative and imaginative role-playing scenarios.</p>",
+   "published_at": "2026-05-27T16:15:16+05:30",
+   "created_at": "2026-05-26T18:22:24+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "",
+   "tags": [
+    "5-8",
+    "6+",
+    "all_products",
+    "custom-26-05-2026",
+    "Id-kds-spotlightsk",
+    "less-than-100",
+    "minecraft",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "spotlight-15-06-26",
+    "video games"
+   ],
+   "variants": [
+    {
+     "id": 54129158881602,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "30732",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "399.00",
+     "grams": 0,
+     "compare_at_price": "399.00",
+     "position": 1,
+     "product_id": 10351456092482,
+     "created_at": "2026-05-26T18:22:24+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 52412066070850,
+     "created_at": "2026-05-27T12:05:58+05:30",
+     "position": 1,
+     "updated_at": "2026-05-27T12:06:00+05:30",
+     "product_id": 10351456092482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/30732_Prod.png?v=1779863760",
+     "width": 3538,
+     "height": 2057
+    },
+    {
+     "id": 52412066136386,
+     "created_at": "2026-05-27T12:05:58+05:30",
+     "position": 2,
+     "updated_at": "2026-05-27T12:06:00+05:30",
+     "product_id": 10351456092482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/30732_Box3_v29.png?v=1779863760",
+     "width": 2048,
+     "height": 2360
+    },
+    {
+     "id": 52412066103618,
+     "created_at": "2026-05-27T12:05:58+05:30",
+     "position": 3,
+     "updated_at": "2026-05-27T12:06:00+05:30",
+     "product_id": 10351456092482,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/30732_Box6_v29.png?v=1779863760",
+     "width": 1920,
+     "height": 2282
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10385114595650,
+   "title": "Alice in Wonderland",
+   "handle": "lego-r-brickheadz-disney-alice-in-wonderland-toys-40925",
+   "body_html": "<p>Fall down the rabbit hole with this LEGO\u00ae BrickHeadz\u2122 | Disney Alice in Wonderland (40925) building set, a unique gift idea for girls, boys and movie lovers ages 10 and up. Bring the fanciful world of Wonderland to life by creating BrickHeadz versions of 4 iconic characters: Alice, the White Rabbit, the Mad Hatter and the Cheshire Cat. Add a touch of Disney magic to the home when displaying these whimsical Alice in Wonderland decor models on a shelf, desk or nightstand. Set contains 601 pieces.</p>",
+   "published_at": "2026-06-29T11:31:38+05:30",
+   "created_at": "2026-06-23T11:44:04+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "",
+   "tags": [
+    "9-14",
+    "custom-23-06-2026",
+    "new_arrivals_24_08_2026",
+    "see-all-age",
+    "see-all-bricks"
+   ],
+   "variants": [
+    {
+     "id": 54875396374850,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "40925",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "4499.00",
+     "grams": 0,
+     "compare_at_price": "4499.00",
+     "position": 1,
+     "product_id": 10385114595650,
+     "created_at": "2026-06-23T11:44:04+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 52680241054018,
+     "created_at": "2026-06-25T11:48:20+05:30",
+     "position": 1,
+     "updated_at": "2026-06-25T11:48:22+05:30",
+     "product_id": 10385114595650,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/40925_Prod.png?v=1782368302",
+     "width": 3130,
+     "height": 1551
+    },
+    {
+     "id": 52680244494658,
+     "created_at": "2026-06-25T11:49:01+05:30",
+     "position": 2,
+     "updated_at": "2026-06-25T11:49:04+05:30",
+     "product_id": 10385114595650,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/40925_Box5_v29.png?v=1782368344",
+     "width": 4284,
+     "height": 2830
+    },
+    {
+     "id": 52680241086786,
+     "created_at": "2026-06-25T11:48:20+05:30",
+     "position": 3,
+     "updated_at": "2026-06-25T11:48:22+05:30",
+     "product_id": 10385114595650,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/40925_boxprod_pos.jpg?v=1782368302",
+     "width": 1500,
+     "height": 3000
+    },
+    {
+     "id": 52680241152322,
+     "created_at": "2026-06-25T11:48:20+05:30",
+     "position": 4,
+     "updated_at": "2026-06-25T11:48:22+05:30",
+     "product_id": 10385114595650,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/40925_Lifestyle_Cons_crop.jpg?v=1782368302",
+     "width": 3500,
+     "height": 3500
+    },
+    {
+     "id": 52680241119554,
+     "created_at": "2026-06-25T11:48:20+05:30",
+     "position": 5,
+     "updated_at": "2026-06-25T11:48:23+05:30",
+     "product_id": 10385114595650,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/40925_Lifestyle_Envr_crop.jpg?v=1782368303",
+     "width": 3500,
+     "height": 3500
+    },
+    {
+     "id": 52680251310402,
+     "created_at": "2026-06-25T11:50:42+05:30",
+     "position": 6,
+     "updated_at": "2026-06-25T11:50:45+05:30",
+     "product_id": 10385114595650,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/40925_Lifestyle_Build_crop.jpg?v=1782368445",
+     "width": 3500,
+     "height": 3500
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917202334018,
+   "title": "Aliya's Baby Sister's Playroom",
+   "handle": "friends-aliya-s-baby-sister-s-playroom-pretend-play-building-kit-42645-125-pieces",
+   "body_html": "<p>This pretend-play toy set for kids aged 6 years old and over lets girls and boys create endless babysitting friendship stories. The LEGO\u00ae Friends Aliya\u2019s Baby Sister\u2019s Playroom (42645) creative toy set comes with 2 LEGO Friends minidolls, a baby figure and lots of accessories for role play.<br>Inspire kids to build the playroom, where Aliya and Liann are caring for Aliya\u2019s baby sister, Amalia. There\u2019s everything kids need to create friendship stories. They can feed the baby at the table \u2013 a clever flip function shows just how much mess a baby can make at mealtimes! When it\u2019s time for a nap, there\u2019s a cot for Amalia. Playtime is catered for too, with a slide, playmat, ball pit, a rocking duck ride and a cute cuddly-toy-style LEGO piece. Then the friends take Amalia for a walk in the baby buggy toy.<br>Discover other building playsets (sold separately) in the LEGO Friends universe, with lots more friendship stories to uncover. This set comes with the LEGO Builder app for intuitive building.</p>",
+   "published_at": "2025-03-20T17:39:51+05:30",
+   "created_at": "2025-03-20T17:39:51+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "5-8",
+    "6+",
+    "age",
+    "all_products",
+    "custom_gift",
+    "discount-new-17-04-2026",
+    "Id-kds-spotlightsk",
+    "interest",
+    "lego friends",
+    "Lego Friends Sets",
+    "Lego Jurassic World",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "new_brick_rush_sale",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "socialising and community",
+    "spotlight-new-03-09-2026",
+    "spotlight_19_08_26",
+    "Spto-new-year",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422763618626,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42645",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "1799.00",
+     "grams": 178,
+     "compare_at_price": "1799.00",
+     "position": 1,
+     "product_id": 9917202334018,
+     "created_at": "2025-03-20T17:39:52+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48923511685442,
+     "created_at": "2025-04-09T13:03:05+05:30",
+     "position": 1,
+     "updated_at": "2025-05-15T12:21:46+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Prod.png?v=1747291906",
+     "width": 3000,
+     "height": 1458
+    },
+    {
+     "id": 48923511750978,
+     "created_at": "2025-04-09T13:03:06+05:30",
+     "position": 2,
+     "updated_at": "2025-05-15T12:21:46+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Box1_v29.png?v=1747291906",
+     "width": 3000,
+     "height": 2550
+    },
+    {
+     "id": 48923511456066,
+     "created_at": "2025-04-09T13:03:03+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:06:30+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_WEB_SEC05_NOBG.png?v=1758447390",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923511554370,
+     "created_at": "2025-04-09T13:03:04+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:06:30+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_WEB_Lineup_NOBG.png?v=1758447390",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923511652674,
+     "created_at": "2025-04-09T13:03:05+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_WEB_SEC04_NOBG.png?v=1758447391",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923511292226,
+     "created_at": "2025-04-09T13:03:02+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_WEB_SEC01.jpg?v=1758447391",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923511161154,
+     "created_at": "2025-04-09T13:03:01+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Lifestyle_Envr.jpg?v=1758447391",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923511193922,
+     "created_at": "2025-04-09T13:03:01+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Lifestyle_Build.jpg?v=1758447391",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923511226690,
+     "created_at": "2025-04-09T13:03:01+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Lifestyle_Cons.jpg?v=1758447391",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923511259458,
+     "created_at": "2025-04-09T13:03:02+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Lifestyle_Cons1.jpg?v=1758447391",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923511423298,
+     "created_at": "2025-04-09T13:03:02+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_Lifestyle_Cons2.jpg?v=1758447391",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923511324994,
+     "created_at": "2025-04-09T13:03:02+05:30",
+     "position": 12,
+     "updated_at": "2025-09-21T15:06:31+05:30",
+     "product_id": 9917202334018,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42645_WEB_SEC03.jpg?v=1758447391",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917166649666,
+   "title": "Alphabet Truck",
+   "handle": "duplo-r-town-alphabet-truck-toy-10421-building-kit-36-pieces",
+   "body_html": "<p>3\u2026 2\u2026 1\u2026 launch into activity-packed playtimes with the build-and-rebuild 3in1 Space Shuttle Adventure (10422) toy. Imaginations take flight as toddlers aged 3+ play astronauts exploring the galaxy in a spaceship toy, meeting aliens and learning about the solar system.<br>This space toy is packed with fun accessories to spark creative play. Preschool kids explore new horizons as they invent fun outer-space adventures for the 2 LEGO\u00ae DUPLO\u00ae astronaut figures, such as making friends with an alien or going on a space walk to mend the rocket with their toy wrench.<br>Playtimes are forever fresh with this flexible 3in1 building set, which comes with lots of interesting bricks and elements that rebuild into 2 further space vehicle toys, a planet base or whatever else toddlers can dream up! With turning cogs, a spinning propeller, wind-up winch, hinged doors and a light brick, this fun toddler educational toy also helps little ones develop fine motor skills.</p>",
+   "published_at": "2025-03-20T17:29:08+05:30",
+   "created_at": "2025-03-20T17:29:08+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "1-4",
+    "2+",
+    "age",
+    "all_products",
+    "custom_gift",
+    "duplo",
+    "duplo town",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Truck",
+    "lego-03-07-2026",
+    "less-than-100",
+    "new-06-10-2025",
+    "new-custom",
+    "play-ground-newtgt",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "theme",
+    "town",
+    "Truck Toy",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 50422717874498,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10421",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "4549.00",
+     "grams": 835,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917166649666,
+     "created_at": "2025-03-20T17:29:08+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48924479553858,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 1,
+     "updated_at": "2025-05-13T16:04:22+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_WEB_PRI_NOBG.png?v=1747132462",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48924479619394,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 2,
+     "updated_at": "2025-05-13T16:04:22+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_Box5_v29.png?v=1747132462",
+     "width": 3000,
+     "height": 2384
+    },
+    {
+     "id": 48924479455554,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:11:02+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_boxprod_v29_WE_pos_jpg.jpg?v=1758447662",
+     "width": 2250,
+     "height": 3000
+    },
+    {
+     "id": 48924479357250,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:11:02+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_WE_Lifestyle.jpg?v=1758447662",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48924479521090,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_WEB_SEC02_NOBG.png?v=1758447663",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48924479324482,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_WEB_SEC01.jpg?v=1758447663",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48924479390018,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_Feature3_MB.jpg?v=1758447663",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48924479422786,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_Lifestyle_build.jpg?v=1758447663",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48924479488322,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_Lifestyle_cons.jpg?v=1758447663",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48924479291714,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_Lifestyle_cons_2.jpg?v=1758447663",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48924479258946,
+     "created_at": "2025-04-09T17:12:43+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:11:03+05:30",
+     "product_id": 9917166649666,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10421_Lifestyle_envr.jpg?v=1758447663",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917167173954,
+   "title": "Ambulance & Driver",
+   "handle": "duplo-r-ambulance-driver-for-pretend-play-10447-building-kit-19-pieces",
+   "body_html": "<p>Caring toddlers pretend play exciting rescue scenes with the Ambulance &amp; Driver (10447) toy for preschoolers. This toddler toy also includes a drivable ambulance toy and 2 LEGO\u00ae DUPLO\u00ae figures, a paramedic and girl, for creative imaginary play.<br>A great gift for toddlers who like social and emotional learning activities, this LEGO DUPLO creative toy is designed to help toddlers learn empathy. The building instructions feature a printed play wheel that lets parents and preschoolers explore the girl\u2019s different emotions. Toddlers can use it to express their feelings around being unwell or how they felt the first time they saw an ambulance. They can also develop logical thinking to construct a sequence of events and fine motor skills as they open the ambulance toy\u2019s roof and place the girl figure inside on the reclined bed. This educational toy for toddlers helps preschoolers develop social skills as they explore how the ambulance driver would treat the patient.</p>",
+   "published_at": "2025-03-20T17:29:18+05:30",
+   "created_at": "2025-03-20T17:29:18+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "1-4",
+    "2+",
+    "age",
+    "all_products",
+    "Ambulance Toy",
+    "custom_gift",
+    "duplo",
+    "duplo town",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Ambulance",
+    "less-than-100",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-custom",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "socialising and community",
+    "spotlight_19_08_26",
+    "theme",
+    "town"
+   ],
+   "variants": [
+    {
+     "id": 50422718464322,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10447",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "2290.00",
+     "grams": 417,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917167173954,
+     "created_at": "2025-03-20T17:29:18+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48918426353986,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 1,
+     "updated_at": "2025-05-16T10:15:50+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_WEB_PRI_NOBG_2ecc0c8a-d7e7-46ef-aacc-bbd5ef1d1d75.png?v=1747370750",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48918426517826,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 2,
+     "updated_at": "2025-05-16T10:15:50+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Box5_v29_51c455b8-03cc-4225-8441-10a1705525ed.png?v=1747370750",
+     "width": 3000,
+     "height": 2486
+    },
+    {
+     "id": 48918426386754,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 3,
+     "updated_at": "2025-05-16T10:15:50+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_WEB_SEC01_NOBG_1377c955-97fe-4284-8bc2-bca9b58b8be0.png?v=1747370750",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48918426419522,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_WEB_SEC02_NOBG_ed414b98-7696-4120-a239-5949b421df50.png?v=1758447647",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48918426222914,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Feature2_144d7e7b-b8b4-4317-97bc-0e9d3a451376.jpg?v=1758447647",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48918426157378,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Feature1_da345b81-7cec-4cb8-96f8-f3f1735ff9ba.jpg?v=1758447647",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48918426190146,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Lifestyle_cons_crop_5297957e-3c4e-45a8-b5a0-cefb7fecc64f.jpg?v=1758447647",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48918426255682,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Lifestyle_build_crop_bef42ac1-a816-4acf-8c4c-d12309f59498.jpg?v=1758447647",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48918426452290,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Lifestyle_envr_crop_b09e3d08-29ce-40ac-88ca-8fe3bd0d0735.jpg?v=1758447647",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48918426288450,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Lifestyle_cons_2_74d5f4ad-e4f1-4305-bd1e-c4300834c256.jpg?v=1758447647",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 48918426321218,
+     "created_at": "2025-04-08T15:36:03+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:10:47+05:30",
+     "product_id": 9917167173954,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10447_Lifestyle_envr_f8b4f2e7-8240-42fa-8e2a-3674e96e3386.jpg?v=1758447647",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917212721474,
+   "title": "Ambush on Mandalore\u2122 Battle Pack",
+   "handle": "star-wars-ambush-on-mandalore-battle-pack-set-75373-building-kit-109-pieces",
+   "body_html": "<p>Let kids play out epic jetpack battles with the LEGO\u00ae Star Wars: The Mandalorian Ambush on Mandalore Battle Pack (75373). A super anytime fantasy gift idea for creative boys, girls and fans aged 6 and over, this buildable adventure toy playset lets them relive Star Wars: The Mandalorian Season 3 action with 4 collectible LEGO minifigures: a Mandalorian Nite Owl, Mandalorian Warrior and 2 Imperial Commandos. There are also lots of LEGO accessories, including blasters, blaster pistols and jetpack elements, plus a transparent element with a handle to make a LEGO minifigure \u2018fly\u2019. A buildable rock formation with a cave and a stud-shooting cannon add to the inspiring action-play possibilities.<br>Check out the LEGO Builder app for digital instructions and zoom and rotate viewing tools to enhance children\u2019s building experience.<br>The rock formation/cave can be connected to the Mandalorian base in the Paz Vizsla and Moff Gideon Battle Pack (75386, sold separately) for extra play options.</p>",
+   "published_at": "2025-03-20T17:42:36+05:30",
+   "created_at": "2025-03-20T17:42:36+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "Standard Retail",
+   "tags": [
+    "100-500",
+    "5-8",
+    "6+",
+    "age",
+    "all_products",
+    "Bus Toy",
+    "custom_gift",
+    "fantasy",
+    "interest",
+    "Lego Bus",
+    "Lego Star Wars",
+    "new-06-10-2025",
+    "new-custom",
+    "Republic-day-sec",
+    "retiring_soon_19_08_26",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "star wars tm",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422777643330,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "75373",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "2099.00",
+     "grams": 148,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917212721474,
+     "created_at": "2025-03-20T17:42:36+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 49205123973442,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 1,
+     "updated_at": "2025-05-15T11:38:03+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_WEB_SEC01_NOBG_c07e6c12-1c14-4ffa-8b28-af86168be5cd.png?v=1747289283",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49205124071746,
+     "created_at": "2025-05-08T17:32:00+05:30",
+     "position": 2,
+     "updated_at": "2025-05-15T11:38:03+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_Box1_v29_ed86d368-796c-4c5a-8f2b-695bae14d80c.png?v=1747289283",
+     "width": 1936,
+     "height": 1932
+    },
+    {
+     "id": 49205124038978,
+     "created_at": "2025-05-08T17:32:00+05:30",
+     "position": 3,
+     "updated_at": "2025-05-15T11:38:03+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_boxprod_v29_sha_538cbf72-ba35-4da5-867b-70cbccdebec8.jpg?v=1747289283",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 49205124104514,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_Prod_38d21054-c0d2-4be6-8ce8-88055ffb8df5.png?v=1758447206",
+     "width": 3173,
+     "height": 1827
+    },
+    {
+     "id": 49205124006210,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_WEB_Lineup_NOBG_c30b6f62-67ca-4275-a3da-3ca424d1d163.png?v=1758447206",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49205123875138,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_WEB_SEC02_NOBG_1ab98b54-0d54-47e1-b73e-da68be24adae.png?v=1758447206",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 49205123842370,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_Lifestyle_envr_f47461c0-f276-4a6e-a142-bc2a66c18bb8.jpg?v=1758447206",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49205123940674,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_Lifestyle_cons_2_a416e3dc-7b1f-46ec-a7f4-2bc1b4bc3350.jpg?v=1758447206",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49205123809602,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_Lifestyle_cons_fb3a953e-e685-415b-ae63-1d76c967fdcf.jpg?v=1758447206",
+     "width": 3000,
+     "height": 2249
+    },
+    {
+     "id": 49205123907906,
+     "created_at": "2025-05-08T17:31:59+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:03:26+05:30",
+     "product_id": 9917212721474,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/75373_Lifestyle_build_5166d5bf-fe4e-4660-8f71-2de91c3d6d1a.jpg?v=1758447206",
+     "width": 3000,
+     "height": 2249
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917214687554,
+   "title": "Avengers Tower",
+   "handle": "marvel-avengers-tower-76269-building-kit-5-201-pieces",
+   "body_html": "<p>Lego Mybrickhouse</p>",
+   "published_at": "2025-03-20T17:43:09+05:30",
+   "created_at": "2025-03-20T17:43:09+05:30",
+   "updated_at": "2026-10-04T03:57:40+05:30",
+   "vendor": "LEGO",
+   "product_type": "D2C driven",
+   "tags": [
+    "18+",
+    "5000-and-above",
+    "adventure and heroes",
+    "age",
+    "all_products",
+    "Avengers Toy",
+    "Brick-maash-offer",
+    "custom_gift",
+    "exclusives",
+    "flash_sale_26_08_26",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Avengers Tower",
+    "Lego Marvel",
+    "Lego Marvel Avengers",
+    "Lego Marvel Superheroes",
+    "Lego Tower",
+    "marvel",
+    "Marvel Toy",
+    "new-06-10-2025",
+    "new-custom",
+    "Republic-day-sec",
+    "Republic-Day-Special",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-15-06-26",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422781739330,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "76269",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "48999.00",
+     "grams": 7096,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917214687554,
+     "created_at": "2025-03-20T17:43:09+05:30",
+     "updated_at": "2026-10-04T03:57:40+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48932347216194,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 1,
+     "updated_at": "2025-04-16T14:28:04+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Prod.png?v=1744793884",
+     "width": 2041,
+     "height": 3000
+    },
+    {
+     "id": 48932347347266,
+     "created_at": "2025-04-10T17:03:57+05:30",
+     "position": 2,
+     "updated_at": "2025-04-16T14:28:04+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Box1_v29.png?v=1744793884",
+     "width": 2648,
+     "height": 3000
+    },
+    {
+     "id": 48932347085122,
+     "created_at": "2025-04-10T17:03:57+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Lifestyle_07.jpg?v=1758447161",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932347052354,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Lifestyle_12.jpg?v=1758447161",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932347150658,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Lifestyle_15.jpg?v=1758447161",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932347117890,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Lifestyle_18.jpg?v=1758447161",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48932347019586,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_Lifestyle_Cons.jpg?v=1758447161",
+     "width": 3000,
+     "height": 1832
+    },
+    {
+     "id": 48932347248962,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_WEB_PRI_NOBG.png?v=1758447161",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48932347281730,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_WEB_SEC01_NOBG.png?v=1758447161",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48932347183426,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_WEB_SEC06_NOBG.png?v=1758447161",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48932347314498,
+     "created_at": "2025-04-10T17:03:58+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:02:41+05:30",
+     "product_id": 9917214687554,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/76269_WEB_SEC07_NOBG.png?v=1758447161",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917199712578,
+   "title": "McLaren P1\u2122",
+   "handle": "technic-mclaren-p1-hypercar-set-for-adults-42172-building-kit-3893-pieces",
+   "body_html": "<p>Ignite your love for supercars with this engaging LEGO\u00ae Technic McLaren P1\u2122 hypercar set for adults. Become immersed in the details as you construct the impressive 1:8 scale model. Then take your time exploring features like the 7-speed gearbox with its shifter drum, the suspension and the V8 piston engine. Admire the adjustable rear wing and the opening doors with their butterfly-style mechanism, before proudly displaying your completed model. Like the real-world car, the LEGO Technic version features its own unique serial number, which gives you access to exclusive online content.<br>From the fun unboxing experience to adding the finishing details, this LEGO Technic set offers a rewarding challenge for adult building fans. It\u2019s an ideal present for supercar enthusiasts and McLaren fans, offering a project to enjoy and a display piece to cherish.</p>",
+   "published_at": "2025-03-20T17:39:11+05:30",
+   "created_at": "2025-03-20T17:39:11+05:30",
+   "updated_at": "2026-10-04T03:57:42+05:30",
+   "vendor": "LEGO",
+   "product_type": "D2C driven",
+   "tags": [
+    "1000-5000",
+    "18+",
+    "age",
+    "all_products",
+    "Brick-maash-offer",
+    "brick_rush_sale_25_09_2026",
+    "custom_gift",
+    "exclusives",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Cars",
+    "Lego Mclaren",
+    "Lego Sets For Adults",
+    "Lego SpeedChampions",
+    "Lego Technic Cars",
+    "Lego Technic Mclaren",
+    "new-06-10-2025",
+    "new-custom",
+    "price_change_25_09_26",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-15-06-26",
+    "technic",
+    "theme",
+    "vehicles"
+   ],
+   "variants": [
+    {
+     "id": 50422760177986,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "42172",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "41199.00",
+     "grams": 7445,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917199712578,
+     "created_at": "2025-03-20T17:39:11+05:30",
+     "updated_at": "2026-10-04T03:57:42+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48923470102850,
+     "created_at": "2025-04-09T12:53:31+05:30",
+     "position": 1,
+     "updated_at": "2025-05-13T18:20:38+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Prod.png?v=1747140638",
+     "width": 3000,
+     "height": 1680
+    },
+    {
+     "id": 48923470070082,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 2,
+     "updated_at": "2025-05-13T18:20:38+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Box1_v29.png?v=1747140638",
+     "width": 3000,
+     "height": 2443
+    },
+    {
+     "id": 48923469971778,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_boxprod_v29_WE.jpg?v=1758447442",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48923470037314,
+     "created_at": "2025-04-09T12:53:31+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_WEB_SEC01_NOBG.png?v=1758447442",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923470004546,
+     "created_at": "2025-04-09T12:53:31+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Cons_03.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923469775170,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Build_02.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923469873474,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Cons_01.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2010
+    },
+    {
+     "id": 48923469906242,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Build_03.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923469840706,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Build_05.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923469939010,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Build_06.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923469807938,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Build_07.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923469742402,
+     "created_at": "2025-04-09T12:53:30+05:30",
+     "position": 12,
+     "updated_at": "2025-09-21T15:07:22+05:30",
+     "product_id": 9917199712578,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/42172_Lifestyle_Envr_06.jpg?v=1758447442",
+     "width": 3000,
+     "height": 2001
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10266854785346,
+   "title": "Project Hail Mary",
+   "handle": "lego-r-icons-project-hail-mary-spaceship-model-kit-11389",
+   "body_html": "<p>Launch into the realm of cinematic science fiction with the LEGO\u00ae Icons Project Hail Mary (11389) spaceship model kit for adults. Enjoy a creative journey as you craft each detail of this microscale replica, which captures the design of the iconic interstellar spacecraft. Turn the crank to send the crew module into orbit, simulating the centrifugal gravity system from the movie. Then add the Ryland Grace minifigure and Rocky figure to complete your display.<br>This detailed model makes a striking centrepiece for the home or office and a perfect birthday or Christmas gift for sci-fi lovers.<br>Build smarter with the LEGO Builder app \u2013 zoom, rotate in 3D, track progress and follow step-by-step digital instructions. Set contains 830 pieces.</p>",
+   "published_at": "2026-03-18T10:07:17+05:30",
+   "created_at": "2026-03-18T10:07:16+05:30",
+   "updated_at": "2026-10-04T03:57:44+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "18+",
+    "500-1000",
+    "all_products",
+    "brick_rush_sale_25_09_2026",
+    "Collectors_week",
+    "Collectors_week_newkds",
+    "custom-22-01-26",
+    "fantasy",
+    "icons",
+    "New-Arrival-mar-apr-may",
+    "price_change_25_09_26",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme"
+   ],
+   "variants": [
+    {
+     "id": 52322929017154,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "11389",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "11999.00",
+     "grams": 0,
+     "compare_at_price": "11999.00",
+     "position": 1,
+     "product_id": 10266854785346,
+     "created_at": "2026-03-18T10:07:16+05:30",
+     "updated_at": "2026-10-04T03:57:44+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51782734315842,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 1,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_Prod.png?v=1773809716",
+     "width": 3000,
+     "height": 3637
+    },
+    {
+     "id": 51782734348610,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 2,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_Box1_v29.png?v=1773809716",
+     "width": 3000,
+     "height": 4504
+    },
+    {
+     "id": 51782734512450,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 3,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_boxprod_v29_WE.jpg?v=1773809716",
+     "width": 2500,
+     "height": 2500
+    },
+    {
+     "id": 51782734479682,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 4,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_Lifestyle_Build_crop.jpg?v=1773809716",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51782734446914,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 5,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_Lifestyle_Cons_crop.jpg?v=1773809716",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 51782734381378,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 6,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_Feature2.jpg?v=1773809716",
+     "width": 1500,
+     "height": 1500
+    },
+    {
+     "id": 51782734414146,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 7,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_Feature1.jpg?v=1773809716",
+     "width": 1500,
+     "height": 1500
+    },
+    {
+     "id": 51782734250306,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 8,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_WEB_SEC04_NOBG.png?v=1773809716",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51782734283074,
+     "created_at": "2026-03-18T10:20:05+05:30",
+     "position": 9,
+     "updated_at": "2026-03-18T10:25:16+05:30",
+     "product_id": 10266854785346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11389_WEB_SEC02_NOBG.png?v=1773809716",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10217656779074,
+   "title": "Shopping Street",
+   "handle": "lego-r-icons-shopping-street-model-building-kit-11371",
+   "body_html": "<p>Immerse yourself in a creative project with the LEGO\u00ae Icons Shopping Street miniature house building kit for adults (11371). Unwind as you craft this captivating addition to the LEGO Modular Buildings Collection. Inspired by historic European architecture, this richly detailed model features buildings with charming, angled walls, ornate facades, a central alleyway and a classic plaza. The 3-level building includes a 2-story music shop with marching-band instruments, and an adjacent furniture store complete with a counter, stools, table and workshop. The top floor is home to a furnished apartment with a bathroom, while a roof garden provides space for potted plants and a pigeon coop. Perfect for home office decor this model includes 7 minifigures and a modular design with easy access to the interior. Build smarter with the LEGO\u00ae Builder app \u2013 zoom, rotate in 3D, track your progress and follow step-by-step digital instructions. This building set contains 3,456 pieces.</p>",
+   "published_at": "2026-01-23T17:01:11+05:30",
+   "created_at": "2026-01-22T16:23:43+05:30",
+   "updated_at": "2026-10-04T03:57:44+05:30",
+   "vendor": "Ample Technologies Pvt Ltd",
+   "product_type": "",
+   "tags": [
+    "1000-5000",
+    "18+",
+    "all_products",
+    "Collectors_week_newkds",
+    "custom-22-01-26",
+    "feb_hype",
+    "icons",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "the lego collection"
+   ],
+   "variants": [
+    {
+     "id": 51867350630722,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "11371",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "24999.00",
+     "grams": 0,
+     "compare_at_price": "24999.00",
+     "position": 1,
+     "product_id": 10217656779074,
+     "created_at": "2026-01-22T16:23:43+05:30",
+     "updated_at": "2026-10-04T03:57:44+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51392028901698,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 1,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/2a09d0ee-143e-429a-bd43-b26c0099bcfb.png?v=1769167007",
+     "width": 3000,
+     "height": 4397
+    },
+    {
+     "id": 51392028934466,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 2,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/5aa65d00-61b3-4e47-a718-b2c700438163.png?v=1769167007",
+     "width": 3000,
+     "height": 4414
+    },
+    {
+     "id": 51392028803394,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 3,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/6e7f96bb-edf5-49a0-923c-b36c0079bf9a.jpg?v=1769167007",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 51392028705090,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 4,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/5f32f6f5-cc7e-4951-9346-b36c0079b38d.jpg?v=1769167007",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 51392028770626,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 5,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/58237c24-030d-4081-b58a-b36c0079c31e.jpg?v=1769167007",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 51392028836162,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 6,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/71536eee-e6d8-4d77-8332-b361002ba031.png?v=1769167007",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51392028868930,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 7,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/6c644d6d-d8fc-4fa3-b37b-b361002bc655.png?v=1769167007",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 51392028737858,
+     "created_at": "2026-01-23T16:44:44+05:30",
+     "position": 8,
+     "updated_at": "2026-01-23T16:46:47+05:30",
+     "product_id": 10217656779074,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/867fad42-531a-417b-8945-b36c0079b7fc.jpg?v=1769167007",
+     "width": 3000,
+     "height": 2001
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10361405374786,
+   "title": "The Lord of the Rings: Minas Tirith\u2122",
+   "handle": "lego-r-icons-the-lord-of-the-rings-minas-tirith-11377",
+   "body_html": "<p>Recreate the grandeur of Gondor with the LEGO\u00ae Icons The Lord of the Rings: Minas Tirith\u2122 (11377) \u2013 a striking centerpiece for adults and devoted fans looking to expand their Middle-earth\u2122 merchandise collection. This hybrid-scale model combines an intricate microscale city exterior with rich minifigure-scale interior detailing. Explore the grand throne room of the citadel, uncover hidden surprises and admire the soaring towers of the White City. Includes 10 The Lord of the Rings minifigures: Gandalf\u2122 the White, Faramir, Denethor, Peregrin Took\u2122, Aragorn\u2122 as King Elessar, Arwen\u2122 and 4 x Soldiers of Gondor, plus a Shadowfax\u2122 horse figure. Movie themed accessories include Gondor helmets, shields and Aragorn\u2019s crown. Build smarter with the LEGO Builder app \u2013 zoom, rotate in 3D, track your progress and follow step-by-step digital instructions. Set includes 8,278 pieces.</p>",
+   "published_at": "2026-06-03T15:04:40+05:30",
+   "created_at": "2026-06-02T12:31:01+05:30",
+   "updated_at": "2026-10-04T03:57:46+05:30",
+   "vendor": "LEGO",
+   "product_type": "",
+   "tags": [
+    "18+",
+    "5000-and-above",
+    "all_products",
+    "brick_rush_sale_25_09_2026",
+    "custom-02-06-2026",
+    "fantasy",
+    "flash_sale_26_08_26",
+    "icons",
+    "kddsdds",
+    "new_arrivals_24_08_2026",
+    "price_change_25_09_26",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "source-product"
+   ],
+   "variants": [
+    {
+     "id": 54458269237570,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "11377",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "69999.00",
+     "grams": 0,
+     "compare_at_price": "69999.00",
+     "position": 1,
+     "product_id": 10361405374786,
+     "created_at": "2026-06-02T12:31:01+05:30",
+     "updated_at": "2026-10-04T03:57:46+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 52486392054082,
+     "created_at": "2026-06-02T17:05:51+05:30",
+     "position": 1,
+     "updated_at": "2026-06-02T17:05:53+05:30",
+     "product_id": 10361405374786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11377_WEB_SEC04_NOBG.png?v=1780400153",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 52486392021314,
+     "created_at": "2026-06-02T17:05:51+05:30",
+     "position": 2,
+     "updated_at": "2026-06-02T17:05:53+05:30",
+     "product_id": 10361405374786,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/11377_Box6_v29.png?v=1780400153",
+     "width": 1895,
+     "height": 3000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917164060994,
+   "title": "THE LORD OF THE RINGS: RIVENDELL\u2122",
+   "handle": "the-lord-of-the-rings-rivendell",
+   "body_html": "<p>Lego Mybrickhouse</p>",
+   "published_at": "2026-03-26T15:58:36+05:30",
+   "created_at": "2025-03-20T17:28:21+05:30",
+   "updated_at": "2026-10-04T03:57:46+05:30",
+   "vendor": "LEGO",
+   "product_type": "D2C driven",
+   "tags": [
+    "18+",
+    "5000-and-above",
+    "adventure and heroes",
+    "age",
+    "all_products",
+    "Black-Friday-Specials",
+    "Brick-maash-offer",
+    "Brickmas_bash",
+    "Briks_newoffer",
+    "Collectors_week",
+    "custom_gift",
+    "icons",
+    "interest",
+    "Lego Harry Potter",
+    "lego_17_07_2026",
+    "new-christmas_day",
+    "new-custom",
+    "New-year-off",
+    "secret-deals-newnavaratri",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "sport-light-new-tab",
+    "Spotlight",
+    "Spotlight2",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422714794306,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10316",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "50399.00",
+     "grams": 7125,
+     "compare_at_price": "50399.00",
+     "position": 1,
+     "product_id": 9917164060994,
+     "created_at": "2025-03-20T17:28:21+05:30",
+     "updated_at": "2026-10-04T03:57:46+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 51850275946818,
+     "created_at": "2026-03-26T15:44:19+05:30",
+     "position": 1,
+     "updated_at": "2026-03-26T15:48:40+05:30",
+     "product_id": 9917164060994,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/l2_b8eb6213-7c3d-475b-9d3f-c202ac834941.png?v=1774520320",
+     "width": 3000,
+     "height": 1553
+    },
+    {
+     "id": 51850275979586,
+     "created_at": "2026-03-26T15:44:19+05:30",
+     "position": 2,
+     "updated_at": "2026-03-26T15:48:40+05:30",
+     "product_id": 9917164060994,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/l4.png?v=1774520320",
+     "width": 2994,
+     "height": 3000
+    },
+    {
+     "id": 51850275750210,
+     "created_at": "2026-03-26T15:44:17+05:30",
+     "position": 3,
+     "updated_at": "2026-03-26T15:48:40+05:30",
+     "product_id": 9917164060994,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/l_19cc7a17-da57-4a65-be72-bfc9f0ae121a.jpg?v=1774520320",
+     "width": 3000,
+     "height": 3000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917163438402,
+   "title": "Titanic",
+   "handle": "titanic-10294-building-kit-9-090-pieces",
+   "body_html": "<p>Lego Mybrickhouse</p>",
+   "published_at": "2025-03-20T17:28:11+05:30",
+   "created_at": "2025-03-20T17:28:11+05:30",
+   "updated_at": "2026-10-04T03:57:46+05:30",
+   "vendor": "LEGO",
+   "product_type": "D2C driven",
+   "tags": [
+    "18+",
+    "5000-and-above",
+    "age",
+    "all_products",
+    "brick-deals",
+    "Brick-maash-offer",
+    "Collectors_week_newkds",
+    "exclusives",
+    "gwp-eligible",
+    "icons",
+    "interest",
+    "Lego Titanic",
+    "new-06-10-2025",
+    "new-custom",
+    "new-shipping-11-05",
+    "New-year-off",
+    "pre-order",
+    "secret-deals-newnavaratri",
+    "secret_deals",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "theme",
+    "travel and history"
+   ],
+   "variants": [
+    {
+     "id": 50422714171714,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10294",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "63999.00",
+     "grams": 12715,
+     "compare_at_price": "63999.00",
+     "position": 1,
+     "product_id": 9917163438402,
+     "created_at": "2025-03-20T17:28:12+05:30",
+     "updated_at": "2026-10-04T03:57:46+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48917466382658,
+     "created_at": "2025-04-08T12:47:10+05:30",
+     "position": 1,
+     "updated_at": "2025-04-15T15:38:41+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Prod_fb21d5c3-7e14-4bc4-9ee4-12c0f19d4c27.jpg?v=1744711721",
+     "width": 3000,
+     "height": 1610
+    },
+    {
+     "id": 48917467431234,
+     "created_at": "2025-04-08T12:47:16+05:30",
+     "position": 2,
+     "updated_at": "2025-04-15T15:38:41+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Box1_v29.jpg?v=1744711721",
+     "width": 3000,
+     "height": 2633
+    },
+    {
+     "id": 48917466775874,
+     "created_at": "2025-04-08T12:47:12+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_01.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48917466874178,
+     "created_at": "2025-04-08T12:47:13+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_24.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48917466939714,
+     "created_at": "2025-04-08T12:47:13+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_25.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48917467398466,
+     "created_at": "2025-04-08T12:47:16+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_20.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2017
+    },
+    {
+     "id": 48917467201858,
+     "created_at": "2025-04-08T12:47:15+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_22.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48917467136322,
+     "created_at": "2025-04-08T12:47:15+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_23.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48917467332930,
+     "created_at": "2025-04-08T12:47:16+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_Cons.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48917468021058,
+     "created_at": "2025-04-08T12:47:20+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_Lifestyle_Build.jpg?v=1758447724",
+     "width": 3000,
+     "height": 2035
+    },
+    {
+     "id": 48917468807490,
+     "created_at": "2025-04-08T12:47:25+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_WEB_SEC01_NOBG_0187947b-e4c0-45ab-8078-2cbacb78acc7.png?v=1758447724",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48917468643650,
+     "created_at": "2025-04-08T12:47:25+05:30",
+     "position": 12,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_WEB_SEC02_NOBG_7e111854-656e-4c37-a6c8-a0a383c53c06.png?v=1758447724",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48917469200706,
+     "created_at": "2025-04-08T12:47:28+05:30",
+     "position": 13,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_WEB_SEC05_NOBG_e68750b1-4e89-434f-8ee8-a373fced25dc.png?v=1758447724",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48917469659458,
+     "created_at": "2025-04-08T12:47:31+05:30",
+     "position": 14,
+     "updated_at": "2025-09-21T15:12:04+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_WEB_PRI_NOBG_d0dcfa67-88d2-4f9a-97cc-213082ddcae0.png?v=1758447724",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48917469856066,
+     "created_at": "2025-04-08T12:47:34+05:30",
+     "position": 15,
+     "updated_at": "2025-09-21T15:12:05+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_WEB_SEC06_NOBG_8f5379c2-d51e-421b-a2ef-c6537a100868.png?v=1758447725",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48917470150978,
+     "created_at": "2025-04-08T12:47:37+05:30",
+     "position": 16,
+     "updated_at": "2025-09-21T15:12:05+05:30",
+     "product_id": 9917163438402,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10294_WEB_SEC08_NOBG_1d6c4535-749a-47b7-a93a-9b8322591373.png?v=1758447725",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9917165437250,
+   "title": "Tudor Corner",
+   "handle": "icons-tudor-corner-model-for-adults-10350-building-kit-3266-pieces",
+   "body_html": "<p>Step into the nostalgic charm of a bygone era with the LEGO\u00ae Icons Tudor Corner model building kit for adults (10350). Unwind as you craft each intricate detail of this captivating addition to the LEGO Modular Buildings Collection.<br>Features include 3 brick-and-timber-style facades complemented by a variety of windows, an exterior staircase and a steeply pitched red roof with rustic chimney stacks. Interior details include a restaurant with a counter, stools and a table; a haberdasher\u2019s adorned with hats and umbrellas; a clockmaker\u2019s workshop with bedside and grandfather clocks; and a snug attic flat. This home office decor set includes 8 minifigure characters and its modular design allows you to rearrange room sections, offering endless possibilities for display and storytelling.<br>Discover the inspiring range of LEGO creative building set for adults. The LEGO Builder app features a 3D version of the building instructions included with this collectible construction kit.</p>",
+   "published_at": "2025-03-20T17:28:44+05:30",
+   "created_at": "2025-03-20T17:28:44+05:30",
+   "updated_at": "2026-10-04T03:57:46+05:30",
+   "vendor": "LEGO",
+   "product_type": "D2C driven",
+   "tags": [
+    "1000-5000",
+    "18+",
+    "age",
+    "all_products",
+    "Black-Friday-Specials",
+    "brick-deals",
+    "Brick-maash-offer",
+    "Brickmas_bash",
+    "Briks_newoffer",
+    "christmas_day",
+    "exclusives",
+    "icons",
+    "Id-kds-spotlightsk",
+    "interest",
+    "Lego Marvel Avengers",
+    "Lego Sets For Adults",
+    "lego-03-07-2026",
+    "lego_17_07_2026",
+    "new arrivals",
+    "new-06-10-2025",
+    "new-christmas_day",
+    "new-custom",
+    "New-year-off",
+    "see-all-age",
+    "see-all-bricks",
+    "see-all-theme",
+    "sets",
+    "spotlight-07-05",
+    "spotlight-15-06-26",
+    "the lego collection",
+    "theme"
+   ],
+   "variants": [
+    {
+     "id": 50422716203330,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "10350",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "24499.00",
+     "grams": 3806,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9917165437250,
+     "created_at": "2025-03-20T17:28:44+05:30",
+     "updated_at": "2026-10-04T03:57:46+05:30"
+    }
+   ],
+   "images": [
+    {
+     "id": 48923641020738,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 1,
+     "updated_at": "2025-05-13T15:51:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WEB_SEC03_NOBG_da36fa6f-c320-4b8d-b480-39194670bfa0.png?v=1747131688",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923641151810,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 2,
+     "updated_at": "2025-05-13T15:51:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Box5_v29.png?v=1747131688",
+     "width": 3000,
+     "height": 2358
+    },
+    {
+     "id": 48923641053506,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 3,
+     "updated_at": "2025-09-21T15:11:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WEB_PRI_NOBG.png?v=1758447688",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923640922434,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 4,
+     "updated_at": "2025-09-21T15:11:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WEB_SEC10_NOBG.png?v=1758447688",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923640955202,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 5,
+     "updated_at": "2025-09-21T15:11:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WEB_SEC01_NOBG.png?v=1758447688",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923640824130,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 6,
+     "updated_at": "2025-09-21T15:11:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Lifestyle_Cons_crop.jpg?v=1758447688",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48923641119042,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 7,
+     "updated_at": "2025-09-21T15:11:28+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WE_Lifestyle.jpg?v=1758447688",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48923640725826,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 8,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Lifestyle_Envr_crop.jpg?v=1758447689",
+     "width": 3000,
+     "height": 3000
+    },
+    {
+     "id": 48923640693058,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 9,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Lifestyle_Build_02.jpg?v=1758447689",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923640791362,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 10,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Lifestyle_Build_03.jpg?v=1758447689",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923640758594,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 11,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Lifestyle_Build_11.jpg?v=1758447689",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923640987970,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 12,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_Lifestyle_Build_08.jpg?v=1758447689",
+     "width": 3000,
+     "height": 2001
+    },
+    {
+     "id": 48923641184578,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 13,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WEB_SEC04_NOBG.png?v=1758447689",
+     "width": 3000,
+     "height": 1687
+    },
+    {
+     "id": 48923641086274,
+     "created_at": "2025-04-09T13:21:54+05:30",
+     "position": 14,
+     "updated_at": "2025-09-21T15:11:29+05:30",
+     "product_id": 9917165437250,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0929/7218/7970/files/10350_WEB_SEC05.jpg?v=1758447689",
+     "width": 3000,
+     "height": 1687
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -181,19 +181,34 @@ as `lego.mybrickhouse.com` — identical Shopify product IDs. One shop, two doma
 The LEGO set number (`42172`) is the join key. Getting this right is the difference
 between a useful tool and a confidently wrong one.
 
-**Rule: read the set number from the SKU field only — never from the product title.**
+**Two rules, and both are load-bearing. Neither is safe alone.**
 
-This was learned the hard way during design. A title-based match produced:
+**Rule 1 — read the set number from the SKU field, never from the title.** A
+title-based match produced:
 
 ```
 10294 → "PartyCorp Christmas Tree Artificial 4 feet"   ✗
 10316 → "PartyCorp Gold Mehndi Alphabet Foil Balloon"  ✗
 ```
 
-A party balloon was being compared against the ₹63,999 Titanic. SKU-only matching
-eliminated every false positive.
+**Rule 2 — the shop must agree the product is LEGO (table below).** Because rule 1 on
+its own is *not enough*. FunCorp's party range carries SKUs like:
 
-**Then: a per-shop rule for "is this actually LEGO?"**
+```
+PCP-LBL10350   ₹59    PartyCorp Purple Metallic Chrome Balloon
+PCP-BBR10316   ₹89    PartyCorp Gold Mehndi Foil Balloon Banner
+PCP-ACC10294   ₹379   PartyCorp Christmas Tree Artificial 4 feet
+```
+
+Pull the digits out of `PCP-LBL10350` and you get `10350` — Tudor Corner. A **₹59
+balloon** would be recorded as a crash in a **₹24,499** set, and the tool would scream
+BUY NOW. What stops it is the vendor check: `PartyCorp` is not `Lego`.
+
+This is the single most dangerous bug in the whole system, it is **already present in
+real shop data**, and it is caught by rule 2 alone. Both fixtures are saved in
+`tests/fixtures/` so the test can never be silently deleted.
+
+**Rule 2 in detail — per shop:**
 
 | Shop | Rule | Why |
 |---|---|---|
