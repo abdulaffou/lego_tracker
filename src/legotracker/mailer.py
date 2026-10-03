@@ -9,14 +9,38 @@ HEADLINE = {"BUY_NOW": "BUY NOW", "GOOD": "GOOD", "FAIR": "FAIR",
 ALL_SHOPS = {"official", "toycra", "funcorp"}
 
 
-def compose(items: list[dict], failed_shops: list[str],
-            today: str) -> tuple[str | None, str | None]:
+def _digest_lines(digest: list[dict]) -> list[str]:
+    lines = ["Everything you are watching:", ""]
+    for entry in sorted(digest, key=lambda i: ORDER[i["verdict"].label]):
+        lines.append(f"  {HEADLINE[entry["verdict"].label]:<16} "
+                     f"{entry['name']} -- Rs{entry['price']:,.0f} "
+                     f"({entry['verdict'].reason})")
+    stale = [e["name"] for e in digest if e.get("stale")]
+    if stale:
+        lines += ["",
+                  "These want a fresh Amazon price-history screenshot: "
+                  + ", ".join(stale)]
+    return lines
+
+
+def compose(items: list[dict], failed_shops: list[str], today: str,
+            digest: list[dict] | None = None
+            ) -> tuple[str | None, str | None]:
     """Build (subject, body). Returns (None, None) when there is no news."""
     if not items:
         if ALL_SHOPS.issubset(set(failed_shops)):
             return ("LEGO tracker: could not check prices today",
                     "Could not check prices today -- every shop failed.\n"
                     f"Shops tried: {', '.join(sorted(failed_shops))}\n")
+        if digest:
+            return (f"LEGO weekly digest -- {today}",
+                    "\n".join(_digest_lines(digest)))
+        if failed_shops:
+            # Silence must mean "nothing to report", never "it broke
+            # three weeks ago".
+            return ("LEGO tracker: a shop could not be reached",
+                    "No price news today, but these could not be checked: "
+                    f"{', '.join(sorted(failed_shops))}\n")
         return None, None
 
     ranked = sorted(items, key=lambda i: (ORDER[i["verdict"].label],
@@ -41,14 +65,22 @@ def compose(items: list[dict], failed_shops: list[str],
 
     if failed_shops:
         lines.append(f"(Could not reach: {', '.join(sorted(failed_shops))})")
+    if digest:
+        lines += [""] + _digest_lines(digest)
 
     return subject, "\n".join(lines)
 
 
 def send(subject: str, body: str, config: dict) -> None:
     """Send via SMTP. Credentials come from the environment only."""
-    user = os.environ["SMTP_USER"]
-    password = os.environ["SMTP_PASS"]
+    try:
+        user = os.environ["SMTP_USER"]
+        password = os.environ["SMTP_PASS"]
+    except KeyError as missing:
+        raise RuntimeError(
+            f"{missing.args[0]} is not set. Add SMTP_USER and SMTP_PASS as "
+            "repository secrets (see README), or run with --dry-run."
+        ) from None
     settings = config["email"]
 
     message = EmailMessage()

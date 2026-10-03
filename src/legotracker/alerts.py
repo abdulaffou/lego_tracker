@@ -59,6 +59,8 @@ def record_alert(state: dict, set_number: str, verdict: Verdict,
 def is_absurd(price: float, previous_price: float | None,
               swing_pct: float) -> bool:
     """A price that moved more than swing_pct overnight is probably a glitch."""
-    if not previous_price:
-        return False
+    if previous_price is None:
+        return False   # nothing to compare against yet
+    if previous_price <= 0:
+        return True    # a zero/negative prior is itself implausible
     return abs(price - previous_price) / previous_price * 100 > swing_pct

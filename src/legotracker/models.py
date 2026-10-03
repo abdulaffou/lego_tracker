@@ -13,6 +13,7 @@ class PriceRow:
     in_stock: bool
     url: str
     source: str            # "feed" | "page" | "manual"
+    suspect: bool = False  # implausible; recorded, flagged, never trusted
 
 
 @dataclass(frozen=True)

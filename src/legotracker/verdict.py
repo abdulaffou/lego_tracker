@@ -32,7 +32,7 @@ def judge(price: float, mrp: float | None, amazon_low: float | None,
     if not in_stock:
         return Verdict("WAIT", None, "out of stock", False)
 
-    tops = _present((mrp, amazon_high))
+    tops = [v for v in _present((mrp, amazon_high)) if v > 0]
     top = max(tops) if tops else None
 
     bottom_candidates = [amazon_low]
@@ -42,8 +42,8 @@ def judge(price: float, mrp: float | None, amazon_low: float | None,
     bottom = min(bottoms) if bottoms else None
 
     # No range to speak of: fall back to percent off MRP.
-    if bottom is None or top is None:
-        if not mrp:
+    if bottom is None or top is None or top <= 0:
+        if not mrp or mrp <= 0:
             return Verdict("WAIT", None, "no price history yet", False)
         off = (mrp - price) / mrp * 100
         label = ("GOOD" if off >= thresholds["mrp_fallback_discount_pct"]
@@ -54,6 +54,14 @@ def judge(price: float, mrp: float | None, amazon_low: float | None,
 
     span = top - bottom
     if span < thresholds["narrow_range_pct"] / 100 * top:
+        # A set that never discounts is not news -- unless it finally
+        # does. Breaking below its known floor is the most newsworthy
+        # thing such a set can do, so it must not be swallowed here.
+        if price < bottom:
+            return Verdict(
+                "BUY_NOW", 0.0,
+                f"first real drop we have seen -- this set had never gone "
+                f"below {_money(bottom)}", True)
         return Verdict(
             "NEVER_DISCOUNTS", None,
             f"price barely moves -- its whole range is only "

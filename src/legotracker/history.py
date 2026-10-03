@@ -9,7 +9,7 @@ from pathlib import Path
 from .models import PriceRow
 
 FIELDS = ["date", "shop", "set_number", "price", "mrp",
-          "in_stock", "url", "source"]
+          "in_stock", "url", "source", "suspect"]
 
 
 def append_rows(path, rows: list[PriceRow]) -> None:
@@ -30,6 +30,7 @@ def append_rows(path, rows: list[PriceRow]) -> None:
                 "in_stock": "true" if row.in_stock else "false",
                 "url": row.url,
                 "source": row.source,
+                "suspect": "true" if row.suspect else "false",
             })
 
 
@@ -50,6 +51,8 @@ def read_rows(path) -> list[PriceRow]:
                     in_stock=record["in_stock"] == "true",
                     url=record["url"],
                     source=record["source"],
+                    # older files predate the column
+                    suspect=record.get("suspect") == "true",
                 ))
             except (KeyError, ValueError):
                 continue  # a corrupt line must not sink the whole history
@@ -57,7 +60,10 @@ def read_rows(path) -> list[PriceRow]:
 
 
 def _for_set(rows: list[PriceRow], set_number: str) -> list[PriceRow]:
-    return [r for r in rows if r.set_number == set_number]
+    """Rows we trust for this set. Suspect rows are kept on disk for
+    the record but never feed a verdict."""
+    return [r for r in rows if r.set_number == set_number
+            and not r.suspect]
 
 
 def sticky_mrp(rows: list[PriceRow], set_number: str) -> float | None:
@@ -69,7 +75,13 @@ def sticky_mrp(rows: list[PriceRow], set_number: str) -> float | None:
     mine = _for_set(rows, set_number)
     if not mine:
         return None
-    listed = [r.mrp for r in mine if r.mrp is not None]
+    # A list price scraped off a page can be any number on that page.
+    # Prefer the shops' own feeds whenever we have one.
+    feed_listed = [r.mrp for r in mine
+                   if r.mrp is not None and r.mrp > 0 and r.source == "feed"]
+    if feed_listed:
+        return max(feed_listed)
+    listed = [r.mrp for r in mine if r.mrp is not None and r.mrp > 0]
     return max(listed) if listed else max(r.price for r in mine)
 
 
@@ -82,3 +94,41 @@ def recorded_low(rows: list[PriceRow], set_number: str) -> float | None:
 def history_days(rows: list[PriceRow], set_number: str) -> int:
     """How many distinct days we have data for."""
     return len({r.date for r in _for_set(rows, set_number)})
+
+
+def latest_price(rows: list[PriceRow], set_number: str) -> float | None:
+    """Cheapest trusted price on the most recent day we have for this set.
+
+    This is what a new price is judged implausible against -- NOT the
+    all-time low. A set that genuinely hit its floor once must not make
+    every later full-price day look like a huge swing.
+    """
+    mine = _for_set(rows, set_number)
+    if not mine:
+        return None
+    newest = max(r.date for r in mine)
+    return min(r.price for r in mine if r.date == newest)
+
+
+def year_path(base, today: str) -> Path:
+    """data/prices.csv + "2026-10-04" -> data/prices-2026.csv
+
+    One file per year. The run records the whole catalogue daily so the
+    retirement signal has data to work with, which is ~240KB a day --
+    a single file would cross GitHub's 100MB limit inside two years.
+    """
+    base = Path(base)
+    return base.with_name(f"{base.stem}-{today[:4]}{base.suffix}")
+
+
+def read_all(base) -> list[PriceRow]:
+    """Every year file, plus any legacy un-suffixed file."""
+    base = Path(base)
+    paths = sorted(base.parent.glob(f"{base.stem}-*{base.suffix}")) \
+        if base.parent.exists() else []
+    if base.exists():
+        paths.insert(0, base)
+    rows: list[PriceRow] = []
+    for path in paths:
+        rows.extend(read_rows(path))
+    return rows

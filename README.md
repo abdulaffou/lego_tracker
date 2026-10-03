@@ -23,7 +23,14 @@ this set is known to have been?
 | Above 50% | WAIT | no |
 
 Sets whose whole price range is under 10% wide never trigger -- they
-simply do not discount.
+simply do not discount. The exception: if such a set ever breaks below
+its known floor, that is the most newsworthy thing it can do, so it is
+reported.
+
+A price that looks implausible -- a huge overnight swing, or a scraped
+page price far from the same day's shop feeds -- is written to the
+history with `suspect` set, and never used as a low, an MRP, or
+tomorrow's baseline. One bad row cannot blind the tracker to a set.
 
 ## Setting it up
 
@@ -76,7 +83,24 @@ useful on day one instead of after weeks of watching -- open the set in
 the Amazon app, tap "Price history", and read the low and high off the
 chart.
 
+## What arrives in your inbox
+
+- A set hits BUY NOW or GOOD -- an email, at most once a week per set
+  unless the price drops further.
+- A shop cannot be reached -- a short notice, at most once a week, so a
+  shop that broke three weeks ago never looks like a quiet day.
+- Every Sunday -- a digest of all eight sets with their verdicts, and a
+  list of any whose Amazon figures are over six months old and want a
+  fresh screenshot.
+- Nothing at all on a quiet day. That silence is meaningful.
+
 ## Where the data lives
 
-`data/prices.csv` -- every price ever seen, append-only, committed after
-each run. Opens in Excel.
+`data/prices-<year>.csv` -- every price ever seen, append-only,
+committed after each run, one file per year. Opens in Excel.
+
+| column | meaning |
+|---|---|
+| `mrp` | the shop's list price, blank if it publishes none |
+| `source` | `feed` (the shop's own JSON) or `page` (scraped) |
+| `suspect` | `true` = implausible, recorded but never trusted |

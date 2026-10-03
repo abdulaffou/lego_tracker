@@ -1,16 +1,19 @@
 """Entry point: fetch, match, record, judge, alert."""
 import argparse
 import logging
+import statistics
 import sys
+from dataclasses import replace
 from datetime import date, datetime
 
 from .alerts import is_absurd, is_news, load_state, record_alert, save_state
 from .config import load_config, load_watchlist
-from .history import (append_rows, history_days, read_rows, recorded_low,
-                      sticky_mrp)
+from .history import (append_rows, history_days, latest_price, read_all,
+                      recorded_low, sticky_mrp, year_path)
 from .mailer import compose, send
 from .shops import fetch_all
 from .shops.amazon import fetch_amazon, fetch_price_history
+from .models import Verdict
 from .verdict import judge
 
 log = logging.getLogger(__name__)
@@ -27,15 +30,58 @@ def _is_stale(seen_on, today: str, stale_days: int) -> bool:
     return delta.days > stale_days
 
 
+def is_digest_day(today: str) -> bool:
+    """Sunday. The weekly reassurance that the tool is still running."""
+    return date.fromisoformat(today).weekday() == 6
+
+
+def flag_suspect_rows(rows, history, thresholds):
+    """Mark implausible rows instead of dropping them.
+
+    Spec section 11: record it, flag it, do not alert on it. A flagged
+    row still reaches prices.csv, but history.py refuses to let it
+    become a low, an MRP, or the baseline for tomorrow's plausibility
+    check -- so one bad row cannot blind the tracker to a set forever.
+
+    Two ways a row is implausible:
+      1. it moved more than absurd_swing_pct against the most recent
+         trusted price for that set, or
+      2. it is a scraped page price far from the same day's shop feeds.
+         This is what catches a wrong price on day one, with no history
+         at all -- the live Rs2,999 Titanic came from a recommended
+         product on an unavailable listing.
+    """
+    band = thresholds["page_sanity_band_pct"] / 100
+    out = []
+    for set_number in {r.set_number for r in rows}:
+        group = [r for r in rows if r.set_number == set_number]
+        previous = latest_price(history, set_number)
+        feeds = [r.price for r in group if r.source == "feed"]
+        reference = statistics.median(feeds) if feeds else None
+        for row in group:
+            bad = is_absurd(row.price, previous,
+                            thresholds["absurd_swing_pct"])
+            if not bad and reference and row.source != "feed":
+                if not (reference * (1 - band) <= row.price
+                        <= reference * (1 + band)):
+                    log.warning("%s price %s from %s is far from today's "
+                                "feeds (%s); flagging as suspect",
+                                set_number, row.price, row.shop, reference)
+                    bad = True
+            out.append(replace(row, suspect=True) if bad else row)
+    return out
+
+
 def build_report(rows, watchlist, history, today, thresholds):
     """Judge every watchlist set. Returns (alertable items, all items)."""
     all_items, alertable = [], []
 
     for entry in watchlist:
         set_number = entry["set"]
-        todays = [r for r in rows if r.set_number == set_number]
+        todays = [r for r in rows
+                  if r.set_number == set_number and not r.suspect]
         if not todays:
-            continue
+            continue   # no trustworthy price for this set today
 
         in_stock = [r for r in todays if r.in_stock]
         best = min(in_stock or todays, key=lambda r: r.price)
@@ -43,11 +89,6 @@ def build_report(rows, watchlist, history, today, thresholds):
         combined = history + todays
         mrp = sticky_mrp(combined, set_number)
         previous = recorded_low(history, set_number)
-
-        if is_absurd(best.price, previous, thresholds["absurd_swing_pct"]):
-            log.warning("ignoring absurd price %s for %s", best.price,
-                        set_number)
-            continue
 
         verdict = judge(
             price=best.price,
@@ -111,16 +152,29 @@ def main(argv=None) -> int:
                 entry["amazon_high"] = stats["high"]
                 entry["seen_on"] = today
 
-    history = read_rows(config["paths"]["prices"])
-    alertable, _ = build_report(rows, watchlist, history, today, thresholds)
-    append_rows(config["paths"]["prices"], rows)
+    history = read_all(config["paths"]["prices"])
+    rows = flag_suspect_rows(rows, history, thresholds)
+    alertable, every = build_report(rows, watchlist, history, today,
+                                    thresholds)
+    append_rows(year_path(config["paths"]["prices"], today), rows)
 
     state = load_state(config["paths"]["state"])
     news = [i for i in alertable
             if is_news(i["set_number"], i["verdict"], i["price"], state,
                        today, thresholds["cooldown_days"])]
 
-    subject, body = compose(news, failed, today)
+    # A shop that has been down for weeks must not look like a quiet
+    # day, but it must not mail daily either.
+    if failed and not is_news("__shops__",
+                              Verdict("GOOD", None, "shops failed", True),
+                              0.0, state, today,
+                              thresholds["cooldown_days"]):
+        failed_for_email = []
+    else:
+        failed_for_email = failed
+
+    digest = every if is_digest_day(today) else None
+    subject, body = compose(news, failed_for_email, today, digest=digest)
     if subject is None:
         log.info("nothing worth an email today")
         return 0
@@ -132,6 +186,9 @@ def main(argv=None) -> int:
         return 0
 
     send(subject, body, config)
+    if failed_for_email:
+        record_alert(state, "__shops__",
+                     Verdict("GOOD", None, "shops failed", True), 0.0, today)
     for item in news:
         record_alert(state, item["set_number"], item["verdict"],
                      item["price"], today)

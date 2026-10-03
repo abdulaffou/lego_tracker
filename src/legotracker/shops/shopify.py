@@ -52,13 +52,18 @@ def parse_products(payload: dict, shop: str, base_url: str,
             price = _to_float(variant.get("price"))
             if price is None or price <= 0:
                 continue
+            # A 0.00 compare_at_price is a merchant habit, not a list
+            # price; letting it through divides by zero downstream.
+            listed = _to_float(variant.get("compare_at_price"))
+            if listed is not None and listed <= 0:
+                listed = None
             available = variant.get("available")
             row = PriceRow(
                 date=today,
                 shop=shop,
                 set_number=set_number,
                 price=price,
-                mrp=_to_float(variant.get("compare_at_price")),
+                mrp=listed,
                 # Toycra's collection lists in-stock items only and omits
                 # the field, so a missing value means in stock.
                 in_stock=True if available is None else bool(available),
@@ -72,11 +77,17 @@ def parse_products(payload: dict, shop: str, base_url: str,
     return list(best.values())
 
 
-def fetch_shop(shop: str, today: str) -> list[PriceRow]:
-    """Fetch every page for one shop. Returns [] on any failure."""
+def fetch_shop(shop: str, today: str) -> tuple[list[PriceRow], bool]:
+    """Fetch every page for one shop.
+
+    Returns (rows, ok). ok is False if ANY page failed -- a catalogue
+    truncated at page 3 of 4 looks healthy but silently loses sets, so
+    it must be reported rather than returned as success.
+    """
     spec = SHOPIFY_SHOPS[shop]
     url = f"{spec['base']}/collections/{spec['collection']}/products.json"
     best: dict[str, PriceRow] = {}
+    ok = True
 
     for page in range(1, MAX_PAGES + 1):
         try:
@@ -87,6 +98,7 @@ def fetch_shop(shop: str, today: str) -> list[PriceRow]:
             payload = response.json()
         except Exception as exc:
             log.warning("%s page %s failed: %s", shop, page, exc)
+            ok = False
             break
         if not (payload.get("products") or []):
             break
@@ -95,4 +107,4 @@ def fetch_shop(shop: str, today: str) -> list[PriceRow]:
             if current is None or row.price < current.price:
                 best[row.set_number] = row
 
-    return list(best.values())
+    return list(best.values()), ok

@@ -12,10 +12,10 @@ def fetch_all(today: str) -> tuple[list[PriceRow], list[str]]:
     rows: list[PriceRow] = []
     failed: list[str] = []
     for shop in SHOPIFY_SHOPS:
-        shop_rows = fetch_shop(shop, today)
-        if shop_rows:
-            rows.extend(shop_rows)
-        else:
+        shop_rows, ok = fetch_shop(shop, today)
+        rows.extend(shop_rows)
+        if not ok or not shop_rows:
             failed.append(shop)
-            log.warning("no rows from %s", shop)
+            log.warning("%s incomplete (%s rows, ok=%s)", shop,
+                        len(shop_rows), ok)
     return rows, failed

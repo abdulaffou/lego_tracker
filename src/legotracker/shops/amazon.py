@@ -26,7 +26,15 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 # Titanic at Rs2,999 -- a recommended item on an unavailable product page.
 MAIN_PRICE = re.compile(
     r'priceToPay.{0,400}?a-price-whole"?>([\d,]+)', re.DOTALL)
-UNAVAILABLE = re.compile(r"Currently unavailable", re.IGNORECASE)
+UNAVAILABLE = re.compile(
+    r"Currently unavailable|Temporarily out of stock|Out of Stock",
+    re.IGNORECASE)
+
+# How far from the main price block a list price may sit and still
+# plausibly belong to the same product.
+BASIS_WINDOW = 3000
+# A list price more than this multiple of the price is another product's.
+MAX_BASIS_RATIO = 3.0
 # Amazon renders the list price as markup, not as a JSON amount:
 #   <span ...apex-basisprice-offscreen-label">M.R.P.: &#8377;41,199.00</span>
 #   <p ...> List Price: <span class="a-text-strike"> &#8377;41,199.00 </span>
@@ -59,13 +67,25 @@ def parse_amazon_page(html: str, set_number: str, url: str,
     price_match = MAIN_PRICE.search(html)
     if not price_match:
         return None          # no main price block: never guess from the page
-    basis = BASIS_PRICE.search(html)
+    price = _number(price_match.group(1))
+
+    # The list price is anchored the same way the price is. Searching the
+    # whole page finds recommendation tiles, and a bogus MRP is worse than
+    # no MRP: sticky_mrp would keep it as the top anchor forever.
+    window = html[max(0, price_match.start() - BASIS_WINDOW):
+                  price_match.end() + BASIS_WINDOW]
+    basis = BASIS_PRICE.search(window)
+    mrp = _number(basis.group(1)) if basis else None
+    if mrp is not None and (mrp <= 0 or mrp > price * MAX_BASIS_RATIO):
+        log.warning("ignoring implausible list price %s against %s", mrp, price)
+        mrp = None
+
     return PriceRow(
         date=today,
         shop="amazon",
         set_number=set_number,
-        price=_number(price_match.group(1)),
-        mrp=_number(basis.group(1)) if basis else None,
+        price=price,
+        mrp=mrp,
         in_stock=True,
         url=url,
         source="page",
