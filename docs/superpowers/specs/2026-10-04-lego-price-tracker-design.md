@@ -21,14 +21,28 @@ on a set you want.
 
 > If this tool had existed last week, would it have saved me money?
 
-Yes — verified during design. Today, right now:
+Yes — and in both directions, which is the point.
+
+**It would have saved money:**
 
 | Set | Amazon | Toycra | You save |
 |---|---|---|---|
 | 42172 McLaren P1 | ₹37,079 | **₹29,399** | **₹7,680** |
-| 10316 Rivendell | ₹50,399 (official) | **₹40,399** | **₹10,000** |
 
-Both were live and verified while writing this spec.
+**And it would have stopped you spending money badly:**
+
+| Set | Looks like | Actually |
+|---|---|---|
+| 10316 Rivendell | ₹40,399 at Toycra — 20% off MRP, a ₹10,000 saving | Sits **75%** up its own yearly range. Amazon has sold it near **₹25,200**. |
+| 76269 Avengers Tower | ₹48,999, same as always | **Above** its yearly high. It has been ₹24,501. |
+| 10350 Tudor Corner | ₹24,499, steady | Sitting **at** its yearly peak. It has been ~₹14,500. |
+
+That second table only became visible once the real Amazon history arrived. A
+shops-only comparison called Rivendell a ₹10,000 win; against its own history it's an
+expensive moment to buy. **Both halves matter, and the second half is the one that
+protects real money.**
+
+Every figure here was fetched or read from a chart during design — see §14.
 
 ---
 
@@ -135,9 +149,30 @@ them the McLaren** — a ₹998 item ranked first. The direct link returned the 
 | **Flipkart** | Prices load via JavaScript after the page. Same problem. |
 | **Hamleys, Maya Toys** | Not on a feed platform. Custom scraping, breaks often. |
 | **Keepa API** | Has real Amazon India history, but €49/month (~₹4,700) and only covers Amazon — blind to the ₹7,680 Toycra gap we found. |
-| **BuyHatke / PriceHistoryApp** | Tested with set 42172: "product not found". They cover phones, not LEGO. |
+| **BuyHatke** | Tested: "page not found" for LEGO sets. |
+| **pricehistory.app** | **Partly in — see below.** Works, and has Amazon India history for LEGO. |
 
 These stay out until the core works. Adding a shop later is one new file (§11).
+
+### pricehistory.app — a free Amazon history source
+
+Free, and it genuinely has LEGO. Verified for the Titanic: `Lowest ₹57,000 ·
+Highest ₹98,999 · Average ₹86,415`, all three parseable with one regex.
+
+*(An earlier check wrongly dismissed this — the probe hit `pricehistoryapp.com`
+instead of `pricehistory.app`.)*
+
+**Limit:** it can only be reached by its exact page URL. Lookup by ASIN 404s, and its
+search API sits behind Cloudflare. So you paste the page link once per set, the same
+way you paste the Amazon link — and from then on the tool **refreshes the low and high
+automatically**, instead of those numbers going stale between screenshots.
+
+Treated like Amazon: best-effort in the cloud, reliable from the local run.
+
+### lego.in is not a separate shop
+
+Worth recording so it never gets added twice: `lego.in` serves the **same catalogue**
+as `lego.mybrickhouse.com` — identical Shopify product IDs. One shop, two domains.
 
 ---
 
@@ -329,8 +364,53 @@ the judgement the raw MRP discount would have got wrong.
 If only `amazon_low` is supplied (no high), fall back to a simple rule: more than 25%
 above the low downgrades one step.
 
-This gate can only ever **lower** a verdict, never raise one. Your Amazon figure can
-talk you out of a purchase; it can't talk you into one.
+For **multi-source** sets this gate can only ever **lower** a verdict. Your Amazon
+figure talks you out of a purchase, never into one. For single-source sets a
+different rule applies — §8.3.
+
+### 8.3 Single-source sets: history becomes the main signal
+
+Discovered on 2026-10-04 when the real Rufus data arrived, and it broke the design as
+written.
+
+**The Titanic case.** Today it's ₹63,999 at the official store — **0% off MRP**, so
+the MRP rule says 🔴 WAIT and stays silent. But its Amazon range is ₹57,000–₹98,999,
+average ₹86,415, which puts ₹63,999 at **17% — near its floor.** It's one of the best
+prices this set has had all year, and the tool would have said nothing.
+
+The flaw: for a LEGO exclusive sold only at the official store, the price **is** the
+MRP by definition. "% off MRP" is permanently 0%, so the gate that decides whether to
+even consult history never opens. Six of eight watchlist sets are in this state.
+
+**The fix — which signal leads depends on how many shops stock the set:**
+
+| | Leading signal | History's role |
+|---|---|---|
+| **2+ shops** | % off MRP | Checks and can downgrade (§8.1) |
+| **1 shop** | Position in its own range | **Decides** |
+
+For a single-source set with history:
+
+| Position in range | Verdict |
+|---|---|
+| Bottom 25% | 🟡 **GOOD** — *"near the cheapest this has been"* |
+| Bottom 10% | 🟢 **BUY NOW** |
+| Above 50% | 🔴 **WAIT** — *"this is a pricey moment"* |
+
+**Safety rails**, because this path can now trigger a buy on history alone:
+
+- Needs **both** `amazon_low` and `amazon_high` — a lone low isn't a range
+- Figures older than **180 days** can only downgrade, never promote
+- Must be **in stock**
+- The email always names the source: *"based on your Amazon history from 4 Oct"*
+- A range narrower than **10%** is treated as "never discounts" — no buy signal ever
+  (Project Hail Mary is flat at ₹11,999 all year; Shopping Street moves in a ₹1,500
+  band. Neither should ever produce excitement.)
+
+**Why this is safe.** The thing being prevented is a confident alert on bad data. Here
+the data is yours, read off Amazon's own chart, with its age shown in the email. The
+larger risk was the original design: silently saying nothing about six of your eight
+sets, forever.
 
 ### 8.2 Judging "discontinued"
 
@@ -515,6 +595,11 @@ Everything checked live on 2026-10-04:
 | No public retirement flag | Brickset docs | only `exitDate`, set *after* retirement |
 | Wayback backfill too thin | CDX index | zero snapshots of the feeds |
 | Python SSL broken on this Mac | urllib call | `CERTIFICATE_VERIFY_FAILED` |
+| pricehistory.app has LEGO | fetched Titanic page | low ₹57,000 / high ₹98,999 / avg ₹86,415 |
+| …but needs the exact URL | tried ASIN + search | 404, and Cloudflare on the API |
+| lego.in duplicates mybrickhouse | compared product IDs | identical — one shop |
+| Titanic *is* on Amazon, and dearer | found 2 listings | ₹75,890 and ₹97,990 vs ₹63,999 official |
+| Minas Tirith not on Amazon India | searched | new set, official store only |
 
 ---
 
@@ -524,35 +609,78 @@ The watchlist holds **only what you supply**. Prices, shop counts and verdicts a
 worked out fresh on every run — storing them here would let stale numbers masquerade
 as truth.
 
+Captured 2026-10-04 from Rufus screenshots, except Titanic (pricehistory.app).
+
 ```yaml
 # watchlist.yaml — edit by hand, no code needed
 - set: 11389
   name: Project Hail Mary
-  # asin, amazon_low, amazon_high, seen_on  ← add from a Rufus screenshot
+  amazon_low:  11999
+  amazon_high: 11999        # flat all year — this set never discounts
+  seen_on: 2026-10-04
 
 - set: 10294
   name: Titanic
+  asin: B09GPPP2NK
+  amazon_low:  57000
+  amazon_high: 98999        # avg 86,415 — Amazon is a bad place to buy this
+  source: pricehistory.app
+  seen_on: 2026-10-04
 
 - set: 11377
   name: Minas Tirith
+  # NO HISTORY — brand new set, not listed on Amazon India yet.
+  # Official store only, ₹69,999. Recheck in a few months.
 
 - set: 10350
   name: Tudor Corner
+  amazon_low:  14500        # chart estimate
+  amazon_high: 24501
+  seen_on: 2026-10-04
 
 - set: 11371
   name: Shopping Street
+  amazon_low:  24479
+  amazon_high: 25999        # very narrow band, barely moves
+  seen_on: 2026-10-04
 
 - set: 76269
   name: Avengers Tower
+  amazon_low:  24501        # chart estimate
+  amazon_high: 48021
+  seen_on: 2026-10-04
 
 - set: 42172
   name: McLaren P1
   asin: B0CWH3TBGB          # verified working
+  amazon_low:  20600
+  amazon_high: 40490
+  seen_on: 2026-10-04
 
 - set: 10316
   name: Rivendell
+  amazon_low:  25200        # chart estimate
+  amazon_high: 45392
+  seen_on: 2026-10-04
 ```
 
-**First job after the build:** the six single-source sets each need an Amazon link
-and a Rufus screenshot. Until then the tool can only tell you their price has
-changed, not whether that price is good.
+**Chart estimates are eyeballed from a Rufus graph**, so treat them as roughly ±5%.
+The ones Rufus states in words (₹20,600; ₹11,999) and the pricehistory.app figures are
+exact. Precision isn't critical — these decide *roughly where in its range* a price
+sits, not the verdict on their own.
+
+### What this data immediately revealed
+
+| Set | Today | Where it sits in its own range | Reading |
+|---|---|---|---|
+| 76269 Avengers Tower | ₹48,999 | **104%** — above its yearly high | Worst possible moment |
+| 10350 Tudor Corner | ₹24,499 | **100%** — at its yearly high | Worst possible moment |
+| 10316 Rivendell | ₹40,399 | **75%** | Expensive, despite 20% off MRP |
+| 42172 McLaren P1 | ₹29,399 | **44%** | Fair, not a steal |
+| 11371 Shopping Street | ₹24,999 | 34% | Barely moves; band is ₹1,500 wide |
+| **10294 Titanic** | **₹63,999** | **17%** | **Genuinely cheap right now** |
+| 11389 Project Hail Mary | ₹11,999 | flat | Has never discounted. Ever. |
+| 11377 Minas Tirith | ₹69,999 | no data | Unknown |
+
+Two sets are at or above their yearly peak. One (Titanic) is near its floor while
+showing **0% off MRP** — which the MRP rule alone would have dismissed. See §8.3.
