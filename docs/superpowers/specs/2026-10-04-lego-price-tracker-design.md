@@ -255,199 +255,125 @@ behaviour the tool exists to catch.
 
 ---
 
-## 7. Your Amazon price history (the Rufus workflow)
+## 7. Your Amazon price history
 
-Amazon's app has **Rufus**, an AI assistant that shows a one-year price chart. It is
-real data and it is excellent. It is also unreachable by any script: it lives behind
-your login, inside the app, with no public address and active bot protection.
+Amazon's app has **Rufus**, an AI assistant showing a one-year price chart. Real data,
+genuinely good. Also unreachable by any script — it lives behind your login, inside
+the app, with no public address and active bot protection. Scraping it would mean
+impersonating your logged-in phone, which breaks constantly.
 
-Scraping it would mean impersonating your logged-in phone. That breaks constantly and
-is not something worth building.
+**So you hand the tool what Rufus already showed you. Once per set.**
 
-**So: you hand the tool what Rufus already showed you. Once per set.**
-
-You send a screenshot in a Claude session; the numbers get read off the chart and
-written into the watchlist:
+You send a screenshot; the low and high get read off the chart into the watchlist:
 
 ```yaml
 - set: 42172
   name: McLaren P1
   asin: B0CWH3TBGB
-  amazon_low: 20600       # lowest in last year, from Rufus
+  amazon_low:  20600
   amazon_high: 40490
-  seen_on: 2026-10-04     # so we know when this went stale
+  seen_on: 2026-10-04
 ```
 
-Thirty seconds per set, on sets you've already decided you care about. It makes the
-tool useful on **day one** instead of after months of watching.
+Thirty seconds per set, and the tool is useful on **day one** rather than after
+months of watching. Where a `pricehistory.app` link exists (§4), those two numbers
+refresh themselves and never go stale.
 
-### Why this is better than scraping Rufus would have been
+**Why this beats scraping Rufus.** Rufus knows one shop. Your tool watches four, and
+Rufus can't email you at 2am when Toycra drops 30%.
 
-Rufus knows one shop. Your tool watches four. Rufus can't email you at 2am when
-Toycra drops 30%.
+**What these numbers are.** Rufus's own footnote: *lowest featured offer price per
+week, Amazon only, excluding shipping*. So they describe Amazon's trading range, not
+a cross-shop floor. Read off a graph, they're worth about ±5% — fine for deciding
+roughly where in its range a price sits, which is all they're asked to do.
 
-### The rule that stops this backfiring
-
-`amazon_low` lives in its **own column** and is **never arithmetically combined** with
-prices the tool recorded itself. It never shifts MRP, never counts as an observed low,
-and never enters the discount calculation.
-
-It does get used — as a **separate gate applied after** the MRP verdict is decided
-(§8.1), with its own sentence in the email naming it as your Amazon figure. Separate
-check, separate wording, separate column. Never a blended number.
-
-Rufus's own footnote says it's the *lowest featured offer price per week, Amazon only,
-excluding shipping* — a festival-sale floor. If that were mixed with our observed
-lows, a genuinely excellent ₹29,399 at Toycra would be judged against an Amazon flash
-sale and the tool would say "wait" forever.
-
-Every alert states which number it compared against. Blank is fine — sets without it
-lean on the other signals.
-
-### Staleness
-
-A Rufus low from a year ago is not evidence about today. After **180 days**, alerts
-mark it `(stale)` and the weekly digest lists which sets want a fresh screenshot.
+**Staleness.** After **180 days** they can only make the tool more cautious, never
+less, and the weekly digest lists which sets want a fresh screenshot.
 
 ---
 
 ## 8. Deciding BUY vs WAIT
 
-Five inputs, each with a known trust level:
-
-| Signal | Source | Available from |
-|---|---|---|
-| Cheapest of all shops today | live feeds | run 1 ✅ |
-| Discount vs MRP | live feeds | run 1 ✅ |
-| Your Rufus low | you, once | run 1 ✅ |
-| Cheapest we've ever recorded | our history | grows weekly 📈 |
-| Being discontinued? | age + stock vanishing | run 1, as a hint |
-
-**The verdicts:**
-
-| | Meaning | Exact condition |
-|---|---|---|
-| 🟢 **BUY NOW** | Best price we can justify | ≥15% off MRP **and** cheapest we've ever recorded **and** in stock |
-| 🟡 **GOOD** | Worth considering | ≥15% off MRP, but we've recorded cheaper before |
-| 🔴 **WAIT** | At or near full price | Under 15% off MRP |
-| ⚫ **BUY BEFORE IT'S GONE** | Don't wait | Looks discontinued (§8.2) — overrides WAIT |
-
-**Why 15%:** below that, a "discount" is usually just shop-to-shop noise. Of the 555
-sets sold by both the official store and Toycra, the median gap was 0% — real
-discounts sit well clear of that line. Both of today's genuine deals (29% and 20%)
-clear it comfortably. The number lives in one config file, changeable without
-touching code.
-
-### 8.1 The Amazon-history gate
-
-When you've supplied a Rufus low **and** high, we know the set's real trading range,
-which is far more informative than any single number. Today's best price is placed
-within it:
+Every set gets one number: **where today's price sits between the cheapest and
+dearest it's known to have been.**
 
 ```
-       ₹20,600                    ₹29,399                   ₹40,490
-       your low  ────────────────── today ────────────────── your high
-                 └─────── 44% of the way up the range ───────┘
+  cheapest known                    today                    dearest known
+      ₹20,600  ──────────────────── ₹29,399 ──────────────────  ₹41,199
+               └──────────── 43% of the way up ────────────┘
 ```
 
-| Where today sits | Effect on the verdict |
+That's the whole rule.
+
+### Building the two ends
+
+| End | Taken from |
 |---|---|
-| Bottom 25% of the range | Confirms 🟢 — email says "near the lowest you've seen" |
-| Middle | 🟢 downgraded to 🟡 — "good, but it has been cheaper" |
-| Top 50% | Downgraded to 🔴 — "this is an expensive moment for this set" |
+| **Top** | MRP, or your Amazon high if that's higher |
+| **Bottom** | Your Amazon low, or the cheapest we've recorded — whichever is lower |
 
-Worked through on your actual numbers: the McLaren at ₹29,399 is 29% off MRP, which
-alone would be 🟢. But it sits **44% up its own range**, so it lands at 🟡 — *"good
-price, though Amazon has had it at ₹20,600."* That's the honest call, and it's exactly
-the judgement the raw MRP discount would have got wrong.
+Both improve on their own over time: the top is a sticky maximum (§6), and the bottom
+drops every time we record a new low.
 
-If only `amazon_low` is supplied (no high), fall back to a simple rule: more than 25%
-above the low downgrades one step.
+### The verdict
 
-For **multi-source** sets this gate can only ever **lower** a verdict. Your Amazon
-figure talks you out of a purchase, never into one. For single-source sets a
-different rule applies — §8.3.
-
-### 8.3 Single-source sets: history becomes the main signal
-
-Discovered on 2026-10-04 when the real Rufus data arrived, and it broke the design as
-written.
-
-**The Titanic case.** Today it's ₹63,999 at the official store — **0% off MRP**, so
-the MRP rule says 🔴 WAIT and stays silent. But its Amazon range is ₹57,000–₹98,999,
-average ₹86,415, which puts ₹63,999 at **17% — near its floor.** It's one of the best
-prices this set has had all year, and the tool would have said nothing.
-
-The flaw: for a LEGO exclusive sold only at the official store, the price **is** the
-MRP by definition. "% off MRP" is permanently 0%, so the gate that decides whether to
-even consult history never opens. Six of eight watchlist sets are in this state.
-
-**The fix — which signal leads depends on how many shops stock the set:**
-
-| | Leading signal | History's role |
+| Position | | Emails you? |
 |---|---|---|
-| **2+ shops** | % off MRP | Checks and can downgrade (§8.1) |
-| **1 shop** | Position in its own range | **Decides** |
+| Bottom 10% | 🟢 **BUY NOW** | yes |
+| Bottom 25% | 🟡 **GOOD** | yes |
+| 25–50% | ⚪ **FAIR** | weekly digest only |
+| Above 50% | 🔴 **WAIT** | no |
 
-For a single-source set with history:
+**Two sets never produce a buy signal at all.** If the whole range is narrower than
+10%, the set simply doesn't discount — Project Hail Mary has been ₹11,999 every day
+for a year; Shopping Street moves within ₹1,500. Flagging those would be noise.
 
-| Position in range | Verdict |
-|---|---|
-| Bottom 25% | 🟡 **GOOD** — *"near the cheapest this has been"* |
-| Bottom 10% | 🟢 **BUY NOW** |
-| Above 50% | 🔴 **WAIT** — *"this is a pricey moment"* |
+**Out of stock is always WAIT.** A brilliant price you can't buy isn't a price.
 
-**Safety rails**, because this path can now trigger a buy on history alone:
+### Why this replaced the earlier design
 
-- Needs **both** `amazon_low` and `amazon_high` — a lone low isn't a range
-- Figures older than **180 days** can only downgrade, never promote
-- Must be **in stock**
-- The email always names the source: *"based on your Amazon history from 4 Oct"*
-- A range narrower than **10%** is treated as "never discounts" — no buy signal ever
-  (Project Hail Mary is flat at ₹11,999 all year; Shopping Street moves in a ₹1,500
-  band. Neither should ever produce excitement.)
+The first version had two separate tests — "15% off MRP" and "position in its range" —
+plus different rules for single- and multi-source sets. Checking it against your real
+data showed they were **the same calculation with different anchors**, and the merged
+version produces identical verdicts on all eight sets with a quarter of the logic.
 
-**Why this is safe.** The thing being prevented is a confident alert on bad data. Here
-the data is yours, read off Amazon's own chart, with its age shown in the email. The
-larger risk was the original design: silently saying nothing about six of your eight
-sets, forever.
+It also fixes a flaw the two-test version had. Titanic is **0% off MRP**, so the MRP
+test dismissed it silently — yet its Amazon range is ₹57,000–₹98,999, putting today's
+₹63,999 at **17%**, near its floor. For a LEGO exclusive the price *is* the MRP by
+definition, so that test could never fire. Six of your eight sets sit in that state.
+One rule, anchored on the real range, catches it.
 
-### 8.2 Judging "discontinued"
+### When there's no history at all
 
-Deliberately built from **only what we can observe ourselves** — no external API, no
-guessing a release year from the set number (set numbers don't encode one, and our own
-history starts empty, so any age test would be silent for years).
+Minas Tirith: one shop, no Amazon listing, no recorded history. Nothing to compare
+against, so it falls back to **% off MRP** (≥15% → 🟡) and otherwise stays silent.
+Honest, and it starts working the moment any history exists.
 
-All three must hold:
+### What every alert tells you
 
-1. The set **disappears from the official LEGO store's catalogue** — the strongest
-   signal available, since LEGO pulls retiring sets from its own shop first, and
-2. It is out of stock or absent at **every** other shop that used to carry it, and
-3. This holds for **14 consecutive days** (not a restock gap or a feed hiccup)
+> Comparing against: your Amazon range ₹20,600–₹41,199 (read 4 Oct) · 3 shops · 12 days recorded
 
-Then, if a price is still visible anywhere and it's **above** our recorded average,
-that's the confirmation — stock is drying up and resellers are marking up.
+So you always know whether a verdict rests on solid ground or thin evidence.
 
-Because this is inference, the email says *"looks like it's being discontinued"* and
-shows the evidence. It never states it as fact.
+### 8.1 Judging "discontinued"
 
-*(Set release year from Brickset's free API would sharpen this. Left out of v1 — it
-needs its own API key, and the three signals above work without one.)*
+Retired LEGO rises permanently and never comes back, so "wait for a deal" becomes
+actively wrong advice on a dying set. That flips everything to ⚫ **BUY BEFORE IT'S
+GONE**.
 
-That last one matters: retired LEGO sets rise permanently. "Wait for a deal" is the
-wrong advice on a dying set, and a tool that only ever says "wait" would quietly cost
-you money.
+There is no public "retiring soon" flag — verified: Brickset only records `exitDate`
+*after* a set is gone. So this is inferred from what we can watch ourselves:
 
-**Retirement is a hint, not a fact.** There is no public "retiring soon" flag —
-verified: Brickset only records `exitDate` *after* a set is gone. We infer from set
-age plus stock disappearing across shops, and the email says "looks like" rather than
-claiming certainty.
+1. The set **vanishes from the official LEGO store's catalogue** — the strongest
+   signal, since LEGO pulls retiring sets from its own shop first, and
+2. It's out of stock or absent at **every** other shop that carried it, and
+3. That holds for **14 consecutive days** — not a restock gap or a feed hiccup
 
-**Every alert shows its own confidence:**
+If a price is still visible somewhere and it's **above** our recorded average, that
+confirms it: stock drying up, sellers marking up.
 
-> Comparing against: your Amazon low (₹20,600, 3 days old) · 1 shop · 12 days of history
-
-So you always know whether you're reading a strong signal or a weak one.
+Because it's inference, the email says *"looks like it's being discontinued"* and
+shows the evidence. Never stated as fact.
 
 ---
 
@@ -532,30 +458,34 @@ the network and don't break when shops change stock):
 - The party balloon never matches the Titanic
 - Project Hail Mary and Shopping Street are *not* dropped by the LEGO filter
 - MRP never ratchets down
-- Rufus low never contaminates recorded lows
+- Your Amazon figures are kept in their own columns, never written into price history
+- A range narrower than 10% never produces a buy signal
 - Verdicts are correct at the boundaries (just-above and just-below each threshold)
 - No duplicate alerts; cooldown respected
 - One dead shop doesn't fail the run
 - Absurd price swings are flagged, not alerted
 
-**End-to-end check before you trust it.** Run against the saved day-one data and
-confirm it produces exactly this, with no history and no Rufus figures supplied:
+**End-to-end check before you trust it.** Run against the saved day-one data plus the
+watchlist in §15, and confirm it produces exactly this:
 
 | Set | Expected | Why |
 |---|---|---|
-| 42172 McLaren P1 | 🟢 **BUY NOW** — ₹29,399 Toycra | 29% off MRP, cheapest on record |
-| 10316 Rivendell | 🟢 **BUY NOW** — ₹40,399 Toycra | 20% off MRP, cheapest on record |
-| other six | *silent* | 0% off, single source |
+| 10294 Titanic | 🟡 **GOOD** — ₹63,999 | 17% up its range, near its floor |
+| 42172 McLaren P1 | ⚪ FAIR — ₹29,399 Toycra | 43% up its range — digest only |
+| 10316 Rivendell | 🔴 WAIT | 60% up its range |
+| 10350 Tudor Corner | 🔴 WAIT | at its yearly high |
+| 76269 Avengers Tower | 🔴 WAIT | at its yearly high |
+| 11389 Project Hail Mary | *silent* | range 0% wide — never discounts |
+| 11371 Shopping Street | *silent* | range 6% wide — never discounts |
+| 11377 Minas Tirith | 🔴 WAIT | no history; 0% off MRP |
 
-Then re-run with the McLaren's Rufus figures (`amazon_low: 20600`,
-`amazon_high: 40490`) and confirm the gate does its job:
+**So the first email contains exactly one set: Titanic.** If it contains Rivendell or
+Avengers Tower, the range maths is inverted and the tool is recommending the worst
+prices of the year.
 
-| Set | Expected | Why |
-|---|---|---|
-| 42172 McLaren P1 | 🟡 **GOOD** (downgraded) | 44% up its own range — "it has been ₹20,600" |
-
-If that second run still says 🟢, the §8.1 gate isn't wired up, and the tool would be
-telling you to spend ₹29,399 without mentioning the set has sold for ₹20,600.
+Then delete every `amazon_low`/`amazon_high` and re-run. Titanic should go quiet, and
+McLaren and Rivendell should become 🟡 on the MRP fallback alone — proving the
+no-history path works for a set you've not yet screenshotted.
 
 ---
 
@@ -683,4 +613,4 @@ sits, not the verdict on their own.
 | 11377 Minas Tirith | ₹69,999 | no data | Unknown |
 
 Two sets are at or above their yearly peak. One (Titanic) is near its floor while
-showing **0% off MRP** — which the MRP rule alone would have dismissed. See §8.3.
+showing **0% off MRP** — which a discount-only rule would have dismissed. See §8.
