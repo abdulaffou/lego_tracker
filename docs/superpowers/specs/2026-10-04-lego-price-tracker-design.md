@@ -207,6 +207,11 @@ date,shop,set_number,price,mrp,in_stock,url,source
 Adding a column later leaves a permanent hole in the history. Getting this right
 today costs nothing.
 
+**When a shop publishes no list price**, `mrp` falls back to the sticky maximum below.
+This is common — on the official store, `compare_at_price` is frequently absent or
+simply equal to the price, because the shop sells at MRP and has nothing to strike
+through.
+
 **MRP is a sticky maximum, not today's number.** Once we've seen a set at ₹41,199,
 that stays the baseline even if the shop temporarily lists it lower. Without this, a
 single-source set whose shop briefly marks *up* would anchor MRP to the inflated
@@ -248,8 +253,13 @@ Toycra drops 30%.
 
 ### The rule that stops this backfiring
 
-`amazon_low` lives in its **own column** and is **never blended** with prices the tool
-recorded itself.
+`amazon_low` lives in its **own column** and is **never arithmetically combined** with
+prices the tool recorded itself. It never shifts MRP, never counts as an observed low,
+and never enters the discount calculation.
+
+It does get used — as a **separate gate applied after** the MRP verdict is decided
+(§8.1), with its own sentence in the email naming it as your Amazon figure. Separate
+check, separate wording, separate column. Never a blended number.
 
 Rufus's own footnote says it's the *lowest featured offer price per week, Amazon only,
 excluding shipping* — a festival-sale floor. If that were mixed with our observed
@@ -285,7 +295,7 @@ Five inputs, each with a known trust level:
 | 🟢 **BUY NOW** | Best price we can justify | ≥15% off MRP **and** cheapest we've ever recorded **and** in stock |
 | 🟡 **GOOD** | Worth considering | ≥15% off MRP, but we've recorded cheaper before |
 | 🔴 **WAIT** | At or near full price | Under 15% off MRP |
-| ⚫ **BUY BEFORE IT'S GONE** | Don't wait | Looks discontinued (§8.1) — overrides WAIT |
+| ⚫ **BUY BEFORE IT'S GONE** | Don't wait | Looks discontinued (§8.2) — overrides WAIT |
 
 **Why 15%:** below that, a "discount" is usually just shop-to-shop noise. Of the 555
 sets sold by both the official store and Toycra, the median gap was 0% — real
@@ -293,22 +303,56 @@ discounts sit well clear of that line. Both of today's genuine deals (29% and 20
 clear it comfortably. The number lives in one config file, changeable without
 touching code.
 
-**If `amazon_low` exists**, one extra rule applies: a 🟢 is downgraded to 🟡 when the
-price is more than 25% above your Rufus low. That stops the tool calling ₹37,079 a
-great deal on a set that has been ₹20,600. It is a separate check with its own
-sentence in the email — never silently folded into the MRP maths (§7).
+### 8.1 The Amazon-history gate
 
-### 8.1 Judging "discontinued"
+When you've supplied a Rufus low **and** high, we know the set's real trading range,
+which is far more informative than any single number. Today's best price is placed
+within it:
 
-All three must hold, so a single quiet week doesn't trigger it:
+```
+       ₹20,600                    ₹29,399                   ₹40,490
+       your low  ────────────────── today ────────────────── your high
+                 └─────── 44% of the way up the range ───────┘
+```
 
-1. Set is **3+ years old** (from its set number / first-seen date), and
-2. Out of stock, or vanished from the feed, at **every** shop that used to carry it,
-   for **14 consecutive days**, and
-3. Where any price is still visible, it's **above** the recorded average
+| Where today sits | Effect on the verdict |
+|---|---|
+| Bottom 25% of the range | Confirms 🟢 — email says "near the lowest you've seen" |
+| Middle | 🟢 downgraded to 🟡 — "good, but it has been cheaper" |
+| Top 50% | Downgraded to 🔴 — "this is an expensive moment for this set" |
 
-Fewer than three sources makes this weaker, so the email says *"looks like"* and
-shows the evidence rather than stating it as fact.
+Worked through on your actual numbers: the McLaren at ₹29,399 is 29% off MRP, which
+alone would be 🟢. But it sits **44% up its own range**, so it lands at 🟡 — *"good
+price, though Amazon has had it at ₹20,600."* That's the honest call, and it's exactly
+the judgement the raw MRP discount would have got wrong.
+
+If only `amazon_low` is supplied (no high), fall back to a simple rule: more than 25%
+above the low downgrades one step.
+
+This gate can only ever **lower** a verdict, never raise one. Your Amazon figure can
+talk you out of a purchase; it can't talk you into one.
+
+### 8.2 Judging "discontinued"
+
+Deliberately built from **only what we can observe ourselves** — no external API, no
+guessing a release year from the set number (set numbers don't encode one, and our own
+history starts empty, so any age test would be silent for years).
+
+All three must hold:
+
+1. The set **disappears from the official LEGO store's catalogue** — the strongest
+   signal available, since LEGO pulls retiring sets from its own shop first, and
+2. It is out of stock or absent at **every** other shop that used to carry it, and
+3. This holds for **14 consecutive days** (not a restock gap or a feed hiccup)
+
+Then, if a price is still visible anywhere and it's **above** our recorded average,
+that's the confirmation — stock is drying up and resellers are marking up.
+
+Because this is inference, the email says *"looks like it's being discontinued"* and
+shows the evidence. It never states it as fact.
+
+*(Set release year from Brickset's free API would sharpen this. Left out of v1 — it
+needs its own API key, and the three signals above work without one.)*
 
 That last one matters: retired LEGO sets rise permanently. "Wait for a deal" is the
 wrong advice on a dying set, and a tool that only ever says "wait" would quietly cost
@@ -414,9 +458,24 @@ the network and don't break when shops change stock):
 - One dead shop doesn't fail the run
 - Absurd price swings are flagged, not alerted
 
-**End-to-end check before you trust it:** run against the saved day-one data and
-confirm it produces exactly the two alerts we already know are correct — McLaren at
-₹29,399 and Rivendell at ₹40,399 — and stays silent on the other six.
+**End-to-end check before you trust it.** Run against the saved day-one data and
+confirm it produces exactly this, with no history and no Rufus figures supplied:
+
+| Set | Expected | Why |
+|---|---|---|
+| 42172 McLaren P1 | 🟢 **BUY NOW** — ₹29,399 Toycra | 29% off MRP, cheapest on record |
+| 10316 Rivendell | 🟢 **BUY NOW** — ₹40,399 Toycra | 20% off MRP, cheapest on record |
+| other six | *silent* | 0% off, single source |
+
+Then re-run with the McLaren's Rufus figures (`amazon_low: 20600`,
+`amazon_high: 40490`) and confirm the gate does its job:
+
+| Set | Expected | Why |
+|---|---|---|
+| 42172 McLaren P1 | 🟡 **GOOD** (downgraded) | 44% up its own range — "it has been ₹20,600" |
+
+If that second run still says 🟢, the §8.1 gate isn't wired up, and the tool would be
+telling you to spend ₹29,399 without mentioning the set has sold for ₹20,600.
 
 ---
 
@@ -461,16 +520,39 @@ Everything checked live on 2026-10-04:
 
 ## 15. Starting watchlist
 
+The watchlist holds **only what you supply**. Prices, shop counts and verdicts are
+worked out fresh on every run — storing them here would let stale numbers masquerade
+as truth.
+
 ```yaml
-- { set: 11389, name: Project Hail Mary,  sources: 1, price: 11999 }
-- { set: 10294, name: Titanic,            sources: 1, price: 63999 }
-- { set: 11377, name: Minas Tirith,       sources: 1, price: 69999 }
-- { set: 10350, name: Tudor Corner,       sources: 1, price: 24499 }
-- { set: 11371, name: Shopping Street,    sources: 1, price: 24999 }
-- { set: 76269, name: Avengers Tower,     sources: 1, price: 48999 }
-- { set: 42172, name: McLaren P1,         sources: 3, price: 29399, asin: B0CWH3TBGB }
-- { set: 10316, name: Rivendell,          sources: 2, price: 40399 }
+# watchlist.yaml — edit by hand, no code needed
+- set: 11389
+  name: Project Hail Mary
+  # asin, amazon_low, amazon_high, seen_on  ← add from a Rufus screenshot
+
+- set: 10294
+  name: Titanic
+
+- set: 11377
+  name: Minas Tirith
+
+- set: 10350
+  name: Tudor Corner
+
+- set: 11371
+  name: Shopping Street
+
+- set: 76269
+  name: Avengers Tower
+
+- set: 42172
+  name: McLaren P1
+  asin: B0CWH3TBGB          # verified working
+
+- set: 10316
+  name: Rivendell
 ```
 
-Six of these need an Amazon link and a Rufus screenshot to become useful. That's the
-first thing to do after the build.
+**First job after the build:** the six single-source sets each need an Amazon link
+and a Rufus screenshot. Until then the tool can only tell you their price has
+changed, not whether that price is good.
