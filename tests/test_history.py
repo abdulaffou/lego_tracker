@@ -78,3 +78,21 @@ def test_history_days_counts_distinct_dates():
             row(date="2026-10-04", shop="toycra"),
             row(date="2026-10-05", shop="official")]
     assert history_days(rows, "10294") == 2
+
+
+def test_appending_the_same_day_twice_replaces_rather_than_duplicates(tmp_path):
+    path = tmp_path / "prices.csv"
+    append_rows(path, [row(date="2026-10-04", price=63999.0)])
+    append_rows(path, [row(date="2026-10-04", price=59999.0)])
+    kept = read_rows(path)
+    assert len(kept) == 1, "one row per (date, shop, set)"
+    assert kept[0].price == 59999.0, "the later run wins"
+
+
+def test_a_rerun_does_not_disturb_other_days(tmp_path):
+    path = tmp_path / "prices.csv"
+    append_rows(path, [row(date="2026-10-03", price=70000.0)])
+    append_rows(path, [row(date="2026-10-04", price=63999.0)])
+    append_rows(path, [row(date="2026-10-04", price=59999.0)])
+    assert sorted(r.date for r in read_rows(path)) == ["2026-10-03",
+                                                       "2026-10-04"]

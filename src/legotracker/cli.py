@@ -5,6 +5,7 @@ import statistics
 import sys
 from dataclasses import replace
 from datetime import date, datetime
+from pathlib import Path
 
 from .alerts import is_absurd, is_news, load_state, record_alert, save_state
 from .config import load_config, load_watchlist
@@ -15,6 +16,7 @@ from .shops import fetch_all
 from .shops.amazon import fetch_amazon, fetch_price_history
 from .models import Verdict
 from .verdict import judge
+from .workbook import build_workbook
 
 log = logging.getLogger(__name__)
 
@@ -112,6 +114,8 @@ def build_report(rows, watchlist, history, today, thresholds):
             "verdict": verdict,
             "sources": len({r.shop for r in todays}),
             "history_days": history_days(history, set_number),
+            "mrp": mrp,
+            "in_stock": bool(in_stock),
         }
         all_items.append(item)
         if verdict.alertable:
@@ -173,6 +177,12 @@ def main(argv=None) -> int:
     else:
         failed_for_email = failed
 
+    # The spreadsheet is written every run, news or not, so it is always
+    # there to open.
+    book = Path(config["paths"]["prices"]).with_name("lego-prices.xlsx")
+    build_workbook(book, every, history + rows, today)
+    log.info("spreadsheet written to %s", book)
+
     digest = every if is_digest_day(today) else None
     subject, body = compose(news, failed_for_email, today, digest=digest)
     if subject is None:
@@ -183,9 +193,10 @@ def main(argv=None) -> int:
         print(subject)
         print()
         print(body)
+        print(f"\n[attachment: {book}]")
         return 0
 
-    send(subject, body, config)
+    send(subject, body, config, attachment=book)
     if failed_for_email:
         record_alert(state, "__shops__",
                      Verdict("GOOD", None, "shops failed", True), 0.0, today)

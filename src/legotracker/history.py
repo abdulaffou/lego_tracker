@@ -12,26 +12,58 @@ FIELDS = ["date", "shop", "set_number", "price", "mrp",
           "in_stock", "url", "source", "suspect"]
 
 
+def _as_record(row: PriceRow) -> dict:
+    return {
+        "date": row.date,
+        "shop": row.shop,
+        "set_number": row.set_number,
+        "price": f"{row.price:.2f}",
+        "mrp": "" if row.mrp is None else f"{row.mrp:.2f}",
+        "in_stock": "true" if row.in_stock else "false",
+        "url": row.url,
+        "source": row.source,
+        "suspect": "true" if row.suspect else "false",
+    }
+
+
+def _key(row: PriceRow) -> tuple:
+    return (row.date, row.shop, row.set_number)
+
+
 def append_rows(path, rows: list[PriceRow]) -> None:
+    """Add today's rows.
+
+    One row per (date, shop, set). Re-running on the same day -- the
+    scheduled run plus a local `make check` -- replaces that day's rows
+    rather than stacking a second copy, so the file stays one honest
+    reading per shop per day.
+    """
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
+
+    replacing = {_key(r) for r in rows}
+    all_rows = read_rows(path)
+    kept = [r for r in all_rows if _key(r) not in replacing]
+    if len(kept) != len(all_rows):      # a same-day re-run superseded some
+        _write(path, kept + list(rows))
+        return
+
     new_file = not path.exists() or path.stat().st_size == 0
     with open(path, "a", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=FIELDS)
         if new_file:
             writer.writeheader()
         for row in rows:
-            writer.writerow({
-                "date": row.date,
-                "shop": row.shop,
-                "set_number": row.set_number,
-                "price": f"{row.price:.2f}",
-                "mrp": "" if row.mrp is None else f"{row.mrp:.2f}",
-                "in_stock": "true" if row.in_stock else "false",
-                "url": row.url,
-                "source": row.source,
-                "suspect": "true" if row.suspect else "false",
-            })
+            writer.writerow(_as_record(row))
+
+
+def _write(path, rows: list[PriceRow]) -> None:
+    """Rewrite the whole file. Used only to replace a same-day re-run."""
+    with open(path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(_as_record(row))
 
 
 def read_rows(path) -> list[PriceRow]:

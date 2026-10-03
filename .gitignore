@@ -4,3 +4,4 @@ __pycache__/
 .env
 .DS_Store
 .superpowers/
+data/lego-prices.xlsx

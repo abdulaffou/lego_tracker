@@ -94,6 +94,23 @@ chart.
   fresh screenshot.
 - Nothing at all on a quiet day. That silence is meaningful.
 
+## The spreadsheet
+
+Every email carries **lego-prices.xlsx**, and `make check` writes it to
+`data/` so you can open it any time.
+
+- **Today** -- one row per set you watch: verdict (colour-coded), best
+  price, which shop, how far off MRP, why, and a link straight to the
+  product page. "Off MRP" is a live formula, so editing a price
+  recalculates it.
+- **History** -- every price recorded for your sets, newest first, one
+  reading per shop per day. Implausible prices are shaded red and marked
+  in the Suspect column; they are kept for the record and never used to
+  judge anything.
+
+Headers are frozen and filters are on, so you can sort by price or filter
+to one shop without touching anything.
+
 ## Where the data lives
 
 `data/prices-<year>.csv` -- every price ever seen, append-only,

@@ -78,3 +78,68 @@ def test_send_reports_a_missing_secret_clearly(monkeypatch):
         assert "SMTP_USER" in str(exc)
     else:
         raise AssertionError("a missing secret must raise RuntimeError")
+
+
+# --- the spreadsheet attachment -------------------------------------
+
+def test_send_attaches_the_workbook(monkeypatch, tmp_path):
+    sent = {}
+
+    class FakeSMTP:
+        def __init__(self, host, port, timeout=None): pass
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def starttls(self): pass
+        def login(self, u, p): pass
+        def send_message(self, msg): sent["msg"] = msg
+
+    monkeypatch.setattr("legotracker.mailer.smtplib.SMTP", FakeSMTP)
+    monkeypatch.setenv("SMTP_USER", "me@example.test")
+    monkeypatch.setenv("SMTP_PASS", "pw")
+
+    book = tmp_path / "lego-prices.xlsx"
+    book.write_bytes(b"PK\x03\x04 fake xlsx")
+    config = {"email": {"to": "me@example.test",
+                        "from_addr": "me@example.test",
+                        "smtp_host": "h", "smtp_port": 587}}
+    send("subject", "body", config, attachment=book)
+
+    names = [p.get_filename() for p in sent["msg"].iter_attachments()]
+    assert "lego-prices.xlsx" in names
+
+
+def test_send_works_with_no_attachment(monkeypatch):
+    class FakeSMTP:
+        def __init__(self, *a, **k): pass
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def starttls(self): pass
+        def login(self, u, p): pass
+        def send_message(self, msg): pass
+
+    monkeypatch.setattr("legotracker.mailer.smtplib.SMTP", FakeSMTP)
+    monkeypatch.setenv("SMTP_USER", "u")
+    monkeypatch.setenv("SMTP_PASS", "p")
+    send("s", "b", {"email": {"to": "x", "from_addr": "x",
+                              "smtp_host": "h", "smtp_port": 587}})
+
+
+def test_a_missing_attachment_file_does_not_stop_the_email(monkeypatch,
+                                                           tmp_path):
+    sent = {}
+
+    class FakeSMTP:
+        def __init__(self, *a, **k): pass
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def starttls(self): pass
+        def login(self, u, p): pass
+        def send_message(self, msg): sent["msg"] = msg
+
+    monkeypatch.setattr("legotracker.mailer.smtplib.SMTP", FakeSMTP)
+    monkeypatch.setenv("SMTP_USER", "u")
+    monkeypatch.setenv("SMTP_PASS", "p")
+    send("s", "b", {"email": {"to": "x", "from_addr": "x",
+                              "smtp_host": "h", "smtp_port": 587}},
+         attachment=tmp_path / "nope.xlsx")
+    assert sent["msg"] is not None, "the news matters more than the sheet"

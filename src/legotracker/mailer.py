@@ -1,7 +1,14 @@
 """Composing and sending the alert email."""
+import logging
 import os
 import smtplib
 from email.message import EmailMessage
+from pathlib import Path
+
+log = logging.getLogger(__name__)
+
+XLSX_TYPE = ("application", "vnd.openxmlformats-officedocument."
+             "spreadsheetml.sheet")
 
 ORDER = {"BUY_NOW": 0, "GOOD": 1, "FAIR": 2, "WAIT": 3, "NEVER_DISCOUNTS": 4}
 HEADLINE = {"BUY_NOW": "BUY NOW", "GOOD": "GOOD", "FAIR": "FAIR",
@@ -71,7 +78,8 @@ def compose(items: list[dict], failed_shops: list[str], today: str,
     return subject, "\n".join(lines)
 
 
-def send(subject: str, body: str, config: dict) -> None:
+def send(subject: str, body: str, config: dict,
+         attachment=None) -> None:
     """Send via SMTP. Credentials come from the environment only."""
     try:
         user = os.environ["SMTP_USER"]
@@ -88,6 +96,15 @@ def send(subject: str, body: str, config: dict) -> None:
     message["From"] = settings["from_addr"]
     message["To"] = settings["to"]
     message.set_content(body)
+
+    if attachment:
+        path = Path(attachment)
+        try:
+            message.add_attachment(path.read_bytes(), maintype=XLSX_TYPE[0],
+                                   subtype=XLSX_TYPE[1], filename=path.name)
+        except OSError as exc:
+            # The news is the point; the spreadsheet is a convenience.
+            log.warning("could not attach %s: %s", path, exc)
 
     with smtplib.SMTP(settings["smtp_host"], settings["smtp_port"],
                       timeout=30) as server:
