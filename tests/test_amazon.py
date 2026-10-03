@@ -38,3 +38,28 @@ def test_price_history_missing_fields_yields_none():
 def test_price_history_rejects_a_low_above_the_high():
     html = "Lowest ... &#8377;90,000 ... Highest ... &#8377;10,000"
     assert parse_price_history(html) is None
+
+
+def test_unavailable_product_yields_none_not_a_recommendation_price():
+    # The real Titanic page is "Currently unavailable". Its first
+    # a-price-whole belongs to a RECOMMENDED product at Rs2,999 -- which
+    # would be reported as a Rs63,999 set crashing 95%.
+    html = open("tests/fixtures/amazon_10294_unavailable.html",
+                encoding="utf-8", errors="ignore").read()
+    assert parse_amazon_page(html, "10294", "https://amzn.test/dp/X",
+                             TODAY) is None
+
+
+def test_price_is_taken_from_the_main_price_block_only():
+    # A recommendation block appears BEFORE the real price in the markup.
+    html = ('<div><span class="a-price-whole">2,999</span></div>'
+            '<div class="a-price priceToPay">'
+            '<span class="a-price-whole">37,079</span></div>')
+    row = parse_amazon_page(html, "42172", "https://amzn.test/dp/X", TODAY)
+    assert row.price == 37079.0
+
+
+def test_page_without_a_main_price_block_yields_none():
+    html = '<div><span class="a-price-whole">2,999</span></div>'
+    assert parse_amazon_page(html, "42172", "https://amzn.test/dp/X",
+                             TODAY) is None

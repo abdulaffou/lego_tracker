@@ -20,7 +20,13 @@ log = logging.getLogger(__name__)
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36")
 
-PRICE_WHOLE = re.compile(r'a-price-whole">([\d,]+)')
+# Amazon pages carry a-price-whole all over: recommendations, "bought
+# together", sponsored tiles. Only the block carrying priceToPay is the
+# product's own price. Taking the first match anywhere once reported the
+# Titanic at Rs2,999 -- a recommended item on an unavailable product page.
+MAIN_PRICE = re.compile(
+    r'priceToPay.{0,400}?a-price-whole"?>([\d,]+)', re.DOTALL)
+UNAVAILABLE = re.compile(r"Currently unavailable", re.IGNORECASE)
 # Amazon renders the list price as markup, not as a JSON amount:
 #   <span ...apex-basisprice-offscreen-label">M.R.P.: &#8377;41,199.00</span>
 #   <p ...> List Price: <span class="a-text-strike"> &#8377;41,199.00 </span>
@@ -48,9 +54,11 @@ def parse_amazon_page(html: str, set_number: str, url: str,
                       today: str) -> PriceRow | None:
     if not html or BLOCKED.search(html):
         return None
-    price_match = PRICE_WHOLE.search(html)
+    if UNAVAILABLE.search(html):
+        return None          # nothing to buy, so nothing to record
+    price_match = MAIN_PRICE.search(html)
     if not price_match:
-        return None
+        return None          # no main price block: never guess from the page
     basis = BASIS_PRICE.search(html)
     return PriceRow(
         date=today,

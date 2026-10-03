@@ -1,6 +1,7 @@
 VENV := .venv
 PY := $(VENV)/bin/python
 PIP := $(VENV)/bin/pip
+export PYTHONPATH := src
 
 setup:
 	python3 -m venv $(VENV)
