@@ -1,0 +1,21 @@
+thresholds:
+  buy_now_pct: 10
+  good_pct: 25
+  fair_pct: 50
+  narrow_range_pct: 10
+  mrp_fallback_discount_pct: 15
+  stale_days: 180
+  min_history_days: 14
+  cooldown_days: 7
+  absurd_swing_pct: 70
+  page_sanity_band_pct: 60
+
+email:
+  to: abdul.affou@enru.io
+  from_addr: abdul.affou@enru.io
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+
+paths:
+  prices: data/prices.csv
+  state: data/alert_state.json

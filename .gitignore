@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+.superpowers/
+data/lego-prices.xlsx
