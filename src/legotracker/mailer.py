@@ -19,9 +19,9 @@ ALL_SHOPS = {"official", "toycra", "funcorp"}
 def _digest_lines(digest: list[dict]) -> list[str]:
     lines = ["Everything you are watching:", ""]
     for entry in sorted(digest, key=lambda i: ORDER[i["verdict"].label]):
-        lines.append(f"  {HEADLINE[entry["verdict"].label]:<16} "
-                     f"{entry['name']} -- Rs{entry['price']:,.0f} "
-                     f"({entry['verdict'].reason})")
+        label = HEADLINE[entry["verdict"].label]
+        lines.append(f"  {label:<16} {entry['name']} -- "
+                     f"Rs{entry['price']:,.0f} ({entry['verdict'].reason})")
     stale = [e["name"] for e in digest if e.get("stale")]
     if stale:
         lines += ["",

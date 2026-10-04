@@ -26,6 +26,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Runs on the same Python the tool will run on. A 3.12-only
+      # f-string once parsed fine on the dev machine (3.14) and crashed
+      # here; this catches that class of break before it matters.
+      - name: Run tests
+        env:
+          PYTHONPATH: src
+        run: python -m pytest -q
+
       - name: Check prices
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
