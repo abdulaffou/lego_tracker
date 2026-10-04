@@ -11,8 +11,8 @@ thresholds:
   page_sanity_band_pct: 60
 
 email:
-  to: abdul.affou@enru.io
-  from_addr: abdul.affou@enru.io
+  to: gangawaliaffou559@gmail.com
+  from_addr: gangawaliaffou559@gmail.com
   smtp_host: smtp.gmail.com
   smtp_port: 587
 
