@@ -9,6 +9,7 @@
   seen_on: 2026-10-04
 
 - set: "10294"
+  pieces: 9090   # not in any feed; from Brickset
   name: Titanic
   asin: B09GPPP2NK
   amazon_low: 57000
@@ -20,6 +21,7 @@
   # No history: brand new set, not listed on Amazon India yet.
 
 - set: "10350"
+  pieces: 3266   # not in any feed; from Brickset
   name: Tudor Corner
   amazon_low: 14500
   amazon_high: 24501
@@ -32,6 +34,7 @@
   seen_on: 2026-10-04
 
 - set: "76269"
+  pieces: 5201   # not in any feed; from Brickset
   name: Avengers Tower
   amazon_low: 24501
   amazon_high: 48021

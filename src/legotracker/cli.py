@@ -11,7 +11,7 @@ from .alerts import is_absurd, is_news, load_state, record_alert, save_state
 from .config import load_config, load_watchlist
 from .history import (append_rows, history_days, latest_price, read_all,
                       recorded_low, sticky_mrp, year_path)
-from .mailer import compose, send
+from .mailer import compose, compose_html, send
 from .shops import fetch_all
 from .shops.amazon import fetch_amazon, fetch_price_history
 from .models import Verdict
@@ -105,6 +105,14 @@ def build_report(rows, watchlist, history, today, thresholds):
             thresholds=thresholds,
         )
 
+        # The set's own attributes, taken from whichever shop supplied
+        # them -- the cheapest shop is often not the one with a photo.
+        image = next((r.image for r in todays if r.image), None)
+        # A hand-entered count in the watchlist is deliberate; a parsed
+        # one is a guess, so the hand-entered one wins.
+        pieces = entry.get("pieces") or next(
+            (r.pieces for r in todays if r.pieces), None)
+
         item = {
             "set_number": set_number,
             "name": entry.get("name", set_number),
@@ -116,6 +124,11 @@ def build_report(rows, watchlist, history, today, thresholds):
             "history_days": history_days(history, set_number),
             "mrp": mrp,
             "in_stock": bool(in_stock),
+            "image": image,
+            "pieces": pieces,
+            "price_per_piece": (best.price / pieces) if pieces else None,
+            "range_low": verdict.low,
+            "range_high": verdict.high,
         }
         all_items.append(item)
         if verdict.alertable:
@@ -185,6 +198,8 @@ def main(argv=None) -> int:
 
     digest = every if is_digest_day(today) else None
     subject, body = compose(news, failed_for_email, today, digest=digest)
+    html = compose_html(news, failed_for_email, today,
+                        digest=digest) if news else None
     if subject is None:
         log.info("nothing worth an email today")
         return 0
@@ -196,7 +211,7 @@ def main(argv=None) -> int:
         print(f"\n[attachment: {book}]")
         return 0
 
-    send(subject, body, config, attachment=book)
+    send(subject, body, config, attachment=book, html=html)
     if failed_for_email:
         record_alert(state, "__shops__",
                      Verdict("GOOD", None, "shops failed", True), 0.0, today)

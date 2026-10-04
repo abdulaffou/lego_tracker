@@ -86,4 +86,5 @@ def judge(price: float, mrp: float | None, amazon_low: float | None,
     if stale:
         reason += " -- figures are over 6 months old"
 
-    return Verdict(label, position, reason, label in ALERTABLE)
+    return Verdict(label, position, reason, label in ALERTABLE,
+                   low=bottom, high=top)

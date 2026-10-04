@@ -8,6 +8,7 @@ Always the COLLECTION endpoint -- the single-product one omits
 "available".
 """
 import logging
+import re
 
 import requests
 
@@ -27,6 +28,31 @@ SHOPIFY_SHOPS: dict[str, dict] = {
 
 MAX_PAGES = 10
 
+# "(3893 Pieces)", "9,090 pcs", "8,278 pieces". The 3-digit floor keeps
+# stray copy like "includes 3 pieces of signage" out.
+PIECES = re.compile(r"([\d,]{3,7})\s*(?:pieces|pcs|piece)\b", re.IGNORECASE)
+TAGS = re.compile(r"<[^>]+>")
+
+
+def _pieces(*texts) -> int | None:
+    for text in texts:
+        if not text:
+            continue
+        match = PIECES.search(TAGS.sub(" ", text))
+        if match:
+            count = int(match.group(1).replace(",", ""))
+            if count >= 100:
+                return count
+    return None
+
+
+def _first_image(product: dict) -> str | None:
+    for image in product.get("images") or []:
+        src = image.get("src")
+        if src:
+            return src
+    return None
+
 
 def _to_float(value) -> float | None:
     try:
@@ -45,6 +71,8 @@ def parse_products(payload: dict, shop: str, base_url: str,
         if not is_lego(product, shop):
             continue
         handle = product.get("handle", "")
+        image = _first_image(product)
+        pieces = _pieces(product.get("title"), product.get("body_html"))
         for variant in product.get("variants") or []:
             set_number = extract_set_number(variant.get("sku"))
             if not set_number:
@@ -69,6 +97,8 @@ def parse_products(payload: dict, shop: str, base_url: str,
                 in_stock=True if available is None else bool(available),
                 url=f"{base_url}/products/{handle}",
                 source="feed",
+                image=image,
+                pieces=pieces,
             )
             current = best.get(set_number)
             if current is None or row.price < current.price:
