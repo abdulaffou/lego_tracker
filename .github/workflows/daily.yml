@@ -38,6 +38,8 @@ jobs:
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          # Amazon CAPTCHAs GitHub's servers; Scrape.do fetches it instead.
+          SCRAPEDO_TOKEN: ${{ secrets.SCRAPEDO_TOKEN }}
           PYTHONPATH: src
         run: python -m legotracker.cli
 

@@ -81,8 +81,11 @@ def judge(price: float, mrp: float | None, amazon_low: float | None,
     if stale and label in ALERTABLE:
         label = "FAIR"
 
-    reason = (f"{position:.0f}% up its range "
-              f"({_money(bottom)}-{_money(top)})")
+    if price < bottom:
+        reason = f"lowest price yet -- under the old low of {_money(bottom)}"
+    else:
+        reason = (f"{position:.0f}% up its range "
+                  f"({_money(bottom)}-{_money(top)})")
     if stale:
         reason += " -- figures are over 6 months old"
 

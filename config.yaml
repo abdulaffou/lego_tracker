@@ -19,3 +19,11 @@ email:
 paths:
   prices: data/prices.csv
   state: data/alert_state.json
+  usage: data/scrapedo_usage.json
+
+# Amazon through Scrape.do (free plan: 1,000 requests a month). Each
+# paid request is counted in paths.usage; a run never goes past
+# monthly_cap, nor below `reserve` of what Scrape.do says is left.
+scrapedo:
+  monthly_cap: 900
+  reserve: 50

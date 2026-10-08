@@ -168,3 +168,29 @@ def test_send_without_html_stays_plain_text(monkeypatch):
                               "smtp_host": "h", "smtp_port": 587}})
     assert "text/html" not in {p.get_content_type()
                                for p in sent["msg"].walk()}
+
+
+# --- the Scrape.do request count rides along in every email ----------
+
+NOTE = "Scrape.do: 6 requests today, 42 of 900 this month, 958 credits left"
+
+
+def test_the_request_count_is_in_the_plain_email():
+    _, body = compose([item()], [], "2026-10-04", usage_note=NOTE)
+    assert NOTE in body
+
+
+def test_the_request_count_is_in_the_html_email():
+    html = compose_html([item()], [], "2026-10-04", usage_note=NOTE)
+    assert NOTE in html
+
+
+def test_the_request_count_is_in_the_weekly_digest():
+    _, body = compose([], [], "2026-10-04", digest=[item()],
+                      usage_note=NOTE)
+    assert NOTE in body
+
+
+def test_no_count_no_line():
+    _, body = compose([item()], [], "2026-10-04")
+    assert "Scrape.do" not in body

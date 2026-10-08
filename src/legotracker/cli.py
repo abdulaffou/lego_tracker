@@ -1,6 +1,7 @@
 """Entry point: fetch, match, record, judge, alert."""
 import argparse
 import logging
+import os
 import statistics
 import sys
 from dataclasses import replace
@@ -13,8 +14,12 @@ from .history import (append_rows, history_days, latest_price, read_all,
                       recorded_low, sticky_mrp, year_path)
 from .mailer import compose, compose_html, send
 from .shops import fetch_all
-from .shops.amazon import fetch_amazon, fetch_price_history
+from .shops.amazon import (fetch_amazon, fetch_amazon_via_scrapedo,
+                           fetch_price_history)
 from .models import Verdict
+from .usage import allowance, load_usage, remaining_credits, save_usage
+from .usage import record as record_usage
+from .usage import summary as usage_summary
 from .verdict import judge
 from .workbook import build_workbook
 
@@ -137,6 +142,34 @@ def build_report(rows, watchlist, history, today, thresholds):
     return alertable, all_items
 
 
+def fetch_amazon_rows(watchlist, today, token, usage, allowed, local):
+    """Amazon prices: free first, Scrape.do only when free fails.
+
+    Each paid request is recorded in `usage`. At most `allowed` are
+    made; a set left unchecked because the budget ran out is reported,
+    never silently skipped. Returns (rows, failed).
+    """
+    rows, failed = [], []
+    for entry in watchlist:
+        asin = entry.get("asin")
+        if not asin:
+            continue
+        row = fetch_amazon(asin, entry["set"], today)
+        if row is None and token:
+            if allowed > 0:
+                allowed -= 1
+                row, spend = fetch_amazon_via_scrapedo(asin, entry["set"],
+                                                       today, token)
+                record_usage(usage, today, spend)
+            elif "scrape.do budget used up" not in failed:
+                failed.append("scrape.do budget used up")
+        if row:
+            rows.append(row)
+        elif local or token:
+            failed.append(f"amazon:{entry['set']}")
+    return rows, failed
+
+
 def main(argv=None) -> int:
     logging.basicConfig(level=logging.INFO,
                         format="%(levelname)s %(name)s: %(message)s")
@@ -154,14 +187,30 @@ def main(argv=None) -> int:
 
     rows, failed = fetch_all(today)
 
-    # Amazon and pricehistory.app: best effort, never fatal.
+    # Amazon: best effort, never fatal. Scrape.do is paid for out of a
+    # free plan, so every request is counted and capped.
+    token = os.environ.get("SCRAPEDO_TOKEN")
+    budget = config["scrapedo"]
+    usage_path = config["paths"]["usage"]
+    usage = load_usage(usage_path)
+    allowed = 0
+    if token:
+        remaining = remaining_credits(token)
+        log.info("scrape.do: %s requests left before this run", remaining)
+        allowed = allowance(usage, today, budget["monthly_cap"], remaining,
+                            budget["reserve"])
+    amazon_rows, amazon_failed = fetch_amazon_rows(
+        watchlist, today, token, usage, allowed, args.local)
+    rows += amazon_rows
+    failed += amazon_failed
+    usage_note = None
+    if token:
+        save_usage(usage_path, usage)
+        usage_note = usage_summary(usage, today, budget["monthly_cap"])
+        log.info(usage_note)
+
+    # pricehistory.app: best effort, never fatal.
     for entry in watchlist:
-        if entry.get("asin"):
-            row = fetch_amazon(entry["asin"], entry["set"], today)
-            if row:
-                rows.append(row)
-            elif args.local:
-                failed.append(f"amazon:{entry['set']}")
         if entry.get("price_history_url"):
             stats = fetch_price_history(entry["price_history_url"])
             if stats:
@@ -197,9 +246,10 @@ def main(argv=None) -> int:
     log.info("spreadsheet written to %s", book)
 
     digest = every if is_digest_day(today) else None
-    subject, body = compose(news, failed_for_email, today, digest=digest)
-    html = compose_html(news, failed_for_email, today,
-                        digest=digest) if news else None
+    subject, body = compose(news, failed_for_email, today, digest=digest,
+                            usage_note=usage_note)
+    html = compose_html(news, failed_for_email, today, digest=digest,
+                        usage_note=usage_note) if news else None
     if subject is None:
         log.info("nothing worth an email today")
         return 0

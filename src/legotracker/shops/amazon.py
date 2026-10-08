@@ -1,8 +1,9 @@
 """Amazon.in, and the free price-history site.
 
 Both are best-effort. Amazon serves data-centre IPs a CAPTCHA, so the
-cloud run often gets nothing; the local run from Abdul's Mac works. Any
-failure returns None and the run continues.
+cloud run gets nothing directly; the local run from Abdul's Mac works.
+When SCRAPEDO_TOKEN is set, a failed direct fetch is retried through
+Scrape.do. Any failure returns None and the run continues.
 
 Product links are supplied in watchlist.yaml, never searched for:
 searching "LEGO Technic McLaren P1 42172" returned four products, none
@@ -103,6 +104,37 @@ def fetch_amazon(asin: str, set_number: str, today: str) -> PriceRow | None:
         log.warning("amazon %s failed: %s", asin, exc)
         return None
     return parse_amazon_page(response.text, set_number, url, today)
+
+
+SCRAPEDO_AMAZON = "https://api.scrape.do/plugin/amazon/"
+
+
+def fetch_amazon_via_scrapedo(asin: str, set_number: str, today: str,
+                              token: str) -> tuple[PriceRow | None, dict]:
+    """The same page, fetched by Scrape.do, which Amazon does not CAPTCHA.
+
+    Returns the row and what the request cost. Scrape.do charges only
+    for successes; a success with no cost header is counted as 1.
+    """
+    url = f"https://www.amazon.in/dp/{asin}"
+    try:
+        response = requests.get(
+            SCRAPEDO_AMAZON,
+            params={"token": token, "url": url, "geocode": "in"},
+            timeout=90)
+        response.raise_for_status()
+    except Exception as exc:
+        # Not the exception text: it can carry the URL, and the URL
+        # carries the token.
+        log.warning("scrape.do amazon %s failed: %s", asin,
+                    type(exc).__name__)
+        return None, {"credits": 0, "remaining": None}
+    headers = response.headers
+    credits = int(headers.get("Scrape.do-Request-Cost", 1))
+    remaining = headers.get("Scrape.do-Remaining-Credits")
+    spend = {"credits": credits,
+             "remaining": int(remaining) if remaining is not None else None}
+    return parse_amazon_page(response.text, set_number, url, today), spend
 
 
 def parse_price_history(html: str) -> dict | None:

@@ -76,6 +76,13 @@ def test_price_below_the_low_anchor_is_buy_now():
     assert v.position < 0
 
 
+def test_a_new_low_says_so_instead_of_minus_percent():
+    # Amazon's McLaren on 2026-10-08: Rs1 under the old low read as
+    # "-0% up its range".
+    v = j(20599, 41199, lo=20600, hi=40490)
+    assert v.reason == "lowest price yet -- under the old low of Rs20,600"
+
+
 # --- Review Focus item 3: missing MRP -------------------------------
 
 def test_missing_mrp_uses_the_amazon_high_as_the_top():

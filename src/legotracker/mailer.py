@@ -32,9 +32,16 @@ def _digest_lines(digest: list[dict]) -> list[str]:
 
 
 def compose(items: list[dict], failed_shops: list[str], today: str,
-            digest: list[dict] | None = None
+            digest: list[dict] | None = None, usage_note: str | None = None
             ) -> tuple[str | None, str | None]:
     """Build (subject, body). Returns (None, None) when there is no news."""
+    subject, body = _compose(items, failed_shops, today, digest)
+    if body is not None and usage_note:
+        body = body.rstrip("\n") + f"\n\n{usage_note}\n"
+    return subject, body
+
+
+def _compose(items, failed_shops, today, digest):
     if not items:
         if ALL_SHOPS.issubset(set(failed_shops)):
             return ("LEGO tracker: could not check prices today",
@@ -237,7 +244,8 @@ def _card(item: dict) -> str:
 
 
 def compose_html(items: list[dict], failed_shops: list[str],
-                 today: str, digest: list[dict] | None = None) -> str:
+                 today: str, digest: list[dict] | None = None,
+                 usage_note: str | None = None) -> str:
     ranked = sorted(items, key=lambda i: (ORDER[i["verdict"].label],
                                           -i["price"]))
     cards = "".join(_card(entry) for entry in ranked)
@@ -248,6 +256,8 @@ def compose_html(items: list[dict], failed_shops: list[str],
     if digest:
         notes.append(f"{len(digest)} sets watched &middot; weekly digest "
                      "attached as a spreadsheet")
+    if usage_note:
+        notes.append(usage_note)
     footer = ""
     if notes:
         footer = (

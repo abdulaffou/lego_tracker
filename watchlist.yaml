@@ -4,6 +4,7 @@
 
 - set: "11389"
   name: Project Hail Mary
+  asin: B0GQT31L1G
   amazon_low: 11999
   amazon_high: 11999
   seen_on: 2026-10-04
@@ -23,12 +24,14 @@
 - set: "10350"
   pieces: 3266   # not in any feed; from Brickset
   name: Tudor Corner
+  asin: B01N5B2LYH
   amazon_low: 14500
   amazon_high: 24501
   seen_on: 2026-10-04
 
 - set: "11371"
   name: Shopping Street
+  asin: B06VZ3Y8P2
   amazon_low: 24479
   amazon_high: 25999
   seen_on: 2026-10-04
@@ -49,6 +52,7 @@
 
 - set: "10316"
   name: Rivendell
+  asin: B0BVMZ5NT5
   amazon_low: 25200
   amazon_high: 45392
   seen_on: 2026-10-04
