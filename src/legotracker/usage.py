@@ -52,9 +52,19 @@ def allowance(usage: dict, today: str, cap: int, remaining: int | None,
     return max(0, left)
 
 
+def _this_month(usage: dict, today: str) -> dict:
+    return usage.setdefault(_month(today), {"requests": 0, "credits": 0,
+                                             "remaining": None, "days": {}})
+
+
+def note_balance(usage: dict, today: str, remaining: int | None) -> None:
+    """Keep Scrape.do's own count, so the email can show it."""
+    if remaining is not None:
+        _this_month(usage, today)["remaining"] = remaining
+
+
 def record(usage: dict, today: str, spend: dict) -> None:
-    month = usage.setdefault(_month(today), {"requests": 0, "credits": 0,
-                                              "remaining": None, "days": {}})
+    month = _this_month(usage, today)
     month["requests"] += 1
     month["credits"] += spend["credits"]
     if spend["remaining"] is not None:

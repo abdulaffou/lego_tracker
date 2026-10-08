@@ -17,7 +17,8 @@ from .shops import fetch_all
 from .shops.amazon import (fetch_amazon, fetch_amazon_via_scrapedo,
                            fetch_price_history)
 from .models import Verdict
-from .usage import allowance, load_usage, remaining_credits, save_usage
+from .usage import (allowance, load_usage, note_balance, remaining_credits,
+                    save_usage)
 from .usage import record as record_usage
 from .usage import summary as usage_summary
 from .verdict import judge
@@ -197,6 +198,7 @@ def main(argv=None) -> int:
     if token:
         remaining = remaining_credits(token)
         log.info("scrape.do: %s requests left before this run", remaining)
+        note_balance(usage, today, remaining)
         allowed = allowance(usage, today, budget["monthly_cap"], remaining,
                             budget["reserve"])
     amazon_rows, amazon_failed = fetch_amazon_rows(

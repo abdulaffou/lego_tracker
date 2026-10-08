@@ -188,3 +188,35 @@ def test_a_paid_call_that_fails_is_reported(monkeypatch):
     _, failed = fetch_amazon_rows(WATCH, TODAY, token="tok", usage={},
                                   allowed=10, local=False)
     assert failed == ["amazon:42172", "amazon:10350"]
+
+
+# --- hardening: a paid request must never be wasted silently ---------
+
+def test_odd_cost_headers_do_not_crash_after_the_credit_is_spent(monkeypatch):
+    monkeypatch.setattr(amazon.requests, "get", lambda *a, **k: Resp(
+        MCLAREN, {"Scrape.do-Request-Cost": "1.0",
+                  "Scrape.do-Remaining-Credits": "n/a"}))
+    row, spend = amazon.fetch_amazon_via_scrapedo("X", "42172", TODAY, "tok")
+    assert row.price == 37079.0
+    assert spend == {"credits": 1, "remaining": None}
+
+
+def test_a_paid_page_that_does_not_parse_says_what_came_back(monkeypatch,
+                                                             caplog):
+    page = "<html><title>Deliver to your location</title><p>hi</p></html>"
+    monkeypatch.setattr(amazon.requests, "get",
+                        lambda *a, **k: Resp(page))
+    row, _ = amazon.fetch_amazon_via_scrapedo("X", "42172", TODAY,
+                                              "secret-tok")
+    assert row is None
+    assert "Deliver to your location" in caplog.text
+    assert "priceToPay" in caplog.text
+    assert "secret-tok" not in caplog.text
+
+
+def test_the_balance_from_scrapedo_is_kept_for_the_email():
+    usage = {}
+    u.note_balance(usage, TODAY, 994)
+    assert u.summary(usage, TODAY, cap=900).endswith("994 credits left")
+    u.note_balance(usage, TODAY, None)          # a failed check keeps it
+    assert usage["2026-10"]["remaining"] == 994

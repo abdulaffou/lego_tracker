@@ -129,12 +129,36 @@ def fetch_amazon_via_scrapedo(asin: str, set_number: str, today: str,
         log.warning("scrape.do amazon %s failed: %s", asin,
                     type(exc).__name__)
         return None, {"credits": 0, "remaining": None}
-    headers = response.headers
-    credits = int(headers.get("Scrape.do-Request-Cost", 1))
-    remaining = headers.get("Scrape.do-Remaining-Credits")
-    spend = {"credits": credits,
-             "remaining": int(remaining) if remaining is not None else None}
-    return parse_amazon_page(response.text, set_number, url, today), spend
+    # The credit is already spent: an odd header must not crash the run
+    # before the spend is recorded.
+    spend = {"credits": _header_int(response.headers,
+                                    "Scrape.do-Request-Cost", 1),
+             "remaining": _header_int(response.headers,
+                                      "Scrape.do-Remaining-Credits", None)}
+    row = parse_amazon_page(response.text, set_number, url, today)
+    if row is None:
+        _explain_unparsed(asin, response.text)
+    return row, spend
+
+
+def _header_int(headers, name: str, default):
+    try:
+        return int(float(headers[name]))
+    except (KeyError, TypeError, ValueError):
+        return default
+
+
+def _explain_unparsed(asin: str, html: str) -> None:
+    """A paid page that gave no price: leave enough to see why."""
+    title = re.search(r"<title[^>]*>(.*?)</title>", html or "", re.S)
+    log.warning(
+        "scrape.do amazon %s: no price in a %s-byte page titled %r "
+        "(captcha=%s, unavailable=%s, priceToPay=%s)",
+        asin, len(html or ""),
+        title.group(1).strip()[:80] if title else None,
+        bool(BLOCKED.search(html or "")),
+        bool(UNAVAILABLE.search(html or "")),
+        "priceToPay" in (html or ""))
 
 
 def parse_price_history(html: str) -> dict | None:
