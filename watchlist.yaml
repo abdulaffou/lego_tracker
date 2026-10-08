@@ -12,7 +12,7 @@
 - set: "10294"
   pieces: 9090   # not in any feed; from Brickset
   name: Titanic
-  asin: B09GPPP2NK
+  # Not sold on Amazon India; the anchors below are its old listing's.
   amazon_low: 57000
   amazon_high: 98999
   seen_on: 2026-10-04
@@ -39,6 +39,7 @@
 - set: "76269"
   pieces: 5201   # not in any feed; from Brickset
   name: Avengers Tower
+  asin: B0CN78FNTY
   amazon_low: 24501
   amazon_high: 48021
   seen_on: 2026-10-04
