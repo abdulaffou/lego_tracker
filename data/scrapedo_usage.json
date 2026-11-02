@@ -31,11 +31,12 @@
     "requests": 135
   },
   "2026-11": {
-    "credits": 5,
+    "credits": 11,
     "days": {
-      "2026-11-01": 5
+      "2026-11-01": 5,
+      "2026-11-02": 6
     },
-    "remaining": 860,
-    "requests": 5
+    "remaining": 854,
+    "requests": 11
   }
 }
